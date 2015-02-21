@@ -1,0 +1,279 @@
+---
+author: wpengine
+comments: true
+date: 2012-07-04 04:10:16+00:00
+excerpt: <em><strong>Analytics</strong></em> - unlike you, it doesn't make assumptions.
+  When we start an optimization, this is always the first thing we look at, before
+  we even take a look at the details of the landing pages. In fact, we try to look
+  at the landing pages as little as possible before looking at Analytics (and doing
+  some research on the industry the site is in). Why, you ask? Simply because we are
+  human, and just like anyone else, we are prone to making judgments and assumptions,
+  which can result in negative consequences. As landing page optimizers, we are trained
+  to look at any page and then immediately start critiquing it in our heads, as well
+  as thinking up a hypothesis for a new experiment. The <span>problem</span> with
+  this is that it still is just a guess, although our experience may make our guesses
+  better than the average guess. By looking at analytics without having looked much
+  at the site, we can gauge a page using facts rather than opinions. If you know how
+  to use data correctly, you will gain the ability to find out what action to take
+  next.
+layout: post
+slug: do-analytics-right
+title: Do Analytics Right
+wordpress_id: 526
+categories:
+- Analytics
+---
+
+_**Analytics**_ - unlike you, it doesn't make assumptions. When we start an optimization, this is always the first thing we look at, before we even take a look at the details of the landing pages. In fact, we try to look at the landing pages as little as possible before looking at Analytics (and doing some research on the industry the site is in). Why, you ask? Simply because we are human, and just like anyone else, we are prone to making judgments and assumptions, which can result in negative consequences. As landing page optimizers, we are trained to look at any page and then immediately start critiquing it in our heads, as well as thinking up a hypothesis for a new experiment. The problem with this is that it still is just a guess, although our experience may make our guesses better than the average guess. By looking at analytics without having looked much at the site, we can gauge a page using facts rather than opinions. If you know how to use data correctly, you will gain the ability to find out what action to take next.
+
+We've put together a guide that will allow you to find key points of interest about your site, as well as how to optimize your conversion rate.
+
+
+## Track _Everything_
+
+
+By far the most important first step is to track every single thing possible. This will not only tell you what to do, but why to do it. This is when you start having epiphanies as you find out new things about your visitors and the way they behave. We'll explain our general workflow for this step (we will assume you use Google Analytics).
+
+
+###  Event Tracking
+
+
+**Add unique event tracking to every single link on the landing page or website, even for simple text links**. This is the only accurate way to know which links and buttons are being clicked. You may think this is what GA's In-page analytics is for, but unfortunately, it uses url paths to determine the number/percent of clicks. That's why when you have 2 different buttons on a page leading to the same page, the clicks counts are the same when looking at in-page analytics.  An example of tracking a specific link within a paragraph:
+
+[cc lang="html" escaped="true" lines="2" width="55%"]Click <a href="/landing-page.php" onclick="_gaq.push(['_trackEvent', 'Click', 'Blog Post 5', 'Paragraph Link #1'])">Here</a> [/cc]
+
+With this code, every time someone clicks this link, Analytics will register an event in the 'click' category, with the 'Paragraph link #1' label within the 'Blog Post 5' action. Categorize your events as you please. Now, I can see how many people click this specific link, and compare this to all the other links on the same page. I can even derive a CTR for this link.
+
+
+### Goal Tracking
+
+
+**Add goal tracking for every conversion, including certain steps within a conversion.** The more you break down the funnel, the more info you can get. _**Even track which fields within a form are being clicked on! **_When you do this, you can find out at what point on your form or checkout page people tend to leave. This kind of data is priceless. You may have to get a bit technical here, and will need some javascript to get this kind of data. Here's an example of a form field that records an event in Analytics when someone uses a form field:
+
+[cc lang="html" escaped="true"] <input type="text" name="firstname" onfocus="_gaq.push(['_trackEvent', 'Form', 'Focus', 'First Name Field'])">[/cc]
+
+This will record a 'Focus' action in the 'Form' category labeled 'First Name Field'. Now, you can compare the use of each field, and find out which ones people aren't using, as well as which ones are causing anxiety and lowering your conversions. Use these events as steps in your goal funnel.
+
+
+### Taking Advantage of Usability Tracking
+
+
+A usability tracking system is any system that allows you to track the way your visitors use your site. We recommend [mouseflow](http://bit.ly/LAKLWF ) and we use it for every single client. We like mouseflow because it gives you 100 free recordings per month, which is enough for us to get some good insight without making the customer pay for a service. We also like how it lets you filter recordings by time on page, so you can watch just the recordings that matter. It also shows the entry page for each recording, so you can get an idea of what kind of visitor you are observing.
+
+
+Here are some awesome examples of the type of data you can get when tracking things as you should:
+
+
+
+
+[image id="474" size="medium" link="true" align="center" shadow="true"]
+    Detailed Event Flows
+
+[image id="476" size="medium" link="true" align="center" shadow="true"]
+    Conversion rate per event, as well as revenue per event. You'll need to synthetically fire an e-commerce transaction to do this. We'll detail this in another post soon.
+
+
+
+
+[image id="479" size="medium" link="true" align="center" shadow="true"]
+    Find out how much of the page content a visitor is willing to read using mouseflow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Interpreting Data
+
+
+
+
+Now that you're tracking just about everything, it's time to read the data. This is how you figure out exactly what actions to take in order to improve your conversion rates. We will walk through some of the main GA reports, and interpret them. I'll show some examples of real websites and their corresponding analytics, pointing out some key interests. Although all analytics data is important, not all of them give you actionable data. We will walk through the actionable data for the sake of having useful information in the context of conversion rate optimization.
+
+
+
+
+
+## The _Audience _
+
+
+Your audience is everything. They account for 100% of the revenue generated from your website. The whole goal of conversion rate optimization is to cater the page to your audience, and give them what they want. Metrics, in essence, are just a way to measure the way your audience perceives your website. In this section, we will discuss specifically the "Audience" tab in Google Analytics. In my opinion, this section does not tell you as much about your audience as the other sections, such as keywords, which pretty much tells you what the visitor was looking for.
+
+
+### How Well Are You Branded?
+
+
+
+
+[image id="495" size="medium" link="true" align="center" shadow="true"]
+    An example of analytics for a branded website
+Looking at the amount of returning visitors is a good indicator that your site is known by name and that people remembered or saved your URL. If you are looking for further evidence, go look at how much direct traffic you have. If they are both quite high and/or correlated, it is a good indicator that people are remembering you, thus becoming branded in their minds. Something you need to remember about these type of visitors are that they are similar to returning customers - **they will almost always be more engaged and convert better than the average visitor. **If 40% of your traffic is direct or returning traffic, while 60% is new, you should still build your landing page to cater the direct/returning traffic. Why? Because they hold more weight in terms of value. Take a look at the image to the right. This is an example of a branded site's analytics. A key point of interest is the average time spent by a returning visitors versus a new visitor. A new visitor sticks around for about 3 minutes, while a returning visitors browses for **over 11 minutes.** That is a difference of almost **300%.** This means you have 300% more time to convert this visitor than a new visitor.
+
+If your site is branded, it also means you have credibility, and people see value in what your brand stands for. To increase your conversions, you need to provide more of whatever value your returning visitors see in you. If you sell pocket-knives, just add a better, new pocket knife, or more "pocket-knifey" things. Don't think your branding and credibility will transfer over to cookware.
+
+
+### How Are People Judging You?
+
+
+Looking at your overall bounce rate gives you an idea of how people are judging your site as a whole once they arrive. However, make sure to cross-reference this with your overall avg. time spent on page - if you have a content-heavy site like a news site, people may be reading just one article then leaving which would result in a bounce. If you have a high bounce but a high time spent on page, that almost always means that a lot of your visitors are simply landing on your content/article pages. It's common for people to leave as soon as they find the information they were looking for.
+
+If your avg. time on page is low, AND your bounce rate is high, it's time to consider a new design. A high site-wide bounce rate usually means that there is something consistent across your entire site causing it. An annoying ad, light-box, or sign-up form that is shown to them on entry is a common source of this.
+
+If you are having bounce-rate issues, have a good design, and have none of the previously mentioned elements that may annoy people into leaving, look at your incoming traffic sources. I'll bet you anything that you have un-targeted traffic coming into your site. If you sell red shoes, stop bidding on the keyword 'blue shoes'. In the traffic sources section we'll explain how to segment data in order to compare bounce rates for specific keywords. We'll even show you how to segment specific keywords for specific pages, and optimize conversions by catering that page towards the traffic going into it.
+
+
+### Visitors Flow
+
+
+Visitors flow is an awesome feature to get a good look as to how people are browsing through your site. Even better, it lets you segment by traffic source. By default you'll notice it segments your entrances by Country/Location, which I personally do not find as useful as segmenting the entrances by traffic source. Use the drop-down on the top-left to change this setting. Make sure to select the "source/medium" option and not just "source", because doing so will mix up your Adwords traffic with your organic traffic!
+
+The main way we use this tool is to gauge how well of a job we are doing at funneling visitors towards and through our funnel. This is especially useful if you have lots of pages on your site. A key point of interest here is visible when you hover your mouse over any of the nodes.  You'll see a pie chart that shows you drop-offs versus through traffic. By clicking the node for any traffic source on the left side, you can choose to view data for only that segment. Take advantage of this. If you find any pages that have significantly high drop-off rates, you've discovered actionable information. Now you know this is a page that you can benefit from by optimizing. However, do not focus on pages that get less than 10% of your total pageviews at first. Increasing conversions by 10% on a page getting 60% of your traffic will be more valuable to your bottom line than increasing conversions by 50% on a page getting 10% of your traffic. Do some math - learn how to use [weight](http://en.wikipedia.org/wiki/Weighted_mean) in your analysis.
+
+A key thing to remember here is not to get carried away by all this data. If you're working on your own site it's a good practice to just look for 3-5 actionable items that will have the greatest effect on your revenues, then come back to find more once you've successfully completed them. Analytics can get as deep as you want it to be, but if you're deeply analyzing pages that are getting a low percentage of your pageviews, you are wasting your time.
+
+
+
+[image id="505" size="large" link="true" align="center" shadow="true"]
+    Here is an example where we've found actionable data in the visitors flow. The homepage sees a significantly high drop-off rate. Since this traffic is from google organic, our next step is to see which keywords the traffic is coming from, then cater the page to them.
+
+
+
+## _Traffic Sources_
+
+
+The audience section of analytics was useful in telling us who comes to the site, their habits, and how they tend to flow through, but it doesn't do a great job telling us _why they came._ This is a question that the traffic sources section has the ability to answer. For this reason, I usually end up spending most of my time here. In this section we'll go over how we approach analysis when it comes to traffic sources, key metrics we analyze, and how we pull actionable data from it.
+
+
+### Cater To The Majority
+
+
+It's not about _you_, it's about _them_. It's not about what you _think _they need - it's all about what _they want._ The first thing we look at in traffic sources is the pie chart in the overview that shows the distribution of visitors from each traffic source. If you see most of your traffic coming from search, it's probably best to focus your efforts on catering to the keywords bringing traffic to your site. Referral traffic can mean many things, but in our experience the most common sites with heavy referral traffic have tended to be sites with credibility and sites that have social value. Direct traffic sites tend to be branded or have offline advertising campaigns running. In this section we will walk you through how to cater your website to the traffic that is engaging the most with your website.
+
+
+### Your Keywords Have The Answers
+
+
+If a site is getting mostly organic search traffic, the search overview page is absolutely the best source for finding immediate, actionable information. The first thing you'll want to do is go to the search overview section and then choose "keyword" as the primary dimension. Be prepared to take some notes.
+
+
+
+[image id="509" size="medium" link="true" align="center" shadow="true"]
+    Search Overview section with goal tracking
+Now, if you've set up your tracking as we recommended in the "Tracking" section of this guide, you should be able to see some data as shown in the figure to the right. If you're collecting leads you probably won't see a per visit goal value, but that's fine. We're looking for actionable data, and we get that by comparing the differences between statistics. First, we are going to go over the differences of how to use data with low pageviews versus data with high pageviews.
+
+High-pageview data is best for figuring out what to do **now.** Low pageview data, on the other hand, will help you find the outliers. However, we need to discern between them, and that's where advanced filters come in. When you first look at this data, it' a good practice to filter the data using the advanced filter option, and **only show data that has 5% of pageviews or more of your total traffic.** So in the case of the screenshot shown to the right, I would filter it so that I only see keywords that are creating 1,000 visits or more - in this case, "diaper cakes", "diaper cake", and (not provided). Unfortunately, I can't do anything with that, because the keywords are too similar, and (not provided) tells me nothing. **However,** remember that this is showing keywords sending traffic to the site as a whole. Once we look at these metrics for specific pages in the content section, we wil find more actionable data, and in this case, better data, since it will tell us how to optimize a **specific page. **
+
+Low pageview data will more often be useful for giving you a long-term direction for optimizing your site. As you can see from the figure shown, the term "baby shower diaper cakes" and "baby diaper cakes" has a significantly higher conversion rate as well as per visit value, which gives us great insight as to what kind of keywords to bid on, how to strategize our SEO tactics, and what our site should generally be about.
+
+
+### Catering to Referral Traffic
+
+
+It's not often we run into sites who's traffic is mostly coming from referral traffic. This is because if you have a lot of referral traffic it means you have a lot of quality backlinks, which will in turn increase your search engine rankings which will in turn increase your organic search traffic. Look at your referral sources, filter so you are only looking at referral sites sending a significant amount of traffic (over 5%), and study the pages sending traffic to your site. Compare the ones sending low-converting traffic versus the ones sending high-converting traffic, and figure out the reason. There's **always **a reason. Take notes of what you find. If anything, you'll uncover things about your social value which will give you a better understanding of your business. All the information you find, you will use later when making optimizations.
+
+
+### Catering to Direct Traffic
+
+
+Branded sites and offline advertisers will often see a high amount of direct traffic coming to their site. This is by far the most valuable type of visitor you can get. You'll notice this type of traffic will be very engaged with your site, spending significantly longer amounts of time on your site. Don't let it go to waste. Provide as much value as you can to them. Find a way to quantify and measure how well you are catering to these visitors. An interesting thing you will find about this type of traffic is that they are willing to take more actions on your site. If you feel that you don't know your traffic well enough and you have a lot of this type of traffic, try using a feedback system such as [KISSInsights](http://kissinsights.com) to get a better understanding of your visitors. Direct traffic will tend to give valuable feedback more often than any other type of traffic. This is especially useful for offline advertisers who have less metrics to work with than online advertisers. You'll also find that a big amount of your traffic will be returning visitors. Again, **pay attention **to what these visitors want.
+
+
+### Figuring Out Why Sales Have Slumped
+
+
+When your sales slump, there's always a reason. Usually, it's caused by your traffic slumping for one reason or another. However, a reason some clients come to us is because their sales have slumped even though their traffic has stayed the same. In other words, their _conversion rate_ has slumped. The beauty of analytics is that it always knows the answer. We'll detail a real case study in this section where a client was in this exact situation and we were able to discern the exact cause.
+
+The first thing you want to find out is the month where sales were best. We then compare this data to the recent month's data, then look for correlations in data. You'll know you've found the answer because when you do, it'll simply _make sense. _You'll see what I mean.
+
+This particular site had over 60% search traffic, and the direct/referral traffic were distributed almost evenly. Most the conversions came from the search traffic, bringing us to conclude that the answer could be found in the search data.
+
+We knew that since the best month, sales had slumped a little over 80%. We need to look for some data that correlates with that, and it should make common sense.
+
+
+
+[image id="515" size="medium" link="true" align="center" shadow="true"]
+    Best Month
+
+[image id="514" size="medium" link="true" align="center" shadow="true"]
+    The most recent month (low sales)
+
+
+
+
+These figures actually tell us exactly what happened. The site in question sells educational material which teaches science to kids. If you actually measure the amount of traffic for the search term "science for kids" in the most recent month versus the best month, you will find that it correlates almost perfectly with the drop in sales. The most recent month sees about 15% the amount of search traffic for that keyword; in other words, about 85% less. Also, this makes perfect sense. If you look at the other top keywords, they are not very targeted to the product being sold. Most of this traffic is going to the articles within the site, which is not going to sell product as well as the term "science for kids". This gave us valuable information moving forward - a perfect example of how delving into data can tell you exactly what you need to do to increase sales. In this case, the most value would come from strategizing SEO efforts for that specific term, as well as funneling the other traffic towards the sales pages.
+
+
+## Content Metrics
+
+
+In terms of conversion rate optimization, the main way in which content metrics differs from the rest of the analytics is that it tells you exactly _which _pages you should work on first. You won't get much out of optimizing a homepage with a 10% bounce rate, or a page getting 3% of your pageviews.
+
+
+### Popularity
+
+
+As I explained earlier, it's really important that you don't get hung up analyzing your low-traffic pages and wasting your time. The only time they can give you really actionable data is when they are immense outliers. Even though a page is only getting a few percent of your traffic, if it's converting 200% higher than your other pages, it's time to figure out why. You might find an idea or concept that the page possesses and apply it to your higher traffic pages.
+
+
+###  Which Pages Are Making _Money?_
+
+
+A key area of interest in Content Analysis is the "Landing Pages" section. Now, without goal tracking or e-commerce tracking setup, this is very similar to the "All Pages" section. However, a key difference is that it lets you segment the data by conversion rate and revenue. _Awesome. _Choose the goal you want to analyze under the explorer tab and you will be shown some extremely useful data. So what does this stuff _mean? _Basically, if it says a page is converting 1%, it's saying that when someone enters your site through that specific page, the conversion rate is 1%. If they enter the site via Page A then head to Page B then convert, Page B will not count a conversion in the landing pages section. So, how do you use this data?
+
+In terms of SEO and PPC, send people to the pages that are getting the most revenue-per-visitor. It might even make sense to drive your internal traffic to the high-performing landing pages. But don't think this means that you can just blast any and all traffic at your converters. If it's not targeted traffic, don't send it there.
+
+Another useful element of this information is that it gives you insight as to what your homepage should look like. Almost all sites I've worked on have the home page as the #1 source of entrances, which also makes it the most popular landing page. Take concepts out of the good landing pages and apply it to the homepage. I assure this will see you a nice increase in overall revenue-per-visitor.
+
+
+### Bounces & Exits
+
+
+First, let's point out the key difference between bounces and exits. Bounces are only recorded if the visitors leaves the site from the first page they saw. If they looked at 2 pages or more, a bounce can no longer be counted. A bounce usually means that a) they didn't find what they were looking for, or b) they judged the site early and left because they judged negatively. Bounces are common on articles because people just want some information. Don't ever depend on article traffic to bring you your conversions - you should merely use them to increase the rankings of your home page or sales page.
+
+A page with a high exit rate is like a leaky pipe. You need to seal the hole. Exit rates are usually high on checkout pages. The average cart abandonment rate is about 60%. By giving your visitor as much info in terms of what to expect **before **they hit the checkout pages, you'll reduce abandonment. For example, how long do they have to cancel? What systems is your software compatible with? These kinds of questions need to be answered before they checkout or else they will leave.
+
+
+### Events
+
+
+
+
+
+### In-Page Analytics
+
+
+
+
+## Measuring Conversions
+
+
+
+
+### Measuring Opportunity
+
+
+
+
+### Funnel Abandonment
+
+
+
+
+### Less is More
+
+
+
+
+## Taking Action
+
+
+

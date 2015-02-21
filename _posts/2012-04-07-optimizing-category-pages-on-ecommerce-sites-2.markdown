@@ -1,0 +1,57 @@
+---
+author: wpengine
+comments: true
+date: 2012-04-07 01:47:11+00:00
+excerpt: When clients need pages on eCommerce sites optimized, I often get asked to
+  do a category page rather than a product page. They usually prefer this because
+  the category pages get a lot more traffic than the product pages, therefore affecting
+  revenue more after optimization. If you charge per page, then it would cost the
+  client a lot more to optimize every product page in a category rather than just
+  optimize the category page. Also, eCommerce sites tend to spend a lot bidding on
+  category-related keywords rather than product keywords. If you are experienced in
+  CPC you probably already know that bidding on product-related keywords is usually
+  more profitable than bidding on category-related keywords. However, you also know
+  that the category keywords have way more traffic available. That's why it's important
+  to be able to send people to category pages and still see good conversions. But
+  the challenge is, how do you optimize a category page when there is no direct conversion
+  to be measured with it? In other words, there is no 'Add to Cart' button on the
+  category pages, but rather links to a bunch of products. <strong>The answer is to
+  optimize the bounce rate and exit rate.</strong>
+layout: post
+slug: optimizing-category-pages-on-ecommerce-sites-2
+title: 'Improving Conversions: eCommerce Category Pages'
+wordpress_id: 1108
+categories:
+- Bounce Rates
+- E-Commerce
+---
+
+When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That's why it's important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no 'Add to Cart' button on the category pages, but rather links to a bunch of products. **The answer is to optimize the bounce rate and exit rate.**
+
+Bounce & Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who **land** on that page **leave immediately** without looking at another page. It's calculated by dividing **entrances **by **bounces** while exit rate is calculated by dividing **page views **by ** exits. **Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it's no longer considered a bounce. A 'bounce' in my eyes means the person judged your business as a whole and it didn't meet their standards, or they didn't find what they were looking for. I'd say for most people it's the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The **exit rate** is just the percentage of people who leave your site from that page. If it's unusually high, I interpret that the page is poor compared to the rest of the site and see it as a 'leak' of visitors, which is up to someone like me to plug.
+
+Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, "Why don't I just measure conversions for that category as a whole to compare?" If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you're running website optimizer on category A and have the conversion tracked on the 'Order Completed' page, you will have counted a conversion for a product that has nothing to do with the category you're optimizing. And that's only one of the many things that can happen? Do you see the issue?
+
+You need an accurate measure that directly correlates to the page, and bounce rate & exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he's now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that's going to be a huge improvement in sales. So now that you know _what_ to measure, I'll give out a few pointers from what I've learned.'
+
+
+## eCommerce Categories Optimization Tips
+
+
+
+
+
+	
+  1. **They may not be looking for that page - **Look at keyword data to see what keywords they are using to get there. My last client had 2 main categories - pre-assembled cabinets, and ready-to-assemble cabinets. Although the ready-to-assemble are much cheaper than the pre-assembled, many people were getting to the pre-assembled page using the term 'cheap cabinets'. They would see they really aren't cheap then leave. I put a banner that was prominent at the top promoting the ready-to-assemble cabinets and told them they are about 30% cheaper. Now I'm kind of guiding them to what they were looking for in the first place.
+
+	
+  2. **They need to know immediately they are at the right place - **I see this way to often - A category page with either no title or a small title, and just a bunch of links to products. I usually put a big hero image of what they were looking for, and a big headline stating it. If someone is looking for 'red bikes' and they land on a category page with a huge red bike and headline stating it, they will get that 'Oh they have what I'm looking for' feeling. This is essential.
+
+	
+  3. **Let them know you're legit - **The cabinet client I had was the biggest online seller of cabinets. They even had commercials on HGTV and other related channels. But when I got to the site, nothing lets me know that. If I had only their website to go off of, I'd never have known how established they were. This is why it's key to put up value propositions like "Doing X for over 15 years" or "As seen on X, Y, & Z". The first things I ask about then go for are money-back guarantees, free shipping, awards, press, and testimonials. Then make SURE they see it by using colorful graphics and icons.
+
+	
+  4. **Use really appealing product images - **The whole point they are here is products, so make sure they look really appealing. This is the most important.
+
+
+Hopefully this helps some of you fellow optimizers and eCommerce sites out!

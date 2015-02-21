@@ -1,0 +1,63 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!--[if IE 9]>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <![endif]-->
+
+	
+    <!--[if !IE 9]>
+    <![IGNORE[--> <![IGNORE[]]>
+    <html class="not-ie9" xmlns="http://www.w3.org/1999/xhtml">
+    <!--<![endif]-->
+    <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="keywords" content="images, pictures, paste, copy paste, direct paste, paste online, online paster, image editor, crop, image host, reddit, facebook, video games, graphic arts, online games, photography, image upload, image sharing, funny pictures, twitter photo, tweet photo" />
+    <meta name="description" content="Snag.gy is an image hosting service that lets you paste images from your clipboard directly online." />
+    <meta name="medium" content="image" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<link rel="image_src" href="http://snag.gy/assets/images/logoSquareBig.png" />
+        <title>snaggy - paste images!</title>
+    <link rel="shortcut icon" href="http://snag.gy/assets/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://snag.gy/assets/css/styles.css"/><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22984291-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+    <body>
+    <div class="wrapper">
+	<div class="header center"><a href="http://snag.gy/"><img src="http://snag.gy/assets/images/logo.png" /></a></div>
+	<div class="content">
+	<div class='txt center'>
+	    <br/><br/><h4>Sorry, the page you are looking for could not be found.</h4><br/><br/><h2><a href="http://snag.gy/">return to the home page</a></h2>
+	</div>
+	</div>
+	<div class="push"></div>
+    </div>
+    <div class="footer">
+		<div class="center info darkEmbossText txt">
+
+		<a href="http://snag.gy/">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://snag.gy/login">login<sup>beta</sup></a>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://snag.gy/about">about</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://snag.gy/contact">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://snag.gy/faq">faq</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://snag.gy/terms">terms</a><br />
+		<div class="iconHolder center">
+		<div class="gplusIcon"><g:plusone size="small" count="false"></g:plusone></div>
+		<a href="http://www.facebook.com/pages/Snaggy/166808603383858" target="_blank" class="icon small icon-footer left facebookSmall"></a>
+		<a href="http://twitter.com/snag_gy" target="_blank" class="icon small icon-footer left twitterSmall"></a><br />
+		</div>
+		<strong>&copy;</strong> 2015
+	</div>
+    </div>
+ <script src="https://apis.google.com/js/plusone.js"></script>    </body>
+    </html>
+ 
