@@ -1,66 +1,32 @@
 ---
 author: convertify
-comments: true
-date: 2013-08-19 17:56:17+00:00
-excerpt: With over 114,000 students, Social Media Marketing University is the largest
-  educator online when it comes to social media marketing. Seeing as their ultimate
-  vision is to educate as many people as possible in about how to market through social
-  media, we partnered up so that we can help them accomplish that goal and maximize
-  the amount of students enrolled.
+date: '2013-08-19 10:56:17'
 layout: post
 slug: education-22-lift-in-course-browses-for-social-media-marketing-university
+status: publish
 title: 'Education: 22% Lift in Course Browses for Social Media Marketing University'
-wordpress_id: 1056
+wordpress_id: '1056'
 categories:
 - Case Studies
 ---
 
+ 
 
-<table >
-<tbody >
-<tr >
+**Business: **
+Education
 
-<td >**Business: **
-</td>
+**Sector: **
+Social Media Marketing
 
-<td >Education
-</td>
-</tr>
-<tr >
+**Optimized Conversion: **
+Course Browses
 
-<td >**Sector: **
-</td>
+**Test: **
+A/B Test
 
-<td >Social Media Marketing
-</td>
-</tr>
-<tr >
-
-<td >**Optimized Conversion: **
-</td>
-
-<td >Course Browses
-</td>
-</tr>
-<tr >
-
-<td >**Test: **
-</td>
-
-<td >A/B Test
-</td>
-</tr>
-<tr >
-
-<td >**Website: **
-</td>
-
-<td >[socialmediamarketinguniversity.com](http://socialmediamarketinguniversity.com)
-</td>
-</tr>
-</tbody>
-</table>
-
+**Website: **
+[socialmediamarketinguniversity.com](http://socialmediamarketinguniversity.com)
+ 
 
 With over 114,000 students, Social Media Marketing University is the largest educator online when it comes to social media marketing. Seeing as their ultimate vision is to educate as many people as possible in about how to market through social media, we partnered up so that we can help them accomplish that goal and maximize the amount of students enrolled.
 
@@ -84,9 +50,7 @@ Here are 2 examples of qualitative statements along with their counter-parts. No
 
 Can you see now why quantitative statements perform better? This is what we did with SMMU's new homepage, and we were able able to achieve a **22% lift in course browses.**
 
-
 ## The Variations
-
 
 **Control: 23.6% Conversion Rate**
 
@@ -96,11 +60,9 @@ Can you see now why quantitative statements perform better? This is what we did 
 
 **Treatment: 28.8% Conversion Rate (+22%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](http://convertify.io/wp-content/uploads/2013/09/Control-300x238.png)[/imageframe]
-
+[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x238.png)[/imageframe]
 
 ## Conclusion
-
 
 I think we've made it clear how you should be crafting your value propositions. As a general rule, _use numbers whenever possible - they speak louder than words._
 

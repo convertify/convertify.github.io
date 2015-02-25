@@ -1,20 +1,11 @@
 ---
 author: wpengine
-comments: true
-date: 2011-05-25 09:56:05+00:00
-excerpt: 'For all of you who are new to optimizing landing pages, we''ve put together
-  a system you can follow that will allow you to avoid making mistakes that cause
-  low conversion rates. If you are not very experienced at making landing pages, you
-  will see much better results by fixing your mistakes rather than trying to add improvements.
-  It''s kind of like fixing a flat tire on a car v.s. adding a turbo. If the tire
-  is flat, fixing it is more important than the turbo since the car cannot operate
-  with a flat regardless of a turbo.
-
-  '
+date: '2011-05-25 02:56:05'
 layout: post
 slug: how-to-create-high-converting-landing-page
+status: publish
 title: How to Create a High-Converting Landing Page
-wordpress_id: 25
+wordpress_id: '25'
 categories:
 - Conversion Rate Optimization
 - Fundamentals
@@ -31,12 +22,7 @@ Okay, so let's get started. My goal with this post is to give you a mental check
 
 Let's assume that your landing page is not allowed to have any images, background, or more than 10 words of content. So pretty much all you get to use is a white background, and 10 words of text - that's it. What would you write? Even if you are reduced to this you can still have a decent landing page as long as you clearly communicate your true value. Also, don't use qualitative words like 'best' or 'cheap'. Those words are relative. Online, we are immune to such words. Use words with absolute value, like '10 dollars' or '4.5 Ghz Processor'. Here's some examples:
 
-**- Education (Good):** "Offering 34,192+ Accredited Online Colleges"
-**- Education (Bad):** "We Have The Best Schools For You!"
-**- Virus Software (Good):** "Remove 100% of Viruses. Updated Daily"
-**- Virus Software (Bad):** "Viruses Won't Stand a Chance Against Our Virus Software!"
-**- Retail (Good):** "Over 1,000+ Products at least 25% off Retail From [Brand], [Brand2], [Brand3]..."
-- **Retail (Bad):** "Check out our store and find out why it's the hottest spot in town!"
+**- Education (Good):** "Offering 34,192+ Accredited Online Colleges" **- Education (Bad):** "We Have The Best Schools For You!" **- Virus Software (Good):** "Remove 100% of Viruses. Updated Daily" **- Virus Software (Bad):** "Viruses Won't Stand a Chance Against Our Virus Software!" **- Retail (Good):** "Over 1,000+ Products at least 25% off Retail From [Brand], [Brand2], [Brand3]..." - **Retail (Bad):** "Check out our store and find out why it's the hottest spot in town!"
 
 Don't ever fall for the belief that adding the right image or that design will boost your conversions rates much. These value propositions are all that matters. Imagine you had a medication for headaches and the value proposition was "Cure your Headache Now." Now imagine changing that to "Cure your Headache, and any type of Cancer." A few extra words that would literally make you millions if it were true. Hopefully you can see the difference I'm trying to point out within those value statements. **Every single element on your page should communicate this statement, or be congruent with it!** Once you got your value proposition, you can start building your page.
 
@@ -50,23 +36,23 @@ Once you know exactly what they need to do, remove any steps that are not absolu
 
 **Not this: **
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](http://convertify.io/wp-content/uploads/2011/05/not.png)[/imageframe]
+[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/not.png)[/imageframe]
 
+ 
 
-
-
+ 
 
 **But this: **
 
+ 
 
+[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/but.png)[/imageframe]
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](http://convertify.io/wp-content/uploads/2011/05/but.png)[/imageframe]
+ 
 
+ 
 
-
-
-
-
+ 
 
 **4. Relieve any anxiety the customer can experience**
 
