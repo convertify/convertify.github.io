@@ -8,13 +8,13 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : Convertify
+tagline: Conversion Rate Optimization Development
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Convertify
+  email : admin@convertify.io
+  github : convertify
+  twitter : _convertify
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
