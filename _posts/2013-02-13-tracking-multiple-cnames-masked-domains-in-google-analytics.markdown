@@ -26,6 +26,6 @@ var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12345-1']); _gaq.push(['_se
 
 And then set up your standard cross-domain profile filter:
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-13-at-8.36.04-AM-300x2611.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-13-at-8.36.04-AM-300x2611.png)
 
 Enjoy!

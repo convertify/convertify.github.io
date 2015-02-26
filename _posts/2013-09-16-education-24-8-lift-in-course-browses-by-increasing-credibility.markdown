@@ -54,11 +54,11 @@ We decided to test this by digging in and finding reputable companies who have h
 
 **Control: 18.4% Conversion Rate**
 
-[imageframe lightbox="yes" style_type="bottomshadow" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)
 
 **Treatment: 23.0% Conversion Rate (+24.8%)**
 
-[imageframe lightbox="yes" style_type="bottomshadow" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1" class="" id=""]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treated.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treated.png)
 
 ## Conclusion
 

@@ -54,13 +54,9 @@ Can you see now why quantitative statements perform better? This is what we did 
 
 **Control: 23.6% Conversion Rate**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]
-
-[/imageframe]
-
 **Treatment: 28.8% Conversion Rate (+22%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x238.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x238.png)
 
 ## Conclusion
 

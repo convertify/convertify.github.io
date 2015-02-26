@@ -21,22 +21,22 @@ For this first test we wanted to test what kind of layout would work best. We ca
 
 **The Variations (Click to enlarge):**
 
-[imageframe lightbox="no" style="none" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.25.46-PM-300x248.png)[/imageframe][image id="882" size="medium" link="true" align="left" shadow="true"]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.25.46-PM-300x248.png)[image id="882" size="medium" link="true" align="left" shadow="true"]
     Control LP: **5.30% Conversion Rate**
 
-[imageframe lightbox="no" style="none" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.26.43-PM-300x262.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.26.43-PM-300x262.png)
     Divider-less: **+103.30%**
 
-[imageframe lightbox="no" style="none" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.26.33-PM-300x278.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-26-at-2.26.33-PM-300x278.png)
     Proximity + Friction: **+67.70%**
 
  
 
-##
 
-##
 
-##
+
+
+
 
 ## Conclusion
 

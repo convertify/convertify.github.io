@@ -67,7 +67,7 @@ Regular expressions allow you to match strings that meet certain conditions. For
 
 In order to learn more efficiently, you have to minimize the time between deciding to implement a test and launching that test. Most of that time in-between goes into development. Site-wide tests often require creating a duplicate of the entire site either in a sub-directory or a sub-domain.  Take a look at the image below of what your test setup might look like in a standard site-wide test using VWO.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-10-at-4.47.05-PM-300x1041.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-10-at-4.47.05-PM-300x1041.png)
 
  
 
@@ -96,29 +96,29 @@ First, I visit a page that the test should apply on.  In this case, any page. I
 
 Here’s the before/after.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/before.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/before.png)
 
  
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/after.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/after.png)
 
  
 
 Make sure you test the code on other pages to make sure it works. Now, I’ll go setup the A/B test. In VWO, you’ll create an A/B test, and just put any URL for now when it asks you for one. I’ll just put apple.com
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/next.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/next.png)
 
  
 
 Next, we are taken to the WYSIWYG editor. Click on the little gear next to “variation 1” and click “Insert Javascript/CSS”. Insert your code there, as shown below.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/final.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/final.png)
 
  
 
 That’s it. Save it and move on. Set up your goals and hit next. On the last step where it says “Run test on URL(s):”, put in your test pattern. If you want it on all pages, put domain.com/*, if you want just a subdirectory, put domain.com/subdirectory/*. You can also exclude URLs. For this test, I’m excluding the checkout process as well as the help section. Below is what that might look like
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/last.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/last.png)
 
  
 
@@ -157,7 +157,7 @@ To iterate even faster, you can take advantage of techniques to lower the confid
 
 You should always measure as many goals as possible. At minimum, always measure revenue-per-visitor, conversion rate, engagement, and visits to intermediate funnel steps. If you’re not too confident in the results of a test, look at the correlation between the metrics. If they are all green, you can give it a bit more confidence. The test below is only at 70% statistical significance in revenue, but I wouldn’t mind finishing this one at about 75% or so because of the correlation.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/goal.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/goal.png)
 
  
 
@@ -167,7 +167,7 @@ Tracking multiple goals also gives you more insight as to how your variation is 
 
 If you look at the line graph for any split-test you’ll notice that it goes up-and-down a lot in the beginning and then starts traveling straighter. As more data is collected, our conversion rate range decreases, which is the basis of the calculation for statistical significance. If you notice the lines on your graph have been parallel for a while, you can have more confidence in the results.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/chart.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/chart.png)
 
  
 

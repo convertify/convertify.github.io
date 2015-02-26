@@ -17,7 +17,7 @@ As with all clients, the first thing we did when beginning our optimization for 
 
 Majority of GNOWFGLINS' traffic entered through the blog - a trait that is fast becoming common in many of today's websites, as Google's algorithm tends to favor quality content more and more. When looking at their funnel for people who entered through an article, we saw a huge drop in visits to the offer page:
 
-[imageframe lightbox="yes" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![Conversion Funnel](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Funnel.png)[/imageframe]
+![Conversion Funnel](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Funnel.png)
 
  
 
@@ -31,27 +31,15 @@ When looking at an article, we noticed there was no call to action. There was a 
 
 **Control: .28% Conversion Rate**
 
-[imageframe lightbox="yes" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]
-
 ![Original](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Original.png)
-
-[/imageframe]
 
 **Variation: .51% Conversion Rate (+82%)**
 
-[imageframe lightbox="yes" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]
-
 ![Winner](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner.png)
 
-[/imageframe]
 
 
 
-
-
-##
-
-##
 
 By adding the call-to-action in the sidebar, we've created a new path and made it much easier to notice that they have a membership offer. A good analogy for this is a restaurant with no sign - you're simply not going to notice it.
 

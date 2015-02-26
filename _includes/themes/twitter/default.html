@@ -12,8 +12,14 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -26,14 +32,112 @@
 
   <body>
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ HOME_PATH }}">
+            <img class="img-responsive brand nav-logo" src="{{ BASE_PATH }}/assets/images/convertify-white-sm.png" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!-- {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+            {% include JB/pages_list %} -->
+              <li class=""><a href="/">Home</a></li>
+              <li class=""><a href="/no-guesswork">No Guesswork</a></li>
+              <li class="dropdown yamm-fw">
+                <a href="/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <div class="yamm-content yamm-fw">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li>
+                              <h4>Convertify Labs</h4>
+                              <p>Free apps to help you increase your conversion rate.</p>
+                              <br>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Plugins</strong>
+                              </p>
+                            </li>
+                            <li>
+                              <a href="#">Pre-populator</a>
+                              <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">Scrollmark</a>
+                              <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li>
+                              <p>
+                                <strong>Convertify Apps</strong>
+                              </p>
+                            </li>
+                            <li>
+                              <a href="#">Convertilyzer</a>
+                              <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">Boomerang</a>
+                              <p><small>Reduce cart abandonment on your online store.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">SideStage</a>
+                              <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">Personify</a>
+                              <p><small>Personalize your site with URL parameters.</small></p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-unstyled">
+                            <li>
+                              <p>
+                                <strong>Tools</strong>
+                              </p>
+                            </li>
+                            <li>
+                              <a href="/labs/selector-tool">Selector Tool</a>
+                              <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">Multistepper</a>
+                              <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                            </li>
+                            <li>
+                              <a href="/quantify">Quantify</a>
+                              <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                            </li>
+                            <li>
+                              <a href="#">Event Buddy</a>
+                              <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class=""><a href="#about">Blog</a></li>
+              <li class=""><a href="#contact">Contact</a></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -46,7 +150,7 @@
       </div>
 
       <footer>
-        <p>&copy; {{ site.author.name }} 2012 
+        <p>&copy; {{ site.author.name }} 2012
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>

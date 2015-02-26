@@ -28,31 +28,27 @@ categories:
 
 **The Variations (Click to enlarge):**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/control.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/control.png)
 
 Control LP 7.01%
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/2.5.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/2.5.jpg)
 
 Anxiety Relief:**+31.91%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/3.5.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/3.5.jpg)
 
 Proximity + Friction:**+20.55%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/4.5.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/4.5.jpg)
 
 [Shorter Header](http://landersoptimized.com/case-studies/shorter-header-increases-conversion-rate-by-107/):**+18.74%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/5.5.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/5.5.jpg)
 
 Scarcity: **+4.07%**
 
 **Conclusion: **All of our hypothesis had positive results on conversion rates - we ended up putting together all the concepts we learned and implementing them globally.
-
-
-
-
 
 ## Test #2
 
@@ -66,23 +62,19 @@ Scarcity: **+4.07%**
 
 **The Variations (Click to enlarge):**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/var-1.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/var-1.png)
 
 Control: **7.01%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/vAr-2.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/vAr-2.jpg)
 
 Anxiety Relief: **+22% Revenue-per-visitor**
 
 **Result: **The Variation saw a 22% increase in revenue-per-visitor. The overall conversion rate increased 11%, which means revenue-per-conversion also increase.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/result-300x53.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/result-300x53.png)
 
 **Conclusion: **Visitors will engage more when product details are clearly visible.
-
-
-
-
 
 ## Test #3
 
@@ -92,13 +84,13 @@ Anxiety Relief: **+22% Revenue-per-visitor**
 
 **Hypothesis: ** On this particular site, visitors were being sent to a recommendations page after hitting "add to cart", instead of the cart page. We wanted to see how effective this was, so we set up a custom funnel in Google Analytics. We found that the recommendations page had a pretty high exit rate - about 60%. We wanted to test the effects of removing this un-necessary step.
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/test3-238x300.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/test3-238x300.png)
 
  
 
 **Results**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/fresult-300x140.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/fresult-300x140.png)
 
  
 

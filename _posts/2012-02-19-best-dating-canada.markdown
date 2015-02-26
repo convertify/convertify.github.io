@@ -17,7 +17,7 @@ A site like this is tricky because the only page you can adjust is the review pa
 
 Here's what the original and optimized pages look like:
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/original-118x3001.jpg)[/imageframe] [imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/treated-159x300.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/original-118x3001.jpg) ![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/treated-159x300.jpg)
 
  
 

@@ -37,13 +37,13 @@ Take a look at the treatment below. We didn't change much, but the increase was 
 
 **Control: $1.12 revenue-per-visitor**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.18.43-PM-300x253.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.18.43-PM.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.18.43-PM-300x253.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.18.43-PM.png)
 
  
 
 **Treatment: $2.57 revenue-per-visitor (+129.1%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.19.05-PM-300x283.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.19.05-PM.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.19.05-PM-300x283.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-04-16-at-1.19.05-PM.png)
 
 ## Conclusion
 

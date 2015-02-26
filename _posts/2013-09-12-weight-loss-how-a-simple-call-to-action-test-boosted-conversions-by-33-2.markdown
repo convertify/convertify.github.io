@@ -46,11 +46,11 @@ For the variation, we decided to change the language to "Take me to the offer". 
 
 **Control: 0.3% Conversion Rate**
 
-[imageframe lightbox="yes" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![Control](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1.png)[/imageframe]
+![Control](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1.png)
 
 **Treatment: 0.4% Conversion Rate (+33%)**
 
-[imageframe lightbox="yes" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner21.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner21.png)
 
 ## Conclusion
 

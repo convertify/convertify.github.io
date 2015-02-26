@@ -15,31 +15,27 @@ categories:
 
 Recently we ran a test for LondonSexTonight.com, an online adult dating site. The results were great, but also interesting. We ran some categorical changes in this test, and just 1 single-variable change. Surprisingly, the winner ended up being a variation with simply a shorter header. I've seen good increases from shortening the header before, but not this big. Now, you may be thinking, "why the hell would a shorter header change anything?!", and the answer is actually pretty obvious when you look at the web through a smaller resolution. Here are all the different variations:
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-134x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-134x3001.jpg)
 
  Control LP:
 
-
-
-
-
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Short-Header-142x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Short-Header-142x3001.jpg)
 
 Shorter Header:**+107%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Multi-Step-139x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Multi-Step-139x3001.jpg)
 
 Multi-Step Form:**+71.99%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Alt-Image-139x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Alt-Image-139x3001.jpg)
 
 Alternate Image:**+20.81%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Lesbians-139x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Lesbians-139x3001.jpg)
 
 Lesbians Image:**+5.41%**
 
-[imageframe lightbox="no" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Alt-Headline-137x3001.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Alt-Headline-137x3001.jpg)
 
 Alt Headline: **-17%**
 

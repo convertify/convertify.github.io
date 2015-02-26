@@ -46,17 +46,17 @@ We put together the new intermediary page, made the funnel longer, and believe i
 
 **Control: $0.16 revenue-per-visitor**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x252.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x252.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)
 
  
 
 **Treatment: $0.23 revenue-per-visitor (+43.54%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x256.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x256.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner.png)
 
 Treated Landing Page
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-pt2-300x195.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-pt2.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-pt2-300x195.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-pt2.png)
 
 Added Intermediary Page
 

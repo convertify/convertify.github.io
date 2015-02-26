@@ -34,15 +34,11 @@ Jumpoutthegym.com provides e-books, training videos, and other educational mater
 
 **Control LP: 34.2% CR**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-11-at-6.51.39-PM-288x300.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-11-at-6.51.39-PM.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-11-at-6.51.39-PM-288x300.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-02-11-at-6.51.39-PM.png)
 
 **Variation: 41.7% CR (+21.95%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/variation-254x300.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/variation.jpg)[/imageframe]
-
-
-
-
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/variation-254x300.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/variation.jpg)
 
 ## Why It Won
 

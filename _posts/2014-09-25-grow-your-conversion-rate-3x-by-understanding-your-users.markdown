@@ -9,7 +9,4 @@ wordpress_id: '1462'
 categories:
 - Analytics
 ---
-
-https://www.youtube.com/watch?v=fw7wLtSO3jk  
-  
-
+https://www.youtube.com/watch?v=fw7wLtSO3jk

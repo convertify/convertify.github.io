@@ -36,15 +36,11 @@ Another thing we noticed is that the navigation-flow felt like it was creating f
 
 **Control: $0.99 revenue-per-visitor**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1-260x300.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1.jpg)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1-260x300.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control1.jpg)
 
 **Treatment: $1.60 revenue-per-visitor (+62.29%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treatment-300x243.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treatment.jpg)[/imageframe]
-
-
-
-
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treatment-300x243.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Treatment.jpg)
 
 ## Conclusion
 

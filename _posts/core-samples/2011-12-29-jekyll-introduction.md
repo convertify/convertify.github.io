@@ -21,7 +21,6 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
 
 
-
 ### What does Jekyll Do?
 
 Jekyll is a ruby gem you install on your local system.
@@ -73,7 +72,6 @@ is intended to give you the _full picture_ relative to what is going on in Jekyl
 Learning these core concepts should help you avoid common frustrations and ultimately
 help you better understand the code examples contained throughout Jekyll-Bootstrap.
 
-
 ## Initial Setup
 
 After [installing jekyll](/index.html#start-now) you'll need to format your website directory in a way jekyll expects.
@@ -99,7 +97,6 @@ Jekyll expects your website directory to be laid out like so:
             |-- style.css
         |-- javascripts
 
-
 - **\_config.yml**
 	Stores configuration data.
 
@@ -124,12 +121,10 @@ Jekyll expects your website directory to be laid out like so:
 
 (read more: <https://github.com/mojombo/jekyll/wiki/Usage>)
 
-
 ### Jekyll Configuration
 
 Jekyll supports various configuration options that are fully outlined here:
 (<https://github.com/mojombo/jekyll/wiki/Configuration>)
-
 
 
 
@@ -203,7 +198,6 @@ Example:
 
 This page will be available at `http://yourdomain.com/people/bob/essay.html`
 
-
 **Recommended Pages**
 
 - **index.html**
@@ -214,7 +208,6 @@ This page will be available at `http://yourdomain.com/people/bob/essay.html`
   Generating a sitemap is good practice for SEO.
 - **about.html**
   A nice about page is easy to do and gives the human perspective to your website.
-
 
 ## Templates in Jekyll
 
@@ -258,7 +251,6 @@ In this way, you can treat the code inside includes as if it was native to the p
 
 Any valid template code may be used in includes.
 
-
 ## Using Liquid for Templating
 
 Templating is perhaps the most confusing and frustrating part of Jekyll.
@@ -297,14 +289,12 @@ My personal stance is to not invest time trying to hack liquid. It's really unne
 _from a programmer's_ perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
 you are better off sticking with ruby. Toward that end I've built [Mustache-with-Jekyll](http://github.com/plusjade/mustache-with-jekyll)
 
-
 ## Static Assets
 
 Static assets are any file in the root or non-underscored subfolders that are not pages.
 That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.
 
 Static assets should be used for images, css, and javascript files.
-
 
 
 
@@ -356,8 +346,6 @@ Configuration parameters for YAML Front-Matter is outlined here:
 The `layout` parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
 If a template file specifies its own layout, it is effectively being used as a `sub-template.`
 That is to say loading a post file into a template file that refers to another template file with work in the way you'd expect; as a nested sub-template.
-
-
 
 
 

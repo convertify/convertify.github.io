@@ -16,19 +16,19 @@ After initially reviewing the website we felt this was a perfect candidate for a
 
 ## The Variations (click to enlarge)
 
-[imageframe lightbox="yes" style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Bed-Head-Cure-Morninghead-20130114.jpg)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Bed-Head-Cure-Morninghead-20130114.jpg)
 
 Control LP: **$0.15 revenue-per-visitor**
 
  
 
-[imageframe lightbox="yes"  style="bottomshadow" bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-30-at-8.07.19-PM.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-30-at-8.07.19-PM.png)
 
 New Layout (No Twitter): **$0.21 revenue-per-visitor (+37.21%)**
 
  
 
-[imageframe lightbox="yes"  style="bottomshadow"  bordercolor="" bordersize="0px" stylecolor="#000000" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-30-at-8.09.25-PM.png)[/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Screen-Shot-2013-01-30-at-8.09.25-PM.png)
 
 New Layout (With Twitter Feed): **$0.18 revenue-per-visitor (+14.05%)**
 

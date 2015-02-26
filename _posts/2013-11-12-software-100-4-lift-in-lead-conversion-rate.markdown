@@ -37,23 +37,17 @@ After some analysis on the site, we discovered that the SecureView site offered 
 
 We also created a new slider that clearly states the benefits to the user, in terms of how it will help them solve cases & catch suspects. We added some great credibility indicators by showing some major government agencies that use the product, as well as case studies that prove the product's effectiveness. The result is a doubled conversion rate.
 
-## The Variations
+## The Variations {: .text-center}
 
 **Control: 5.0% Conversion Rate**
 
-[imageframe lightbox="yes" style="bottomshadow" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![Control](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x281.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.jpg)[/imageframe]
+[![Control](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x281.jpg)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.jpg)
 
 **Treatment: 10.1% Conversion Rate (+100.4%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"]
-
-![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x274.png) [/imageframe]
+![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x274.png) 
 
 **[Annotated Version](https://notableapp.com/posts/6550c715efc2ff217d96624c292d096c2e4a663f#annotate/6550c715efc2ff217d96624c292d096c2e4a663f)**
-
-
-
-
 
 ## Conclusion
 

@@ -53,11 +53,11 @@ We put this together and added it to the variation. The test revealed some great
 
 **Control: 4.4% Conversion Rate**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x188.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control-300x188.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Control.png)
 
 **Treatment: 7.6% Conversion Rate (+72.8%)**
 
-[imageframe lightbox="yes" bordercolor="#000000" bordersize="0px" stylecolor="" align="center" animation_type="0" animation_direction="down" animation_speed="0.1"][![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x193.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner.png)[/imageframe]
+[![](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner-300x193.png)](/media/images/{{ page.date | date: "%F" }}-{{ page.slug }}/Winner.png)
 
 ## Conclusion
 
