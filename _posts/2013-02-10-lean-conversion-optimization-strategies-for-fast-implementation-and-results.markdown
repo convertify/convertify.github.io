@@ -92,7 +92,9 @@ Let’s pretend I want to test 2 things: The effect of changing my background co
 
 First, I visit a page that the test should apply on.  In this case, any page. I’ll just go to the home page. I highly recommend [jQuery injector for Chrome](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid). This will allow you to run jQuery from the console on any site.  Here’s the code I’ve come up with:
 
-[cc lang="javascript" escaped="true"]$('body').css('background-color','gray');[/cc]
+{% highlight js %}
+$('body').css('background-color','gray');
+{% endhighlight %}
 
 Here’s the before/after.
 
@@ -126,7 +128,8 @@ What you see in the “Exclude URLs” section is a regular expression. They can
 
 Now we launch the test. That literally took me about 5 minutes. Compare _that_ to setting up a sub-domain and cloning the site just to test the background color! Once that's done we can layer our next test on top of it. We’re going to test the effects of raising the price of iPhone cases by 10%. I'll use [this page ](http://store.apple.com/us/product/HA755ZM/A/power-support-hd-anti-glare-film-set-for-iphone-5?fnode=47&fs=m.iphoneCompatibility%3Diphone_5)as the testing page.  Here’s the code I came up with:
 
-[cc lang="javascript" escaped="true"]if (/cases/i.test($('.breadcrumb-nav ol.breadcrumbs li').last().text())) {
+{% highlight js %}
+if (/cases/i.test($('.breadcrumb-nav ol.breadcrumbs li').last().text())) {
 
 currentprice = parseFloat($('#price span.current_price span span').text().replace(/^ss*/, '').replace(/ss*$/, '').replace("$",""));
 
@@ -134,7 +137,8 @@ newprice = Math.round((currentprice + (currentprice * .1))*100)/100;
 
 $('#price span.current_price span span').text("$"+newprice);
 
-}[/cc]
+}
+{% endhighlight %}
 
 For sake of time I didn’t test it on every page (and it’s not going to actually submit this price when you hit add to cart), but it’s a good example because it’s somewhat complex and it works on the [page I tested it on](http://store.apple.com/us/product/HA755ZM/A/power-support-hd-anti-glare-film-set-for-iphone-5?fnode=47&fs=m.iphoneCompatibility%3Diphone_5). This took about 15 minutes, and it will be the same for any decent developer.
 

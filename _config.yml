@@ -83,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : convertify
     livefyre :
       site_id : 123
     intensedebate :
@@ -102,13 +102,13 @@ JB :
     provider : google
     google :
         tracking_id : 'UA-123-12'
-    getclicky :
-      site_id :
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
+    # getclicky :
+    #   site_id :
+    # mixpanel :
+    #     token : '_MIXPANEL_TOKEN_'
+    # piwik :
+    #     baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+    #     idsite : '1'                   # the id of the site on Piwik
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
