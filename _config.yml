@@ -1,6 +1,6 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:title
+permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
@@ -16,7 +16,7 @@ author :
   email : admin@convertify.io
   github : convertify
   twitter : _convertify
-  feedburner : feedname
+  # feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
