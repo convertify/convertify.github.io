@@ -1,0 +1,99 @@
+/* Stuff you should edit as needed */
+
+.multistep-form {
+	position: relative;
+}
+
+.multistep-form .progress-bar {
+	width: 150px;
+	height: 15px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 15px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: white;
+	padding: 0;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,.5), 0px 1px rgba(255,255,255,.3);
+}
+
+.multistep-form .progress {
+	background: #89c730;
+	border-radius: 15px;
+	height: 100%;
+	width: 0;
+	box-shadow: inset 0px 0px 1px rgba(0,0,0,.2);
+}
+
+a.back {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color:#30a9c7;
+	text-shadow: 0px 1px rgba(0,0,0,.2);
+	background: url('https://raw.github.com/coopermaruyama/multistep.js/master/Demo/back.png');
+	width: 25px;
+	height: 22px;
+}
+a.back:hover {
+	opacity: 0.9;
+}
+
+/* Stuff you probably won't need to edit */
+.multistep-form .step {
+	display: none;
+}
+.multistep-form input[type=text], .multistep-form input[type=email], .multistep-form input[type=password] {
+	outline-style: none;
+	outline:none;
+}
+.multistep-form input[type=text]:focus, .multistep-form input[type=email]:focus, .multistep-form input[type=password]:focus, .multistep-form textarea:focus {
+	box-shadow: 0px 0px 5px rgba(0,183,240,.5);
+}
+.multistep-form input[type=text].success,.multistep-form input[type=email].success,.multistep-form input[type=password].success, .multistep-form textarea.success  {
+	background: white url('https://raw.github.com/coopermaruyama/multistep.js/master/Demo/input-success-small.png') no-repeat 97% center;
+	box-shadow: 0px 0px 4px rgba(10,240,10,.5);
+}
+.multistep-form input[type=text].error,.multistep-form input[type=email].error,.multistep-form input[type=password].error, .multistep-form textarea.error {
+	background: white url('https://raw.github.com/coopermaruyama/multistep.js/master/Demo/input-error-small.png') no-repeat 97% center;
+	box-shadow: 0px 0px 4px rgba(240,10,10,.5);
+}
+.multistep-form select.error {
+	border: 1px solid red;
+}
+.multistep-form .error-text {
+	color: rgba(255,0,0,.75);
+	font-weight: bold;
+	font-size: 10px;
+	margin: 0px auto !important;
+}
+
+.multistep-form .checkbox.error-text {
+	position:absolute;
+}
+
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
+  .tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+  
+	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }

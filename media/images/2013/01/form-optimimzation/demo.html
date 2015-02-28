@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<title>Multistep</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<link rel="stylesheet" href="demo.css">
+		<script type="text/javascript" src="demo.js"></script>		
+
+		<style type="text/css">
+			.clr {
+				clear:both;
+			}
+
+
+			#formcontainer {
+				margin: 0 auto;
+				width: 350px;
+				border-radius: 10px;
+				border: 1px solid #85919c;
+				background-image:url('https://raw.github.com/coopermaruyama/multistep.js/master/Demo/form-bg.png');
+				background-repeat: repeat-x;
+				padding: 20px;
+				box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+				font-family: 'Lucida Sans Unicode', 'Lucia Grande', Lucida, Helvetica, Arial;
+			}
+			#formcontainer h2 {
+				color: #ff5a00;
+				font-family: 'Lucida Sans Unicode', 'Lucia Grande', Lucida, Helvetica, Arial;
+				font-weight: bold;
+				font-size: 28px;
+				margin: 0px 0px 5px 10px;
+			}
+			#form .left, #form .right {
+				width: 45%;
+				padding: 2%;
+			}
+			#form .left {float: left;}
+			#form .right {float: right;}
+			#form input[type=text], #form input[type=password], #form input[type=email] {
+				width: 95%;
+				height: 23px;
+				border-radius: 15px;
+				border: 1px solid rgba(0, 0, 0, .2);
+				box-shadow: 0px 1px rgba(255, 255, 255, .3);
+				padding-left: 10px;
+				}
+			#form label {
+				color: #121c24;
+				font-size: 14px;
+				font-family: 'Lucida Sans Unicode', 'Lucia Grande', Lucida, Helvetica, Arial;
+			}
+			button.submit {
+	background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+
+
+				border: 1px solid rgba(0,0,0,.2);
+				border-radius: 20px;
+				width: 121px;
+				height: 37px;
+				font-family: 'Lucida Sans Unicode', 'Lucia Grande', Lucida, Helvetica, Arial;
+				color: white;
+				font-size: 20px;
+				float: right;
+				margin-right: 15px;
+				text-shadow:  0px -1px rgba(0,0,0,.5);
+				margin-top: 12px;
+				cursor:pointer;
+			}
+			button.submit:hover {
+				opacity: 0.9;
+			}
+			#form input[type=radio] {
+				margin: auto 5px auto 10px;
+			}
+			#form p {
+				margin-top: 3px;
+				margin-bottom:15px;
+			}
+			#form textarea {
+				width: 97%;
+				height: 96px;
+				border-radius: 5px;
+				border: 1px solid rgba(0, 0, 0, .4);
+			}
+			.what-level, .claim-pending,.why-not {display:none;}
+		</style>
+		<script type="text/javascript">
+		$(function() {
+			$('#form').multistep();
+
+			$('input[name=ssd-apply]').change(function() {
+				if ($(this).val() == "Yes") {
+					$('.claim-pending').show()
+				};
+				if ($(this).val() == "No") {
+					$('.claim-pending').hide()
+				};
+			});
+			$('input[name=claim-pending]').change(function() {
+				if ($(this).val() == "Yes") {
+					$('.what-level').show()
+				};
+				if ($(this).val() == "No") {
+					$('.what-level').hide()
+				};
+			});
+			$('input[name=seen-doctor]').change(function() {
+				if ($(this).val() == "Yes") {
+					$('.why-not').hide()
+				};
+				if ($(this).val() == "No") {
+					$('.why-not').show()
+				};
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="formcontainer">
+			<form action="#" id="form">
+				<h2>Start Here</h2>
+				<div class="progress-bar">
+					<div class="progress"></div>
+				</div>
+				<div class="step">
+					<label for="work-disability" class="radio">Required Radio:</label>
+					<p>
+						<input type="radio" name="work-disability" value="yes"><span class="radio">Yes</span>
+						<input type="radio" name="work-disability" value="no"><span class="radio">No</span>
+					</p>
+					<label for="ssd-apply" class="radio">Optional Radio that does cool stuff if you choose "yes":</label>
+					<p>
+						<input type="radio" name="ssd-apply" value="Yes"><span class="radio">Yes</span>
+						<input type="radio" name="ssd-apply" value="No"  optional="yes"><span class="radio">No</span>
+					</p>
+					<label class="claim-pending" for="claim-pending">Now this is required:</label>
+					<p class="claim-pending">
+						<input type="radio" value="Yes" name="claim-pending">
+						<span>Yes</span>
+						<input type="radio" value="No" name="claim-pending">
+						<span>No</span>
+					</p>
+					<label for="what-level" class="what-level">What Level?</label>
+					<p class="what-level">
+						<select name="what-level" id="what-level">
+							<option value="">Please Select</option>
+							<option value="Initial">Initial</option>
+							<option value="Reconsideration">Reconsideration</option>
+							<option value="Administrative Law Judge">Administrative Law Judge</option>
+							<option value="Appeals Council">Appeals Council</option>
+						</select>
+					</p>
+					<label for="seen-doctor">Have you seen a doctor?</label>
+					<p>
+						<input type="radio" value="Yes" name="seen-doctor">
+						<span>Yes</span>
+						<input type="radio" value="No" name="seen-doctor">
+						<span>No</span>
+						</span>
+					</p>
+					<label for="why-not" class="why-not">Why Not?</label>
+					<br>
+					<textarea name="why-not" id="why-not" class="why-not"></textarea>	
+					<button class="submit">Submit</button>
+				</div>
+				<div class="step">
+					<label for="age">What is your age?</label>
+					<p>
+						<select name="age" id="age">
+							<option value="">Please Select
+							</option>
+							<option value="Under 18 years">Under 18 years
+							</option>
+							<option value="19-29 years">19-29 Years
+							</option>
+							<option value="30-39 years">30-39 Years
+							</option>
+							<option value="40-49 years">40-49 Years
+							</option>
+							<option value="50-59 years">50-59 Years
+							</option>
+							<option value="60-64 years">60-64 Years
+							</option>
+							<option value="65 and over">65 and over
+							</option>
+						</select>
+					</p>
+					<label for="attorney-helping">Is an attorney or advocate already helping you with your disability case?</label>
+					<p>
+						<input type="radio" name="attorney-helping" value="Yes"><span>Yes</span>
+						<input type="radio" name="attorney-helping" value="No"><span>No</span>
+					</p>
+					<label for="describe">Please describe your disability</label>
+					<textarea name="describe"></textarea>
+					<button class="submit">Continue</button>
+				</div>
+				<div class="step" id="last-step">
+					<div class="left">
+						<label for="firstname">First Name</label>
+						<input type="text" name="firstname">
+					</div>
+					<div class="right">
+						<label for="lastname">Last Name</label>
+						<input type="text" name="lastname">
+					</div>
+					<div class="clr"></div>
+					<div class="left">
+						<label for="email">Email</label>
+						<input type="text" name="email" class="email">
+					</div>
+					<div class="right">
+						<label for="phone">Phone Number</label>
+						<input type="text" name="phone" class="phone">
+					</div>
+					<div class="left">
+						<label for="email">Address (Optional)</label>
+						<input type="text" optional="yes" name="address">
+					</div>
+					<div class="right">
+						<label for="phone">City</label>
+						<input type="text" name="zip">
+					</div>
+					<button class="submit">Submit</button>
+				</div>
+				<div class="clr"></div>
+			</form>
+		</div>	
+	</body>
+</html>
