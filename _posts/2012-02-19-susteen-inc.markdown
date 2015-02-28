@@ -5,6 +5,7 @@ layout: post
 slug: susteen-inc
 status: publish
 title: 'Case Study: Datapilot - 42.7% Increase in Sales'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/Screen-Shot-2011-11-24-at-5.12.29-PM.png
 wordpress_id: '37'
 categories:
 - Case Studies

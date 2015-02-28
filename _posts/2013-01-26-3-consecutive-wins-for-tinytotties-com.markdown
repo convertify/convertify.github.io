@@ -6,6 +6,7 @@ slug: 3-consecutive-wins-for-tinytotties-com
 status: publish
 title: 3 Consecutive Wins for TinyTotties.com
 wordpress_id: '848'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/TinyTotties_ProductPage.png
 categories:
 - Case Studies
 - Conversion Rate Optimization

@@ -5,6 +5,7 @@ layout: post
 slug: how-to-run-ab-split-tests-on-volusion-ecommerce-using-google-website-optimizer-2
 status: publish
 title: How to Run A/B Split Tests on Volusion eCommerce using Google Website Optimizer
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/03/volusionshiny.jpg
 wordpress_id: '1106'
 categories:
 - E-Commerce

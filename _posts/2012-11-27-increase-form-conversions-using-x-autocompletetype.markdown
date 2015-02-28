@@ -5,6 +5,7 @@ layout: post
 slug: increase-form-conversions-using-x-autocompletetype
 status: publish
 title: Increase Form Conversions Using X-Autocompletetype
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/11/images.jpg
 wordpress_id: '753'
 categories:
 - Conversion Rate Optimization

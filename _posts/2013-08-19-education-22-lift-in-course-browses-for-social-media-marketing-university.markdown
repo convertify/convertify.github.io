@@ -6,6 +6,7 @@ slug: education-22-lift-in-course-browses-for-social-media-marketing-university
 status: publish
 title: 'Education: 22% Lift in Course Browses for Social Media Marketing University'
 wordpress_id: '1056'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/08/Screen-Shot-2013-07-31-at-3.22.17-AM.png
 categories:
 - Case Studies
 ---

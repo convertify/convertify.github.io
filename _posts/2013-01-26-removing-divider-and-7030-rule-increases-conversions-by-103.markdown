@@ -6,6 +6,7 @@ slug: removing-divider-and-7030-rule-increases-conversions-by-103
 status: publish
 title: Removing Divider and Applying 70/30 Rule Increases Conversions By 103%
 wordpress_id: '878'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/BuildingsGuide.png
 categories:
 - Case Studies
 - Conversion Rate Optimization

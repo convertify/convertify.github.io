@@ -5,6 +5,7 @@ layout: post
 slug: do-analytics-right
 status: publish
 title: Do Analytics Right
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/07/se.jpg
 wordpress_id: '526'
 categories:
 - Analytics

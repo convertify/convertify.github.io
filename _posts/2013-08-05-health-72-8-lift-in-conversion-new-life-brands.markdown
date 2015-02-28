@@ -6,6 +6,7 @@ slug: health-72-8-lift-in-conversion-new-life-brands
 status: publish
 title: 'Health: 72.8% Lift in Conversion for New Life Brands'
 wordpress_id: '1044'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/07/Screen-Shot-2013-07-31-at-3.21.10-AM.png
 categories:
 - Case Studies
 ---

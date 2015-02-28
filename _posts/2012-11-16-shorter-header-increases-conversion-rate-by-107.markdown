@@ -5,6 +5,7 @@ layout: post
 slug: shorter-header-increases-conversion-rate-by-107
 status: publish
 title: Shorter Header Increases Conversion Rate By 107%
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/11/Screen-Shot-2012-11-15-at-11.41.27-PM.png
 wordpress_id: '553'
 categories:
 - Case Studies

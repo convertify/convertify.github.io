@@ -5,6 +5,7 @@ layout: post
 slug: universal-conversion-code-for-google-website-optimizer
 status: publish
 title: Universal Conversion Code for Google Website Optimizer
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/03/353373_ZMnl3spGy4fpK_v0LDnCTILKw-3.jpg
 wordpress_id: '171'
 categories:
 - Conversion Rate Optimization

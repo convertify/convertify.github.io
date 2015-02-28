@@ -5,6 +5,7 @@ layout: post
 slug: meet-christians-case-study
 status: publish
 title: 'Case Study: MeetChristians.com'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/mc-chart.png
 wordpress_id: '40'
 categories:
 - Case Studies

@@ -6,6 +6,7 @@ slug: retail-43-54-increase-in-revenue-per-visitor-for-morninghead
 status: publish
 title: 'Retail: 43.54% Increase in Revenue-per-Visitor for Morninghead'
 wordpress_id: '1049'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/08/Screen-Shot-2013-07-31-at-3.09.23-AM1.png
 categories:
 - Case Studies
 ---

@@ -7,6 +7,9 @@ status: publish
 title: Is Your Website Leaking? How Adding One Element to a Blog's Sidebar Achieved
   a 82.14% Lift in Conversions
 wordpress_id: '1347'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2014/07/the-joker-backseat-driver.jpg
+fluid_image: true
+title_image: true
 categories:
 - Case Studies
 ---

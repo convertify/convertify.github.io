@@ -5,6 +5,7 @@ layout: post
 slug: bogtus-optimization-case-study
 status: publish
 title: 'Case Study: Bogtus Real Estate'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-19-at-9.31.56-PM.png
 wordpress_id: '42'
 categories:
 - Case Studies

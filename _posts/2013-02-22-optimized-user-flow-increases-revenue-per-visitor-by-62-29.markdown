@@ -6,6 +6,7 @@ slug: optimized-user-flow-increases-revenue-per-visitor-by-62-29
 status: publish
 title: Optimized User Flow Increases Revenue-Per-Visitor By 62.29%
 wordpress_id: '1001'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Results1.png
 categories:
 - Case Studies
 ---

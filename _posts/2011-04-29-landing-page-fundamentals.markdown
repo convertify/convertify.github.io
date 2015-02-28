@@ -5,6 +5,7 @@ layout: post
 slug: landing-page-fundamentals
 status: publish
 title: 'Conversion Rate Optimization: Why Most Visitors Don''t Convert & How to Optimize'
+featured_image: http://www.boostsuite.com/wp-content/uploads/2010/03/landing.jpg
 wordpress_id: '1100'
 categories:
 - Conversion Rate Optimization

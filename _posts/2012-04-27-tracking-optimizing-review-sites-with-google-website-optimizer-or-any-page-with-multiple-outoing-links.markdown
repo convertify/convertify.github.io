@@ -6,6 +6,7 @@ slug: tracking-optimizing-review-sites-with-google-website-optimizer-or-any-page
 status: publish
 title: Tracking & Optimizing Review Sites with Google Website Optimizer (or Any Page
   with Multiple Outoing Links)
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/star-rating.jpeg
 wordpress_id: '233'
 categories:
 - Scripts

@@ -7,6 +7,7 @@ status: publish
 title: 'Case Study: The Importance of Headlines & Thought Sequences (129% Lift in
   Revenue)'
 wordpress_id: '1116'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/04/Screen-Shot-2013-04-16-at-1.04.21-PM1.png
 categories:
 - Case Studies
 ---

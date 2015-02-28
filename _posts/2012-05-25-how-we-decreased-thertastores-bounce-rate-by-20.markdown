@@ -5,6 +5,7 @@ layout: post
 slug: how-we-decreased-thertastores-bounce-rate-by-20
 status: publish
 title: How We Decreased TheRTAStore's Bounce Rate By 20%
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/05/Screen-Shot-2012-05-25-at-11.27.06-AM.png
 wordpress_id: '293'
 categories:
 - Bounce Rates

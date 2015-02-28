@@ -5,6 +5,7 @@ layout: post
 slug: track-clicks-as-conversions-in-google-website-optimizer
 status: publish
 title: Track Clicks as Conversions in Google Website Optimizer
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/app_sphere_gwo.png
 wordpress_id: '182'
 categories:
 - Scripts

@@ -5,6 +5,7 @@ layout: post
 slug: optimizing-category-pages-on-ecommerce-sites-2
 status: publish
 title: 'Improving Conversions: eCommerce Category Pages'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/shopping_cart_stucco11.png
 wordpress_id: '1108'
 categories:
 - Bounce Rates

@@ -6,6 +6,7 @@ slug: achieve-bigger-gains-conversion-rate-optimization-experiments
 status: publish
 title: Achieve Bigger Gains On Your Conversion Rate Optimization Experiments
 wordpress_id: '757'
+featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/12/CAT-VS-SINGLE.jpg
 categories:
 - Conversion Rate Optimization
 - Guides

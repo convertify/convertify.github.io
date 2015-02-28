@@ -6,6 +6,7 @@ slug: how-to-create-high-converting-landing-page
 status: publish
 title: How to Create a High-Converting Landing Page
 wordpress_id: '25'
+featured_image: /media/images/2011/05/landing-page-optimization.jpg
 categories:
 - Conversion Rate Optimization
 - Fundamentals
