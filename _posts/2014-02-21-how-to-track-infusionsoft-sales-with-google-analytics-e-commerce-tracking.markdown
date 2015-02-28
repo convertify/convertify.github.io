@@ -13,7 +13,9 @@ categories:
 - Guides
 - Scripts
 ---
-
+<script type="text/javascript">
+	var disqus_identifier = '2670052270';
+</script>
 _Note: If you'd like us to perform this integration for you, we offer a flat rate to do this for you. Please email [info@convertify.io](mailto:info@convertify.io) to hire us._
 
 Tracking Infusionsoft sales in Google Analytics is a bit trickier than it needs to be. Because of the fact that the Infusionsoft cart is hosted on a different domain, cookie values are not persisted through the checkout process. Also, they do not provide variables that provide order details on the thank you page. Therefore, there are really 2 things that need to be accomplished to solve this problem:
