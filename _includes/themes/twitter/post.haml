@@ -1,0 +1,57 @@
+\ {% if page.fluid_image %}
+.row
+  .featuredImage-fullWidth
+    .featuredImage-overlay
+    %img.img-responsive{:src => "{{ page.featured_image }}"}
+    \ {% if page.title_image %}
+    .featuredImage-content
+      .col-sm-8.col-sm-offset-2
+        %h1.postTitle {{ page.title }}
+        \ {% if page.description %}
+        %p {{ page.description }}
+        \ {% endif %}
+    \ {% endif %}
+\ {% endif %}
+.row.shadow-above.postBody
+  .col-sm-8.col-sm-offset-2
+    \ {% unless page.fluid_image and page.title_image %}
+    %h1.postTitle {{ page.title }}
+    \ {% endunless %}
+    \ {% unless page.fluid_image %}
+    %img.featuredImage.featuredImage--single.img-responsive.center-block{:alt => "", :src => "{{ page.featured_image }}"}/
+    \ {% endunless %}
+    {{ content }}
+    %hr/
+    .pagination
+      %ul
+        {% if page.previous %}
+        %li.prev
+          %a{:href => "{{ BASE_PATH }}{{ page.previous.url }}", :title => "{{ page.previous.title }}"} ← Previous
+        {% else %}
+        %li.prev.disabled
+          %a ← Previous
+        {% endif %}
+        %li
+          %a{:href => "{{ BASE_PATH }}{{ site.JB.archive_path }}"} Archive
+        {% if page.next %}
+        %li.next
+          %a{:href => "{{ BASE_PATH }}{{ page.next.url }}", :title => "{{ page.next.title }}"} Next →
+        {% else %}
+        %li.next.disabled
+          %a Next →
+          {% endif %}
+    %hr/
+    {% include JB/comments %}
+
+-#
+  .row
+    .col-md-4
+      %h4 Published
+      .date
+        %span {{ page.date | date_to_long_string }}
+      {% unless page.tags == empty %}
+      %h4 Tags
+      %ul.tag_box
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+      {% endunless %}

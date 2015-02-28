@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  $(window).load(function() {
+    $parallax = $(".ha-bg-parallax");
+    feat_half = ($("img", $parallax).height() - 500) / 2;
+    $parallax.css("background-position-y", "-"+feat_half+"px");
+  });
+</script>
