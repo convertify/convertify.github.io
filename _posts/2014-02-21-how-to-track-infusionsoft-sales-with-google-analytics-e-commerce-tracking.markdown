@@ -38,47 +38,108 @@ The first thing we need to do is get our website to pass Google Analytics inform
 
 You'll need to edit your current tracking code. Assuming your code looks like this:
 
-[cc lang="js"]
-
-
-
-[/cc]
+{% highlight js %}
+<script>// <![CDATA[
+  var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12345-1']);  
+  _gaq.push(['_setDomainName', 'website.com']); 
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);
+  })();
+// ]]></script>
+{% endhighlight %}
 
 You'll need to make it look like this:
 
-[cc lang="js"]
+{% highlight js %}
+<script>
+    // <![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12345-1']);
+    _gaq.push(['_setDomainName', 'website.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    var infusionsoft_app_id = "m48"; //replace with your actual APP ID
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    document.addEventListener('DOMContentLoaded', function() {
+        var elements = document.querySelectorAll("a");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            regex = new RegExp(infusionsoft_app_id + ".infusionsoft.com");
+            if (regex.test(el.getAttribute("href"))) {
+                current_onclick = (typeof el.getAttribute("onclick") == "undefined") ? "" : el.getAttribute("onclick");
+                el.setAttribute("onclick", "_gaq.push(['_link', '" + el.getAttribute('href') + "']); return false;" + current_onclick);
+            }
+        });
+    });
+    // ]]>
+</script>
+{% endhighlight %}
 
-
-
-[/cc]
-
-Make sure not to overwrite your original Account ID ([cci]UA-XXXXX-X[/cci]) or your domain name (The part after [cci]_setDomainName'.[/cci]) with the information from the example code. Also, replace the "m48" part in  [cci]var infusionsoft_app_id = "m48";[/cci] with your actual Infusionsoft App ID.
+Make sure not to overwrite your original Account ID (<code>UA-XXXXX-X</code>) or your domain name (The part after <code>_setDomainName'.</code>) with the information from the example code. Also, replace the "m48" part in  <code>var infusionsoft_app_id = "m48";</code> with your actual Infusionsoft App ID.
 
 ### If you have Universal Analytics
 
 You'll need to append some code to your current tracking code. Assuming your code looks like this:
 
-[cc lang="js"]
-
-
-
-[/cc]
-
+{% highlight js %}
+<script>
+    // <![CDATA[
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X', 'website.com');
+    ga('send', 'pageview');
+    // ]]>
+</script>
+{% endhighlight %}
 You'll want to make it look like this:
 
-[cc lang="js"]
-
-
-
-[/cc]
+{% highlight js %}
+<script>
+    // <![CDATA[
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X', 'website.com');
+    ga('send', 'pageview');
+    ga('require', 'linker');
+    ga('linker:autoLink', ['m179.infusionsoft.com']); //don't forget to use your own app ID!
+    // ]]>
+</script>
+{% endhighlight %}
 
 ### Test If it's working
 
 Let's see if it works! Once this change has been made, go to a page on your website that contains an "Add to Cart" button for infusionsoft. Once you click it, look at the URL on the next page. If you have traditional analytics, your URL should look like this now:
 
-https://m179.infusionsoft.com/app/orderForms/Product?**__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&__utmb=145477216.4.10.1392989453&__utmc=145477216&__utmx=-&__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=244849413**
+<code>https://m179.infusionsoft.com/app/orderForms/Product?<strong>__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&__utmb=145477216.4.10.1392989453&__utmc=145477216&__utmx=-&__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=244849413</strong></code>
 
-If you have universal analytics, your URL should look like this: https://m179.infusionsoft.com/app/manageCart/showManageOrder?**_ga=1.38339491.1087305745.1390089092**&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1 I've bolded the information that should be appended assuming it's working. Once this is done, you're ready for the next step! If you're having trouble, please let us know in the comments below!
+If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1</code> I've bolded the information that should be appended assuming it's working. Once this is done, you're ready for the next step! If you're having trouble, please let us know in the comments below!
 
 ### Adding Tracking to Infusionsoft
 
@@ -90,19 +151,32 @@ Copy the following code into each area, making sure to replace the account ID an
 
 #### Traditional Analytics Code:
 
-[cc lang="js"]
-
-
-
-[/cc]
+{% highlight js %}
+<script>
+    // <![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12345-1']);
+    _gaq.push(['_setDomainName', 'm179.infusionsoft.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    // ]]>
+</script>
+{% endhighlight %}
 
 #### Universal Analytics Code:
 
-[cc lang="js"]
+{% highlight js %}
+<script>// <![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-
-
-[/cc]
+ga('create', <strong>'UA-XXXXXX-01', 'm179.infusionsoft.com' 'auto', {
+  'allowLinker': true
+});
+ga('require', 'linker');
+ga('linker:autoLink', ['website.com'] ); //replace with your actual domain
+ga('send', 'pageview');
+// ]]></script>
+{% endhighlight %}
 
 Once that's done, cross-domain tracking is set up! Now it's time to get your site hooked up to the Infusionsoft API.
 
@@ -127,13 +201,11 @@ Once the plugin is installed, go to Settings -> Infusionsoft Google Analytics an
 
 We're almost there!
 
-Next, in Wordpress, go to Appearance >> Editor. On the right menu, click for the "Footer" link. Now scroll to the very bottom of the editor, and right before the closing [cci][/cci] tag, paste the following code:
+Next, in Wordpress, go to Appearance >> Editor. On the right menu, click for the "Footer" link. Now scroll to the very bottom of the editor, and right before the closing <code></code> tag, paste the following code:
 
-[cc lang="php"]
-
-
-
-[/cc]
+{% highlight php %}
+<?php isset($_REQUEST['orderId']) && do_shortcode('[infusionsoft-google-analytics]'); ?>
+{% endhighlight %}
 
 If you haven't done so already, set up a thank you page on your Wordpress site. Then, use this page as the thank you page for ALL your order forms as well as your shopping cart, and make sure to check the "Pass contact's information to Thank You page" setting (see below).
 
