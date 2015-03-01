@@ -26,7 +26,7 @@ Overall it's a technical process that requires some code, but we've done all the
 
 **Note: This post assumes you have Wordpress. We will edit it soon so that it can be added to any PHP site**
 
-If you have any trouble or have any questions, _please _let us know in the comments below!
+If you have any trouble or have any questions, _please_let us know in the comments below!
 
 ## Setting Up Cross-Domain Tracking
 
@@ -139,7 +139,9 @@ Let's see if it works! Once this change has been made, go to a page on your webs
 
 <code>https://m179.infusionsoft.com/app/orderForms/Product?<strong>__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&__utmb=145477216.4.10.1392989453&__utmc=145477216&__utmx=-&__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=244849413</strong></code>
 
-If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1</code> I've bolded the information that should be appended assuming it's working. Once this is done, you're ready for the next step! If you're having trouble, please let us know in the comments below!
+If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1</code> 
+
+I've bolded the information that should be appended assuming it's working. Once this is done, you're ready for the next step! If you're having trouble, please let us know in the comments below!
 
 ### Adding Tracking to Infusionsoft
 
@@ -147,7 +149,8 @@ Now we need to get Infusionsoft to use this information in the URL. You'll need 
 
   1. **Shopping cart footer: **Located at** **Ecommerce >> Ecommerce Setup >> Shopping Cart Themes >> Edit Theme >> HTML Areas >> Custom Footer
   2. **Order Form Footer: **Located at Ecommerce >> Ecommerce Setup >> Order Form Themes >> Edit Theme >> HTML Areas >> Custom Footer
-Copy the following code into each area, making sure to replace the account ID and domains below with your appropriate information:
+
+Copy the following code into each area, making sure to replace the account ID and domains below with your appropriate information:  
 
 #### Traditional Analytics Code:
 
@@ -193,6 +196,7 @@ We've provided here a plugin that will make the rest of the process a piece of c
 _Note: credit for the  files used goes to [Mindshare Studios](https://github.com/mindsharestudios/infusionsoft-google-analytics) as these are just slightly modified versions of their code._
 
 **If you have traditional analytics: [Download](http://landersoptimized.com/static/infusionsoft-google-analytics/wp-traditional.zip)**
+
 **If you have universal analytics: [Download](http://landersoptimized.com/static/infusionsoft-google-analytics/wp-universal.zip)**
 
 Once downloaded, login to wordpress, go to Plugins > Add Plugins, and upload the ZIP as a new plugin.

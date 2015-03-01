@@ -7,10 +7,11 @@ status: publish
 title: Working with Clients - Watch out for Back-Seat Driving
 featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2014/07/the-joker-backseat-driver.jpg
 fluid_image: true
-title_image: false
+title_image: true
 wordpress_id: '1359'
 categories:
 - Tips
+excerpt: Your client is all that matters - that's true. It's important that they have a sense of control in order to maintain a long-lasting relationship with mutual trust. But this is a double-edged sword.
 ---
 _"I really like [competitor]'s website. Can you do a test using a design like theirs?"_
 
