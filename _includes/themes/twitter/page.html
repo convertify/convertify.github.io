@@ -1,9 +1,7 @@
-<div class="page-header">
-  <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
-</div>
+{% if page.hide_title == null %}
+	<div class="page-header">
+	  <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
+	</div>
+{% endif %}
 
-<div class="row">
-  <div class="span14">
-    {{ content }}
-  </div>
-</div>
+{{ content }}

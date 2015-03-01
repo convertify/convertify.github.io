@@ -3,20 +3,66 @@ layout: page
 title: Categories
 header: Posts By Category
 group: navigation
+hide_title: true
 ---
 {% include JB/setup %}
 
-<ul class="tag_box inline">
-  {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
-</ul>
+<div class="row">
+	<div class="col-sm-3" id="leftColumn">
+		<div>
+			<h1>{{ page.title }}</h1>
+			<nav class="nav-sidebar">
+				<ul class="nav" role="tablist" id="sidebar--tabs">
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="col-sm-9">
+		<div class="tab-content">
+			{% for category in site.categories %} 
+				<div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ category[0] | slugify }}-ref">
+					<!-- <div id="{{ category[0] | slugify }}-ref" class="hiddenAnchor"></div> -->
+					<h2>{{ category[0] | join: "/" }}</h2>
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
 
-
-{% for category in site.categories %} 
-  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  <ul>
-    {% assign pages_list = category[1] %}  
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
-
+<script type="text/javascript">
+	$(function() {
+		$("#sidebar--tabs").affix({
+			offset: {
+				top: 235
+			}
+		});
+		var $body = $(document.body),
+			navHeight = $('.navbar').outerHeight(true) + 10;
+		$body.scrollspy({
+			target: '#leftColumn',
+			offset: navHeight
+		});
+		// smooth scrolling sections
+		$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1000);
+		});
+		// $('a[href*=#]:not([href=#])').click(function() {
+		// 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		// 		var target = $(this.hash);
+		// 		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		// 		if (target.length) {
+		// 			$('html,body').animate({
+		// 				scrollTop: target.offset().top - 50
+		// 			}, 1000);
+		// 			return false;
+		// 		}
+		// 	}
+		// });
+	});
+</script>

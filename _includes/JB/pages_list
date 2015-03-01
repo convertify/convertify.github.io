@@ -20,7 +20,60 @@ Usage:
   This helper can be seen in use at: ../_layouts/default.html
 -->{% endcomment %}
 
+
+
 {% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="{{ BASE_PATH }}{{node.url}}">
+                  {% if node.featured_image %}
+                    <img class="img-responsive" src="{{node.featured_image}}">
+                  {% endif %}
+                </a>
+              </div>
+              <div class="col-xs-8">
+                {% if node.date %}
+                  <h3 class="postDate"><small>{{ node.date | date_to_long_string }}</small></h3>
+                {% endif %}
+                <h2><a class="post-title" href="{{ BASE_URL }}{{ node.url }}">{{ node.title }}</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                {% if node.featured_image %}
+                  <img class="img-responsive visible-xs" src="{{node.featured_image}}">
+                {% endif %}
+                <h2><a class="post-title visible-xs" href="{{ BASE_URL }}{{ page.url }}">{{ node.title }}</a></h2>
+                  <p>
+                    {% if node.excerpt.size > 250 %}
+                      {{ node.excerpt | strip_html | truncatewords: 70 | append: '...' }}
+                    {% else %}
+                      {{ node.content| strip_html | truncatewords: 70 | append: '...' }}
+                  {% endif %}
+                    <a href="{{ BASE_URL }}{{ node.url }}">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+
+
+
+
+<!-- {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
   {% for node in pages_list %}
@@ -36,4 +89,4 @@ Usage:
   {% endfor %}
 {% endif %}
 {% assign pages_list = nil %}
-{% assign group = nil %}
+{% assign group = nil %} -->

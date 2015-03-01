@@ -114,6 +114,10 @@ h1.postTitle {
 /*==============================================================================
 =            MODULES                                                           =
 ==============================================================================*/
+.title--hero {
+	margin: 0;
+	padding: 3em 0;
+}
 .nav-logo {
   max-height: 100%;
   margin-top:-5px;
@@ -133,7 +137,34 @@ li.coming-soon a:after {
     color: rgba(0,0,0,.6);
     text-decoration: none;
 }
-
+.post { 
+	border-bottom:1px solid #DDD;
+	margin-bottom: 35px;
+	p {
+		font-size: 17px;
+		line-height: 30px;
+		color: rgba(0,0,0,.8);
+	}
+}
+.post-title {  
+	color:#662D91; 
+}
+.post .glyphicon { 
+	margin-right:5px; 
+}
+.post-header-line { 
+	border-top:1px solid #DDD;
+	border-bottom:1px solid #DDD;
+	padding:5px 0px 5px 15px;
+	font-size: 12px; 
+}
+.post-content { 
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.postDate {
+	margin: -5px 0 -15px 0;
+}
 li.coming-soon a {
     color: black;
 }
@@ -177,6 +208,46 @@ li.coming-soon p {
   }
 }
 
+.nav-sidebar { 
+    width: 100%;
+    padding: 8px 0; 
+    border-right: 1px solid #ddd;
+    .affix {
+    	top: 55px;
+    }
+}
+.nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+    -webkit-border-radius: 4px 0 0 4px; 
+    -moz-border-radius: 4px 0 0 4px; 
+    border-radius: 4px 0 0 4px; 
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #428bca; 
+    color: #fff; 
+    text-shadow: 1px 1px 1px #666; 
+}
+.nav-sidebar .active a:hover {
+    background-color: #428bca;   
+}
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+.hiddenAnchor {
+	display:block; 
+	position: relative; 
+	top: -70px; 
+	visibility: hidden;
+}
 
 
 /**
