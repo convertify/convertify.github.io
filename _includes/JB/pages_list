@@ -34,7 +34,7 @@ Usage:
               <div class="col-xs-4">
                 <a href="{{ BASE_PATH }}{{node.url}}">
                   {% if node.featured_image %}
-                    <img class="img-responsive" src="{{node.featured_image}}">
+                    <img class="img-responsive thumbnail" src="{{node.featured_image}}">
                   {% endif %}
                 </a>
               </div>
