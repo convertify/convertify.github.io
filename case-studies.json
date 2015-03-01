@@ -1,0 +1,17 @@
+---
+---
+[{% for case_study in site.categories['case studies'] %}
+    {
+        "title": "{{case_study.title}}",
+       {% if case_study.featured_image %}
+       "image": "{{ case_study.featured_image }}",
+       {% endif %}
+       {% if case_study.excerpt.size > 250 %}
+        "excerpt": "{{ case_study.excerpt | strip_html | truncatewords: 70 | append: '...' }}",
+       {% else %}
+        "excerpt": "{{ case_study.content| strip_html | strip_newlines | truncatewords: 70 | append: '...' }}",
+       {% endif %}
+        "url": "{{ BASE_URL }}{{ case_study.url }}",
+        "date": "{{ case_study.date | date_to_long_string }}"
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}]
