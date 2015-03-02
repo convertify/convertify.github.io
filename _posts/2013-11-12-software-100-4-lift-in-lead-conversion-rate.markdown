@@ -9,6 +9,7 @@ wordpress_id: '1078'
 featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/11/Screenshot-2013-11-08-19.56.49.png
 categories:
 - Case Studies
+tags: ['b2b', 'saas', 'multi-variable']
 ---
 
 **Business: **

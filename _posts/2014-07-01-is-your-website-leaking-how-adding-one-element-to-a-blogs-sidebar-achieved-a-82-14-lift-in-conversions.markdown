@@ -12,6 +12,7 @@ fluid_image: true
 title_image: true
 categories:
 - Case Studies
+tags: ['b2c', layout', 'responsive', 'design']
 ---
 
 If you're getting plenty of traffic but still not seeing sales, it usually means that your offer is not enticing enough to your visitors, or you're getting the wrong type of traffic. But don't be too quick to judge, because that's not always the case. Sometimes, the issue is that _people are having trouble finding your offer in the first place._
