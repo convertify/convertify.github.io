@@ -27,7 +27,7 @@ In this guide, we will assume we have a page with 3 links as so:
   
 **Link 3: **http://site3.com/somepage.html  
   
-We will need to create a php file on the server. Let's call this redirect.php.  
+We'll need to create a php file on the server. Let's call this redirect.php.  
   
 We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.  
   
