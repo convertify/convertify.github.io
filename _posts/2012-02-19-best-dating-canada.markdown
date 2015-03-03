@@ -7,6 +7,7 @@ status: publish
 title: 'Conversion Optimization Case Study: Best Dating Canada'
 featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/Screen-Shot-2012-05-08-at-5.21.18-PM.png
 wordpress_id: '44'
+tags: ['affiliate']
 categories:
 - Case Studies
 - Conversion Rate Optimization
