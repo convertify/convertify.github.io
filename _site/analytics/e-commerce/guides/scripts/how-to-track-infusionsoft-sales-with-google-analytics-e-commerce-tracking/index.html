@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2014/02/infusionsoft-google-analytics-ecommerce.jpg'>
+    
+    <script type="text/javascript">
+	var disqus_identifier = '2670052270';
+</script>
+
+<p><em>Note: If you’d like us to perform this integration for you, we offer a flat rate to do this for you. Please email <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#105;&#110;&#102;&#111;&#064;&#099;&#111;&#110;&#118;&#101;&#114;&#116;&#105;&#102;&#121;&#046;&#105;&#111;">&#105;&#110;&#102;&#111;&#064;&#099;&#111;&#110;&#118;&#101;&#114;&#116;&#105;&#102;&#121;&#046;&#105;&#111;</a> to hire us.</em></p>
+
+<p>Tracking Infusionsoft sales in Google Analytics is a bit trickier than it needs to be. Because of the fact that the Infusionsoft cart is hosted on a different domain, cookie values are not persisted through the checkout process. Also, they do not provide variables that provide order details on the thank you page. Therefore, there are really 2 things that need to be accomplished to solve this problem:</p>
+
+<ol>
+  <li>Setup cross-domain tracking to pass GA data from your domain to Infusionsoft’s domain.</li>
+  <li>Use the order ID on the thank you page as well as the Infusionsoft API to fetch the necessary order information.
+Overall it’s a technical process that requires some code, but we’ve done all the work for you. The following instructions will walk you through step-by-step to get this precious data tracked in Google Analytics!</li>
+</ol>
+
+<p><strong>Note: This post assumes you have Wordpress. We will edit it soon so that it can be added to any PHP site</strong></p>
+
+<p>If you have any trouble or have any questions, _please_let us know in the comments below!</p>
+
+<h2 id="setting-up-cross-domain-tracking">Setting Up Cross-Domain Tracking</h2>
+
+<p>Just in case, I’m going to assume that you don’t have Google Analytics installed on your Infusionsoft order forms.</p>
+
+<p>The first thing we need to do is get our website to pass Google Analytics information to our order forms and our checkout pages. Follow the steps below:</p>
+
+<h3 id="if-you-have-the-traditional-google-analytics">If you have the traditional Google Analytics:</h3>
+
+<p>You’ll need to edit your current tracking code. Assuming your code looks like this:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span><span class="c1">// &lt;![CDATA[</span>
+  <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span> <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-12345-1&#39;</span><span class="p">]);</span>  
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setDomainName&#39;</span><span class="p">,</span> <span class="s1">&#39;website.com&#39;</span><span class="p">]);</span> 
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
+  <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">ga</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span>
+    <span class="nx">ga</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">ga</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;https:&#39;</span> <span class="o">==</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span> <span class="o">?</span> <span class="s1">&#39;https://ssl&#39;</span> <span class="o">:</span> <span class="s1">&#39;http://www&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.google-analytics.com/ga.js&#39;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span><span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">ga</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+  <span class="p">})();</span>
+<span class="c1">// ]]&gt;&lt;/script&gt;</span></code></pre></div>
+
+<p>You’ll need to make it look like this:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="c1">// &lt;![CDATA[</span>
+    <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-12345-1&#39;</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setDomainName&#39;</span><span class="p">,</span> <span class="s1">&#39;website.com&#39;</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAllowLinker&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
+    <span class="kd">var</span> <span class="nx">infusionsoft_app_id</span> <span class="o">=</span> <span class="s2">&quot;m48&quot;</span><span class="p">;</span> <span class="c1">//replace with your actual APP ID</span>
+    <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">ga</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+        <span class="nx">ga</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span>
+        <span class="nx">ga</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="nx">ga</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;https:&#39;</span> <span class="o">==</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span> <span class="o">?</span> <span class="s1">&#39;https://ssl&#39;</span> <span class="o">:</span> <span class="s1">&#39;http://www&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.google-analytics.com/ga.js&#39;</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+        <span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">ga</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+    <span class="p">})();</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">elements</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span>
+        <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">elements</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">regex</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="nx">infusionsoft_app_id</span> <span class="o">+</span> <span class="s2">&quot;.infusionsoft.com&quot;</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">regex</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;href&quot;</span><span class="p">)))</span> <span class="p">{</span>
+                <span class="nx">current_onclick</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">el</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;onclick&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;undefined&quot;</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;&quot;</span> <span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;onclick&quot;</span><span class="p">);</span>
+                <span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;onclick&quot;</span><span class="p">,</span> <span class="s2">&quot;_gaq.push([&#39;_link&#39;, &#39;&quot;</span> <span class="o">+</span> <span class="nx">el</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&#39;]); return false;&quot;</span> <span class="o">+</span> <span class="nx">current_onclick</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+    <span class="c1">// ]]&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+
+<p>Make sure not to overwrite your original Account ID (<code>UA-XXXXX-X</code>) or your domain name (The part after <code>_setDomainName'.</code>) with the information from the example code. Also, replace the “m48” part in  <code>var infusionsoft_app_id = "m48";</code> with your actual Infusionsoft App ID.</p>
+
+<h3 id="if-you-have-universal-analytics">If you have Universal Analytics</h3>
+
+<p>You’ll need to append some code to your current tracking code. Assuming your code looks like this:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="c1">// &lt;![CDATA[</span>
+    <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">o</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">i</span><span class="p">[</span><span class="s1">&#39;GoogleAnalyticsObject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span>
+        <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">||</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="p">(</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span> <span class="o">=</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span> <span class="o">||</span> <span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)</span>
+        <span class="p">},</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">l</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+        <span class="nx">a</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">o</span><span class="p">),</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">o</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+        <span class="nx">a</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">a</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">g</span><span class="p">;</span>
+        <span class="nx">m</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span>
+    <span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">,</span> <span class="s1">&#39;ga&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">,</span> <span class="s1">&#39;website.com&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span> <span class="s1">&#39;pageview&#39;</span><span class="p">);</span>
+    <span class="c1">// ]]&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+
+<p>You’ll want to make it look like this:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="c1">// &lt;![CDATA[</span>
+    <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">o</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">i</span><span class="p">[</span><span class="s1">&#39;GoogleAnalyticsObject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span>
+        <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span> <span class="o">||</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="p">(</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span> <span class="o">=</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span> <span class="o">||</span> <span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)</span>
+        <span class="p">},</span> <span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">l</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+        <span class="nx">a</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">o</span><span class="p">),</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">o</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+        <span class="nx">a</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">a</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">g</span><span class="p">;</span>
+        <span class="nx">m</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span>
+    <span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">,</span> <span class="s1">&#39;ga&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">,</span> <span class="s1">&#39;website.com&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span> <span class="s1">&#39;pageview&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;require&#39;</span><span class="p">,</span> <span class="s1">&#39;linker&#39;</span><span class="p">);</span>
+    <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;linker:autoLink&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;m179.infusionsoft.com&#39;</span><span class="p">]);</span> <span class="c1">//don&#39;t forget to use your own app ID!</span>
+    <span class="c1">// ]]&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+
+<h3 id="test-if-its-working">Test If it’s working</h3>
+
+<p>Let’s see if it works! Once this change has been made, go to a page on your website that contains an “Add to Cart” button for infusionsoft. Once you click it, look at the URL on the next page. If you have traditional analytics, your URL should look like this now:</p>
+
+<p><code>https://m179.infusionsoft.com/app/orderForms/Product?<strong>__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&amp;__utmb=145477216.4.10.1392989453&amp;__utmc=145477216&amp;__utmx=-&amp;__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&amp;__utmv=-&amp;__utmk=244849413</strong></code></p>
+
+<p>If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&amp;clearCart=true&amp;subscriptionPlanQuantity=1&amp;subscriptionPlanId=9&amp;cartSkinId=8632&amp;productId=692&amp;productQuantity=1</code> </p>
+
+<p>I’ve bolded the information that should be appended assuming it’s working. Once this is done, you’re ready for the next step! If you’re having trouble, please let us know in the comments below!</p>
+
+<h3 id="adding-tracking-to-infusionsoft">Adding Tracking to Infusionsoft</h3>
+
+<p>Now we need to get Infusionsoft to use this information in the URL. You’ll need to add the tracking code to the following 2 areas in Infusionsoft:</p>
+
+<ol>
+  <li><strong>Shopping cart footer: </strong>Located at<strong> </strong>Ecommerce » Ecommerce Setup » Shopping Cart Themes » Edit Theme » HTML Areas » Custom Footer</li>
+  <li><strong>Order Form Footer: </strong>Located at Ecommerce » Ecommerce Setup » Order Form Themes » Edit Theme » HTML Areas » Custom Footer</li>
+</ol>
+
+<p>Copy the following code into each area, making sure to replace the account ID and domains below with your appropriate information:  </p>
+
+<h4 id="traditional-analytics-code">Traditional Analytics Code:</h4>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="c1">// &lt;![CDATA[</span>
+    <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-12345-1&#39;</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setDomainName&#39;</span><span class="p">,</span> <span class="s1">&#39;m179.infusionsoft.com&#39;</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAllowLinker&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">]);</span>
+    <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
+    <span class="c1">// ]]&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
+
+<h4 id="universal-analytics-code">Universal Analytics Code:</h4>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span><span class="c1">// &lt;![CDATA[</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="nx">s</span><span class="p">,</span><span class="nx">o</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">r</span><span class="p">,</span><span class="nx">a</span><span class="p">,</span><span class="nx">m</span><span class="p">){</span><span class="nx">i</span><span class="p">[</span><span class="s1">&#39;GoogleAnalyticsObject&#39;</span><span class="p">]</span><span class="o">=</span><span class="nx">r</span><span class="p">;</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span><span class="o">=</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span><span class="o">||</span><span class="kd">function</span><span class="p">(){</span> <span class="p">(</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span><span class="o">=</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)},</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">l</span><span class="o">=</span><span class="mi">1</span><span class="o">*</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="nx">a</span><span class="o">=</span><span class="nx">s</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">o</span><span class="p">),</span> <span class="nx">m</span><span class="o">=</span><span class="nx">s</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">o</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span><span class="nx">a</span><span class="p">.</span><span class="nx">async</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="nx">g</span><span class="p">;</span><span class="nx">m</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">m</span><span class="p">)</span> <span class="p">})(</span><span class="nb">window</span><span class="p">,</span><span class="nb">document</span><span class="p">,</span><span class="s1">&#39;script&#39;</span><span class="p">,</span><span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">,</span><span class="s1">&#39;ga&#39;</span><span class="p">);</span>
+
+<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">strong</span><span class="o">&gt;</span><span class="s1">&#39;UA-XXXXXX-01&#39;</span><span class="p">,</span> <span class="s1">&#39;m179.infusionsoft.com&#39;</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s1">&#39;allowLinker&#39;</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;require&#39;</span><span class="p">,</span> <span class="s1">&#39;linker&#39;</span><span class="p">);</span>
+<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;linker:autoLink&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;website.com&#39;</span><span class="p">]</span> <span class="p">);</span> <span class="c1">//replace with your actual domain</span>
+<span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span> <span class="s1">&#39;pageview&#39;</span><span class="p">);</span>
+<span class="c1">// ]]&gt;&lt;/script&gt;</span></code></pre></div>
+
+<p>Once that’s done, cross-domain tracking is set up! Now it’s time to get your site hooked up to the Infusionsoft API.</p>
+
+<h2 id="pulling-e-commerce-data-from-infusionsoft">Pulling E-Commerce Data From Infusionsoft</h2>
+
+<p>Now we need to get Infusionsoft to pass data back to our site, and into google analytics. Before we start, we’ll need to grab our API key from Infusionsoft. Here’s a quick GIF showing how to generate one if you haven’t already:</p>
+
+<p><a href="http://convertify.wpengine.com/wp-content/uploads/2014/02/Untitled.gif"><img src="http://convertify.wpengine.com/wp-content/uploads/2014/02/Untitled.gif" alt="Get Api Key from Infusionsoft" /></a></p>
+
+<h3 id="wordpress-instructions">Wordpress Instructions</h3>
+
+<p>We’ve provided here a plugin that will make the rest of the process a piece of cake. Start by downloading the appropriate plugin:</p>
+
+<p><em>Note: credit for the  files used goes to <a href="https://github.com/mindsharestudios/infusionsoft-google-analytics">Mindshare Studios</a> as these are just slightly modified versions of their code.</em></p>
+
+<p><strong>If you have traditional analytics: <a href="http://landersoptimized.com/static/infusionsoft-google-analytics/wp-traditional.zip">Download</a></strong></p>
+
+<p><strong>If you have universal analytics: <a href="http://landersoptimized.com/static/infusionsoft-google-analytics/wp-universal.zip">Download</a></strong></p>
+
+<p>Once downloaded, login to wordpress, go to Plugins &gt; Add Plugins, and upload the ZIP as a new plugin.</p>
+
+<p>Once the plugin is installed, go to Settings -&gt; Infusionsoft Google Analytics and enter your Infusionsoft App ID as well as your API Key there and save.</p>
+
+<p>We’re almost there!</p>
+
+<p>Next, in Wordpress, go to Appearance » Editor. On the right menu, click for the “Footer” link. Now scroll to the very bottom of the editor, and right before the closing <code></code> tag, paste the following code:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">&#39;orderId&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">do_shortcode</span><span class="p">(</span><span class="s1">&#39;[infusionsoft-google-analytics]&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span></code></pre></div>
+
+<p>If you haven’t done so already, set up a thank you page on your Wordpress site. Then, use this page as the thank you page for ALL your order forms as well as your shopping cart, and make sure to check the “Pass contact’s information to Thank You page” setting (see below).</p>
+
+<p><a href="http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-24-12.45.10.png"><img src="http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-24-12.45.10.png" alt="Screenshot 2014-02-24 12.45.10" /></a></p>
+
+<p> </p>
+
+<p>The code we put in the footer of your Wordpress runs globally, so you can set up multiple thank you pages and if you want, and it will still work as long as the page is on Wordpress.</p>
+
+<p>That’s it - you’re done!</p>
+
+<p>Hope that wasn’t too hard! Now, just wait and watch the data roll into google analytics! If all goes well, you will start seeing data in google analytics under Conversions » Ecommerce » Overview, and it should look something like this:</p>
+
+<p><a href="http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-21-07.26.181.png"><img src="http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-21-07.26.181.png" alt="Screenshot 2014-02-21 07.26.18" /></a></p>
+
+<p> </p>
+
+<p>If you have any trouble, please comment below and we’ll try to help. Enjoy!</p>
+
+<p> </p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/case-studies/software-100-4-lift-in-lead-conversion-rate' title='Software: 100.4% Lift in Lead Conversion Rate'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/tips/70-conversion-optimization-tools-resources-that-you-should-know-about' title='70 Conversion Optimization Tools & Resources That You Should Know About'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '1084 http://www.landersoptimized.com/?p=1084';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

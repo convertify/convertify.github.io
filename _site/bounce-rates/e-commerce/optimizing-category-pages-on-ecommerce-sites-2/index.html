@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Improving Conversions: eCommerce Category Pages</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>Improving Conversions: eCommerce Category Pages</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/shopping_cart_stucco11.png'>
+    
+    <p>When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That’s why it’s important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no ‘Add to Cart’ button on the category pages, but rather links to a bunch of products. <strong>The answer is to optimize the bounce rate and exit rate.</strong>  </p>
+
+<p>Bounce &amp; Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who <strong>land</strong> on that page <strong>leave immediately</strong> without looking at another page. It’s calculated by dividing <strong>entrances **by **bounces</strong> while exit rate is calculated by dividing <strong>page views **by ** exits. </strong>Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it’s no longer considered a bounce. A ’bounce’ in my eyes means the person judged your business as a whole and it didn’t meet their standards, or they didn’t find what they were looking for. I’d say for most people it’s the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The <strong>exit rate</strong> is just the percentage of people who leave your site from that page. If it’s unusually high, I interpret that the page is poor compared to the rest of the site and see it as a ‘leak’ of visitors, which is up to someone like me to plug.  </p>
+
+<p>Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, “Why don’t I just measure conversions for that category as a whole to compare?” If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you’re running website optimizer on category A and have the conversion tracked on the ‘Order Completed’ page, you will have counted a conversion for a product that has nothing to do with the category you’re optimizing. And that’s only one of the many things that can happen? Do you see the issue?  </p>
+
+<p>You need an accurate measure that directly correlates to the page, and bounce rate &amp; exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he’s now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that’s going to be a huge improvement in sales. So now that you know <em>what</em> to measure, I’ll give out a few pointers from what I’ve learned.’ </p>
+
+<h2 id="ecommerce-categories-optimization-tips">eCommerce Categories Optimization Tips</h2>
+
+<ol>
+  <li>**They may not be looking for that page - **Look at keyword data to see what keywords they are using to get there. My last client had 2 main categories - pre-assembled cabinets, and ready-to-assemble cabinets. Although the ready-to-assemble are much cheaper than the pre-assembled, many people were getting to the pre-assembled page using the term ‘cheap cabinets’. They would see they really aren’t cheap then leave. I put a banner that was prominent at the top promoting the ready-to-assemble cabinets and told them they are about 30% cheaper. Now I’m kind of guiding them to what they were looking for in the first place.</li>
+  <li>**They need to know immediately they are at the right place - **I see this way to often - A category page with either no title or a small title, and just a bunch of links to products. I usually put a big hero image of what they were looking for, and a big headline stating it. If someone is looking for ‘red bikes’ and they land on a category page with a huge red bike and headline stating it, they will get that ‘Oh they have what I’m looking for’ feeling. This is essential.</li>
+  <li>**Let them know you’re legit - **The cabinet client I had was the biggest online seller of cabinets. They even had commercials on HGTV and other related channels. But when I got to the site, nothing lets me know that. If I had only their website to go off of, I’d never have known how established they were. This is why it’s key to put up value propositions like “Doing X for over 15 years” or “As seen on X, Y, &amp; Z”. The first things I ask about then go for are money-back guarantees, free shipping, awards, press, and testimonials. Then make SURE they see it by using colorful graphics and icons.</li>
+  <li>**Use really appealing product images - **The whole point they are here is products, so make sure they look really appealing. This is the most important.
+Hopefully this helps some of you fellow optimizers and eCommerce sites out!</li>
+</ol>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/scripts/track-clicks-as-conversions-in-google-website-optimizer' title='Track Clicks as Conversions in Google Website Optimizer'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/scripts/tracking-optimizing-review-sites-with-google-website-optimizer-or-any-page-with-multiple-outoing-links' title='Tracking & Optimizing Review Sites with Google Website Optimizer (or Any Page with Multiple Outoing Links)'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '1108 http://www.landersoptimized.com/?p=1108';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

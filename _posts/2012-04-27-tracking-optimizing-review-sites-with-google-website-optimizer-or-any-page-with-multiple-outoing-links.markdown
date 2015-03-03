@@ -8,6 +8,7 @@ title: Tracking & Optimizing Review Sites with Google Website Optimizer (or Any 
   with Multiple Outoing Links)
 featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/star-rating.jpeg
 wordpress_id: '233'
+tags: ['scripts']
 categories:
 - Scripts
 ---

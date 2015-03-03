@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversion Rate Optimization: Why Most Visitors Don't Convert & How to Optimize</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/landing-page-fundamentals">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/landing-page-fundamentals">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/landing-page-fundamentals">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/landing-page-fundamentals">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>Conversion Rate Optimization: Why Most Visitors Don't Convert & How to Optimize</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://www.boostsuite.com/wp-content/uploads/2010/03/landing.jpg'>
+    
+    <p>Remember the first time you ever made a landing page, or had one made? At this time, you probably had no idea what to expect. And I’ll bet the first time you saw the conversion rate on it you were stumped. You knew not everyone would click your submit button, but you didn’t expect this low of a conversion rate! I’ll bet you were just as surprised seeing how many people bounce right away! And the worst part - you have no idea why.  </p>
+
+<p>This is most people. They think that if a visitor clicks an ad that says ‘Want a basketball for $5? Click Here!”, then they will buy their 5 dollar basketball. They think that professional picture of their product is going to make the customer want to buy it. Unfortunately, <strong>it ain’t that easy.</strong>  </p>
+
+<p>So, why is this? Is it because the page isn’t pretty enough? Nope. Is it because you don’t have enough other pages? Probably not. So **why **is this happening?  </p>
+
+<p>Here’s why - **Because the person creating the page usually doesn’t understand the function/goal of a landing page. **  </p>
+
+<p>And guess what, just cause you have a great web designer doesn’t mean it will convert well. Your designer is only good at one thing - making things pretty. Only <strong>You (the business owner)</strong> have the knowledge you will need to make your page convert well, not your designer.  </p>
+
+<p>A landing page is <strong>not **about having cool graphics, or a lot of links, or a video, or a hot girl holding your product (although they may help)…. **It’s about conveying your value. ** Write that down, as it’s one of the most important aspects of any business. Assuming we call your landing page ‘</strong>x’<strong>, the first thought any human has when seeing your page is: “</strong>x=?” ** <strong>They are trying to fill in the blank.</strong> Your landing page needs to fill it in for them, and it should be the highest possible value you can fill in.  </p>
+
+<p>Think about it - do you think one restaurant will succeed just cause it’s pretty? Just cause it’s in a good location? Just cause it’s got cool napkins? Nope!  </p>
+
+<p>A good restaurant succeeds because it has <strong>good food.</strong> Think about all your favorite places to eat. I bet they aren’t all nice - some may be hidden, some may only be open on Mondays, some may be far away, some may suck for parking; but I’ll bet they have <strong>good tasting food.</strong> One of my favorite foods is tacos from the taco truck. It’s parked on a corner and it’s made in a truck - and they sell **lots of tacos. **You can go there at 3am on a Friday and it will have a line. It is the complete opposite of a ‘5-star restaurant’, but it has 5-star taste, and that’s all that matters. That’s the value that matters in the restaurant business - the taste of your food.  </p>
+
+<p>A landing page is meant to prove exactly this: <strong>that the value that the visitor will receive by taking the action that your landing page asks is ACTUALLY worth the COST of taking the action.</strong> In other words, if <strong>x</strong> equals your value, and <strong>y</strong> equals the customer’s cost, <strong>x</strong> must be greater than <strong>y</strong>, or  <em>**x&gt;y **.</em>  </p>
+
+<p>This single factor is by far, the most <strong>important</strong> thing that your landing page has to convey. It is the difference between succeeding or failing.  </p>
+
+<p>So, now that you know what your landing pages needs to <strong>do,</strong> how do you do it?  </p>
+
+<p>Well, first you need to meet rule #1. Most pages don’t even meet this requirement and therefore are doomed to a bad conversion rate, and it won’t get any better unless they meet this requirement, or lie.  </p>
+
+<p><strong>Rule #1: You must _ACTUALLY _have value.</strong>  </p>
+
+<p>If you want to go surf, you need a surfboard. If you want to **convey **value, you must actually **have some value to convey. **So now, figure out the purpose of your business. What does your business actually **do? **Write it down. Don’t put any details or specifics. For example, don’t say “We make the <em>best</em> chairs” or “We make <em>six-color</em> printers.” Be as broad as possible. “We provide chairs” or “We clean your car” is good.  </p>
+
+<p>Now you’ve provided the value of x, or at least the basis of it. Now we need to convey a <strong>high **value. This is what will ultimately make the customer not only choose you over others, but to actually convert on your landing page. If we can raise this value high enough, then eventually the value with be higher than it’s perceived cost by the customers, and more importantly than the value of your competitors. In other words, we will show that  </strong>_x &gt; y. _**This is where rule #2 comes in:  </p>
+
+<p><strong>Rule #2: The Value gained by converting must be perceived to _ACTUALLY _be higher than the cost of converting.</strong>  </p>
+
+<p>The big difference here between rule #1 and rule #2 is that in rule #1 the product gives itself the value, like when you are browsing through a store and you are looking at items. When they land on your page and see shoes (for example) the value of <strong>x</strong>, in their eyes, is shoes, not cars (x=x but not y). However, in rule #2, the customer must decide how much value <strong>x</strong> will add to their life, and if it’s worth the cost.** Nobody <strong>can fill that in but themselves. Mathematically, the customer is thinking **Me + x - y = ?</strong> In other words, they are asking, “will this add enough value to my life to make up for its costs?” Ultimately, you are trying to make the resulting <strong>perception</strong> of the value for them as high as possible… through your landing page! Your landing page is simply trying to make <strong>x (your product’s value)</strong> as <em>high as possible</em> and <strong>y (cost)</strong> as <em>low as possible.</em>  </p>
+
+<p>This next part is the most important. What I’ve told you so far just makes your page function as it’s supposed to. Now, in order to succeed and attain high conversion rates, we must acknowledge two things. First, we need to realize that our product (x) will have a different amount of value to each and every person. You wouldn’t pay for your favorite shoe if it was 4 sizes too big. A guy would see no value in a tampon, and a girl would see no value in men’s jeans. <strong>This is why you will always see higher conversion rates by making separate landing pages that each cater to your target demographic!</strong> Second, we need to realize that there may be competition offering higher value, or lower cost.  </p>
+
+<p>Before we move on, I’d like to tell you about value-to-cost ratio. We no longer live in a world where people want just their money’s worth. <strong>People want the absolute best for their money, and expect much more than their money’s worth.</strong> Everybody has this ‘standard’ for value-to-cost ratio in their head that must be met for them to buy. Mathematically, this is shown by taking <strong>x</strong> - the value, and dividing it by <strong>y</strong> - the cost. For example, if someone has a standard of a value-to-cost ratio of 2, then they need to <strong>perceive</strong> that the value that is ultimately added to their life is twice the amount of their cost, or that x must be at least 2y. Notice how I keep emphasizing the word <strong>perceive</strong>, because I need you to understand that there is no single number of ‘value’ attached to your product. It’s merely a perception the customer makes, and every customer will see a different value to your product. And also, realize that they are not perceiving that value of your product, but merely <strong>the value added to their lives</strong> by purchasing your product. I’m just trying to put it in a mathematical perspective so you can understand it.  </p>
+
+<p>So let’s solve the first part. Let’s assume we are a company making computers. We have 5 prospective customers interested in buying computers. Someone who clicks on your ad and lands on your page is an equivalent of this. We call them a1, a2, a3, a4, and a5. Our computers only run windows, and only the english version. They cost $1,500 each and have 512MB of RAM. Now we’re going to describe our prospective customers: </p>
+
+<ul>
+  <li>a1 -  male, $2,000 budget, prefers windows</li>
+  <li>a2 - male, $1,000 budget, prefers windows</li>
+  <li>a3 - female, $5,000 budget, prefers windows, speaks no english</li>
+  <li>a4 - male, $2,000 budget, die-hard mac fan</li>
+  <li>
+    <p>a5 - male, $3,000 budget, wants at least 1GB RAM.
+Now, we’re assuming that these people arrived at our site by clicking an ad showing a picture of a computer, which gave them their first bit of the value of your product (x) - computers. Once they land on our page, we can assume they are interested in getting a computer. Now, at first, they will all have this one thought: <strong>“Is the value of this product higher than my cost?” **They need to know they are going to get their money’s worth, that **<em>x&gt;y.</em></strong> The answer to that will be different for every single customer that ever encounters your landing page. Let’s take a look at what our customers thought. </p>
+  </li>
+  <li>a1 - “It’s within my budget, has windows which is what I want, it’s worth it!” <strong>(x&gt;y)</strong></li>
+  <li>a2 - “I only decided I would spend $1,000 on a computer. This one costs too much!” <strong>(x&lt;y)</strong></li>
+  <li>a3 - “I don’t speak english, and it’s english only. I can’t even use it!” <strong>(x&lt;y)</strong></li>
+  <li>a4 - “Ewwww Windows!… Mac for life, why would I ever buy anything but a mac?!” <strong>(x&lt;y)</strong></li>
+  <li>a5 - “Only 512MB RAM? Not enough, no thanks!” <strong>(x&lt;y)</strong>
+So there you have it. I didn’t mention competition to keep it simple, but don’t forget that your competition will affect your sales.  <strong>This **is how a customer is thinking on your page.</strong> This is why you see low conversion rates on most landing pages!** A customer may click on your ad, because they <strong>really do want a computer</strong>, but if they didn’t convert, all it means is that they either <strong>a)</strong> believe the value-to-cost ratio wasn’t high enough (x/y) or <strong>b)</strong> believe they can get a better value-to-cost ratio somewhere else (x1/y). Every element in your page should either show that x &gt; y or help show it!! That’s why a company like Nike would endorse professional basketball players. They want to show you that the value of their product is the highest in the industry, and therefore the best players use it. For the computer company in this example, I would state all the specs of the computer, some detailed pictures, an incentive to buy the computer, show side-by-side comparisons against competitors, and explain every feature. This all adds to the perceived value. Most important, I would **only **advertise to those in my buying-range, by including keywords in campaigns like ‘512MB’ and such. I can also add true value, which is the most effective, by doing something like lowering the price or upgrading it to 1GB of RAM at no extra cost. So keep this in mind when designing your next landing page, and master it.  </li>
+</ul>
+
+<p>Now, that last part was only half the battle. Now, we need to deal with the hardest part. We need to show that we provide **Higher Value Than The Competition. **If there is a computer just like yours at the same price but with a few upgrades, the prospective customer ‘a1’ would have bought from them instead of you. Even though we met a1’s standards, they will still not convert as long as someone else is offering a better value-to-cost ratio. You easily can lose **every single customer **that would have bought from you, as long as someone else is offering a higher value product. In other words, **you are not the only ‘x’. **There is also x2, x3, x4, x5, and so on.  </p>
+
+<p>This is the toughest part. That is why people lie in order to compete. Here’s what the customer thinks next, and every single one will think this: <strong>“Will I gain more value by buying this product, for the lowest cost, than from any other competitor?” **It also gets a little tricky mathematically. Let’s assume we are x1, and we only have 9 competitors. Once a customer has confirmed that x&gt;y, they want to know if **<em>x1 &gt; x(n) where n is the competitor.</em></strong> This means that X1 has to be greater than x2,x3,x4, and so on. Obviously your customer will not compare you to every single competitor,  but they will all compare you to different competitors. Lots of businesses don’t even have anything to convey in order to show this, since they have not put in the work to be the best, or to provide the most value. In other words, <strong>only one can be the best.</strong> The iPhone 3G was my favorite phone until the iPhone 4 came out. The phone never changed, only my perception of it’s value. Luckily, people have “preferences”. Just cause something is green rather than blue doesn’t make it better, but some people will pay double to have that. So for our computer company in the example, I would make sure people knew that no other computer in that price range comes with the high-end Intel processor that mine has in it. I would give a 2-year warranty instead of the 1-year that my competition is offering. I would show off the awards that my computer has won. I would put side-by-side comparison charts showing that my product has more features. I would lower the price.  </p>
+
+<p>I hope this helps - this is the missing key(s) that most landing pages ignore. I wouldn’t call this Landing Page Optimization, as this is simply a basis you should have before even beginning on the landing page. This is more like the Landing Page Framework. <strong>This is the job of a landing page, to show this - and the design and content is your medium to convey this.</strong> If you can do this, I can assure you will see great results, even with a bad design. Think - If I made gloves that fit people who had 6 fingers, how much of the market share do you think I’d take for the 6-fingered glove market? To most, the value of my product is nil, but to people with 6 fingers, it’s a whole different story.  </p>
+
+<p>Go apply this to your pages, and enjoy! I’d love to hear feedback about results after implementing these ideas!</p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='prev disabled'>
+        <a>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page' title='How to Create a High-Converting Landing Page'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '1100 http://www.landersoptimized.com/?p=1100';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Case Study: Bogtus Real Estate</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/case-studies/conversion-rate-optimization/bogtus-optimization-case-study">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/case-studies/conversion-rate-optimization/bogtus-optimization-case-study">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/case-studies/conversion-rate-optimization/bogtus-optimization-case-study">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/case-studies/conversion-rate-optimization/bogtus-optimization-case-study">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>Case Study: Bogtus Real Estate</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/Screen-Shot-2012-02-19-at-9.31.56-PM.png'>
+    
+    <p><a href="http://bogtus.com"><strong>Bogtus Apartment Acquisitions</strong></a> is an Apartment Real Estate Broker, and came to us because they were experiencing low conversion rates on their landing page. According to the client, their landing page conversions were “well under 1%”. After looking at some stats we saw it indeed was between .2-.5%, and we decided to take on the challenge of optimizing it. Now, we knew real estate is a very high competition industry, with sky-high CPC’s. That’s because their margins are high, and they can actually profit with those CPC’s even with low conversion rates. After an optimization that included a complete re-design of the site, we were able to get the site to convert at 5.06%. Unfortunately, we weren’t able to collect as much data as we wanted before the job was over, but the client decided it was okay to stop the experiment early because they were “more than satisfied with the results” :). Now on to the good stuff:</p>
+
+<p> </p>
+
+<p><img src="/media/images/2012-02-19-bogtus-optimization-case-study/1.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="/media/images/2012-02-19-bogtus-optimization-case-study/2.png" alt="" /></p>
+
+<p> </p>
+
+<p>First of all, the page was built on wordpress, and I prefer to create my pages from a blank html file in a text editor, so we scrapped that site altogether, and started a new design. A lot of the time it’s easier to start from scratch than to try and fix a broken site. The very first thing I noticed on the old site was the headline. It wasn’t clear at all, and was way too long. Not to mention, the headline on the old landing page didn’t even communicate the value very well. I knew we were going to see some big increases here.</p>
+
+<p>Another thing I noticed was the form. On the old landing page, there was a button labeled “Click here to get your free personalized report”. Once you cliecked it, you were led into a page with a very long form that made you just want to get out of there. The idea was that visitors would fill out this form to submit information about the type of place they were looking for, and the realtor would email them back with some listings matching their criteria. After the optimization, we actually used the same fields with the same names, and we still got a good enough conversion rate out of it that we kept it, since the report helped a lot to create the sale. The goal that needed to be accomplished here is to communicate value well enough to where it would be well worth it to request a report. I changed the headling to “Find Apartments Worth Investing In”. This was a lot more effective than the old headline which basically seemed to go in one ear and out the other. It instantly communicated what he offers (apartments), and why they should choose him (worth investing in). Value propositions hold lots of weight in performance and are one of the first things you should test in any landing page optimization.</p>
+
+<p>Another key thing I realized is that what this website was really about was being communicated incorrectly. This site is for one broker, not multiple brokers. Therefore, this site should be communicating the value of ‘a broker’, rather than a ‘brokerage firm’. I decided to completely scrap out the idea of putting graphics of apartments on the landing page, and decided to use a photo of the broker himself with an intro. In the end, they aren’t hiring a firm, but rather a single person. This gave me an opportunity to use the concept of transparency which I believe is one of the best ways to gain credibility. By putting a nice first-person intro about the broker rather than a business description, users get the feeling of being more ‘connected’ and less like the site is trying to get something out of them. The results were great!</p>
+
+<p>The old page had no content at all. I added some key points as to why they should choose him, and also included some content that used to be on the page that lets you get a free report. More importantly, I wrote some of the intro copy which I believe was very effective. I made sure to use <strong>quantitative</strong> statements, which is probably the most important thing when creating copy. This lies on the principle that “numbers don’t lie”. If I tell you my friend is a good basketball player, you get a vague idea of his “goodness”. However, if I tell you he “score nine 3-pointers in a row”, you have a clear idea that the guy can play. Use that concept often.</p>
+
+<p>Another feature I added was an email capture on the first page. Just in case they didn’t fill out the report inquiry, the realtor would at least capture some contact information to follow-up with. This is a fundamental thing to be tested on all sites that use a long form or funnel. I also changed the button to say ‘Let’s talk’, since that really is the goal here: to connect a apartment-investor with the apartment-broker.</p>
+
+<p>I hope to hear your feedback, as well as other things you guys would’ve done to create even better results!</p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/case-studies/conversion-rate-optimization/meet-christians-case-study' title='Case Study: MeetChristians.com'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/case-studies/conversion-rate-optimization/best-dating-canada' title='Conversion Optimization Case Study: Best Dating Canada'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '42 http://www.landersoptimized.com/?p=42';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
