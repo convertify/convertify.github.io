@@ -4,7 +4,7 @@
  <title>Convertify</title>
  <link href="http://blog.convertify.io/" rel="self"/>
  <link href="http://blog.convertify.io"/>
- <updated>2015-03-02T20:11:50-08:00</updated>
+ <updated>2015-03-02T20:47:35-08:00</updated>
  <id>http://blog.convertify.io</id>
  <author>
    <name>Convertify</name>
@@ -2175,7 +2175,7 @@ Now, if you’ve set up your tracking as we recommended in the “Tracking” se
 
 &lt;p&gt;**Link 3: **http://site3.com/somepage.html  &lt;/p&gt;
 
-&lt;p&gt;We will need to create a php file on the server. Let’s call this redirect.php.  &lt;/p&gt;
+&lt;p&gt;We’ll need to create a php file on the server. Let’s call this redirect.php.  &lt;/p&gt;
 
 &lt;p&gt;We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.  &lt;/p&gt;
 
