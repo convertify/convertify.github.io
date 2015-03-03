@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Track Clicks as Conversions in Google Website Optimizer</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/scripts/track-clicks-as-conversions-in-google-website-optimizer">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/scripts/track-clicks-as-conversions-in-google-website-optimizer">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/scripts/track-clicks-as-conversions-in-google-website-optimizer">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/scripts/track-clicks-as-conversions-in-google-website-optimizer">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>Track Clicks as Conversions in Google Website Optimizer</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/app_sphere_gwo.png'>
+    
+    <p>Sometimes, you may be interested in optimizing clicks-through-rates using Google Website Optimizer. Since GWO requires a thank-you page link with code in it in order to count as a conversion, we came up with a workaround to make a click count as a conversion. Not only will I be showing you how to track clicks as a conversion, but I’ll also show how you can track <strong>multiple</strong> clicks as the **same **conversion. My recent client wanted me to improve his click-through-rates on his review site, which meant I needed to count specific outgoing clicks from his website as a conversion. The way the solution works is that you make all the buttons link to the same page, which contains the conversion code in it. The page then redirects them to the proper page based on which button/link they clicked. It’s unnoticeable, and easy to do:  </p>
+
+<p>[dropcap]1[/dropcap] First we need to create an HTML page with the conversion code in it. Open up any text-editor, and copy/paste your conversion code from GWO into the file. save it anywhere on your web server. We’ll call it conversion.html for this example. M<strong>ake sure the filename ends in .html before saving!</strong>  </p>
+
+<p>[dropcap]2[/dropcap]Open up the text-editor again and create another file. We’ll call it gwo.php for this example. Copy the following code into it then save it on your web server in the same folder as conversion.html! If you just want to track 1 destination, look at the first block of code. If you want to track multiple links going to multiple destinations and want to count them all as the same conversion, see the second section of code.  </p>
+
+<p>**Single destination: **<em>(Replace ‘http://www.domain.com/page.html’ with the link it should redirect to.)</em>  </p>
+
+<p>[cc lang=”html” escaped=”true”]  </p>
+
+<?php include('conversion.html'); echo "<script>location.href='http://www.domain.com/page.html'</script>";  
+  
+?>
+
+<p>[/cc]  </p>
+
+<p>**Multiple Destinations: **<em>Two outgoing links are used in this example. If you have 4 links, there would be 4 “case” statements. You can copy/paste extra ones as needed. Replace the links which follow “href=” with your links. </em>  </p>
+
+<p>[cc lang=”html” escaped=”true”]  </p>
+
+<?php include('conversion.html'); switch ($_GET['id']) {  
+  
+case 1: echo "<script>location.href='http://www.domain.com/page.html'</script>"; break;  
+  
+case 2: echo "<script>location.href='http://www.domain.com/page.html'</script>"; break;  
+  
+}  
+  
+?>
+
+<p>[/cc]  </p>
+
+<p>Once finished, save the file and move to the next step.  </p>
+
+<p>[dropcap]3[/dropcap] Now, we have to change the link of your buttons to link to this new page. But first, we need to figure out what link to use. Let’s pretend that our gwo.php file is saved at http://website.com/gwo.php. If we wanted to link to the site in ‘case 1’, we would visit http://website.com/gwo.php?id=1 . If we wanted the button to link to ‘case 2’, we simply change id=1 in the link to id=2. So http://website.com/gwo.php?id=2 would take us to a different site than if we put id=1. In the process, it will also spit out the conversion code so that GWO can track it.  </p>
+
+<p>[dropcap]4[/dropcap] Last, we need to validate the page. When setting up the experiment in the GWO setup wizard, in this example, we put http://website.com/conversion.html in the thank-you page field. Google Website Optimizer should validate the page successfully if your page is uploaded correctly.  </p>
+
+<p>That’s it, You’re Done! If you want to add more links to be counted as conversions, all you need to do is add another ‘case’ to the php page we made. Hope this helps!</p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/conversion-rate-optimization/scripts/universal-conversion-code-for-google-website-optimizer' title='Universal Conversion Code for Google Website Optimizer'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2' title='Improving Conversions: eCommerce Category Pages'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '182 http://www.landersoptimized.com/?p=182';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

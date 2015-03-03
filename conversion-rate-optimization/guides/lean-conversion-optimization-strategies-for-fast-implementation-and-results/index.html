@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lean Conversion Optimization: Strategies for Fast Implementation and Results</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>Lean Conversion Optimization: Strategies for Fast Implementation and Results</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Chart.jpg'>
+    
+    <p>Recently I read <a href="http://theleanstartup.com/"><em>The Lean Startup</em></a> by Eric Ries – A popular book that many of you have probably read. At the core of his concept is the Build-Measure-Learn loop, which is exactly what Conversion Rate Optimization is about. For those who haven’t read it, the quick outline is this:</p>
+
+<p> </p>
+
+<ul>
+  <li>Business performance should be measured by how much is learned in a certain span of time.</li>
+  <li>To accomplish this, you must build a minimum viable product, test it, measure results, and then learn from it.</li>
+  <li>The faster you iterate this process, the faster your business will grow.
+The book reminded me exactly why conversion optimization is so effective - We build an experiment to test a hypothesis, measure results by creating a split-test, and then drive a conclusion based on the results.</li>
+</ul>
+
+<p>Something he pointed out that interested me the most, however, is that when 2 companies compete, the company who iterates through this process the quickest is the one who usually wins. In CRO, this also applies. Each test teaches us something about our visitors – and the more we know about our visitors, the better we can sell to them. Every time you learn something about your visitors, you can make a “change” to your site that increases conversions. For example, imagine you had a $50 product but you had low conversions because your visitors were only willing to pay $40.  As long as you don’t learn that information, you’ll be losing out on the additional revenue you could’ve gained by lowering your price. This is what I like to call a “blind spot”, and every business has tons of them.  Uncovering them is how you’ll learn to grow, and split-testing is simply a vehicle that allows us to uncover them. It mitigates the consequences of our assumptions.</p>
+
+<p>This article will detail unique optimization strategies that you will find extremely useful. Some topics will be somewhat technical, requiring the understanding of some programming. Either way, you should read it – understanding why you should apply these strategies is what will ultimately help you improve your conversion rates.</p>
+
+<h2 id="return-on-effort"><strong>Return on Effort</strong></h2>
+
+<p>The effectiveness of an experiment should not be measured solely by the percentage of increase it brings in conversions. Every case study brags about how they hit xxx% increase in conversion, but I believe the most important factor is <strong>return on effort.</strong> You should measure the effectiveness of your test by taking into account the effort and time it took to implement that test. Imagine how much more time and money it would take to test a new video compared to testing a new headline. Headline tests take me about 10 minutes to implement, whereas testing a new video would require a lot more money and resources.  With this in mind, we can begin to lay out a better way to run tests.</p>
+
+<h2 id="choosing-what-to-test"><strong>Choosing What to Test</strong></h2>
+
+<p>If you asked a few experienced optimizers what element they would test first on a specific landing page, I believe you would receive varied responses. One may think the navigation should be tested first, while another would go for a headline test first. Without an effective strategy, most optimizers tend to decide what to test first based on one of two things:</p>
+
+<ol>
+  <li>What they have seen work before – This is because we want winning tests, and duplicating past wins intuitively seems to have the highest chance of success.</li>
+  <li>What element they believe is most lacking – Optimizers intuitively want to work on whatever has the most room for improvement.
+There’s nothing wrong with this – it’s a good place to start. But we shouldn’t run experiments based on this alone. You need to weigh your ideas against the time it will take to implement the test, as well as the resources (and money) required to do so.</li>
+</ol>
+
+<p>To figure out what to test, follow these steps:</p>
+
+<ol>
+  <li>Make a list of all your hypotheses about how you can increase conversions.</li>
+  <li>Convert these hypotheses into possible experiments.</li>
+  <li>Identify the following attributes of each test:
+    1. Expected change in conversion rate
+    2. Time required to implement the test
+    3.  Money required to implement the test
+    4. The duration that the test will need to run for to be conclusive. VWO’s <a href="http://visualwebsiteoptimizer.com/ab-split-test-duration/">test duration calculator</a> will help you with this.</li>
+  <li>Taking these attributes into account, prioritize each test by weighing the expected change in conversion rate against the time, money, and test duration required
+This methodology of testing allows you to be more efficient, and is especially necessary for smaller sites that are not getting a lot of conversions to run tests with. This can make the difference between a test that runs 2 months versus a test that runs 2 weeks! Once you figure out what to test, we need to implement it.<strong> </strong></li>
+</ol>
+
+<h2 id="implementation"><strong>Implementation</strong></h2>
+
+<p><strong> </strong>I’m not going to get into setting up basic tests – you probably already know how to do that. I’m going to show you some advanced techniques for setting up tests that will allow you to run **multiple site-wide tests at the same time. **I like to call this “layering”. There are 2 huge benefits to running layered tests:</p>
+
+<ol>
+  <li>By using all of your visitors, you can run tests quicker.</li>
+  <li>By running multiple tests at once, you can run more tests in less time.</li>
+</ol>
+
+<h3 id="jquery"><strong>jQuery</strong></h3>
+
+<p>What makes layering possible is client-side scripting – namely Javascript. With Javascript, we can dynamically adjust a website on-the-fly. jQuery is a Javascript library that allows you to accomplish this with relative ease, much more quickly than if you were to use plain Javascript. With jQuery, you can modify elements dynamically using a selector. I’ll outline a few strategies and show you how to implement each one. Even though you don’t intend to learn the coding, but rather intend to hand the task off to a developer, you should still take the effort to understand how it works.</p>
+
+<h3 id="regular-expressions"><strong>Regular Expressions</strong></h3>
+
+<p>Regular expressions allow you to match strings that meet certain conditions. For example, if you want to run some code on product pages but not category pages, you would use a regular expression.</p>
+
+<h3 id="layering-site-wide-tests"><strong>Layering Site-Wide Tests</strong></h3>
+
+<p>In order to learn more efficiently, you have to minimize the time between deciding to implement a test and launching that test. Most of that time in-between goes into development. Site-wide tests often require creating a duplicate of the entire site either in a sub-directory or a sub-domain.  Take a look at the image below of what your test setup might look like in a standard site-wide test using VWO.</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/Screen-Shot-2013-02-10-at-4.47.05-PM-300x1041.png" alt="" /></p>
+
+<p> </p>
+
+<p>The problem with this is that not only does it require you to create an entire duplicate of your site in a sub-directory then make the changes, but it also allows you only 1 site-wide test at a time.</p>
+
+<p>Of course, you can test just certain sub-directories, such as creating a split-test for domain.com/products/* and another for domain.com/category/*, but you still have to create copies of all the pages residing in that subdirectory. <em>Think about it</em> – <em>you’re duplicating 100% of the content, even if you are only changing/testing 1% of that content!</em> Something about that just doesn’t seem right. And what about when your visitors link back to that URL? If it’s in a sub-directory, that link will send the visitor to a “page not found” after you stop the test. <em>There’s a better way, and I’m about to show you.</em></p>
+
+<p>A simple A/B test works by redirecting 50% of the traffic to the variation page. But something else happens in order to ensure that the person sees that page if they leave and come back – a cookie is saved to their computer that identifies which version of the page they should see. Modern software gives you 2 ways to create a split-test: A/B tests, and split-URL tests. An A/B test will show the same URL no matter which variation you are assigned, but a split-URL test will redirect you. The A/B test has the advantage on that front because it prevents people linking to broken pages in the future, but it has a huge disadvantage as well – you can’t test multiple pages.</p>
+
+<p>In software such as Optimizely or VWO, A/B tests are set up using a visual WYSIWYG editor that makes it really easy to create tests, but you can’t make changes to multiple pages at once with a WYSIWYG editor.  For example, you can’t tell a WYSIWYG editor that lets you edit just one page to increase all your prices by 10%. However, these software include a nifty feature that allow you to get the best of both worlds – a Javascript API.</p>
+
+<p>This API allows us to run Javascript code based on the value of the cookie – in essence, the variation they should see. In VWO, it’s a feature of the A/B editor and it allows us to layer site-wide tests on top of each other.</p>
+
+<p>Here’s how you layer site-wide tests:</p>
+
+<ol>
+  <li>Visit a relevant page on your site.</li>
+  <li>Pull up the developer console, and write/test the code that makes the change you want site-wide.</li>
+  <li>Set up an A/B test, and add just that code to your variation.</li>
+  <li>Change your A/B test’s URL pattern settings so that it runs on the relevant pages, and excludes irrelevant ones.  If your software doesn’t meet your needs of proper URL matching, you can also use regular expressions in your code.</li>
+  <li>Launch test, then repeat steps for next test.
+Let’s pretend I want to test 2 things: The effect of changing my background color, and the effects of increasing my prices by 10%. I’ll show you how to set this up in VWO, using Apple’s online store as an example.</li>
+</ol>
+
+<p>First, I visit a page that the test should apply on.  In this case, any page. I’ll just go to the home page. I highly recommend <a href="https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid">jQuery injector for Chrome</a>. This will allow you to run jQuery from the console on any site.  Here’s the code I’ve come up with:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;background-color&#39;</span><span class="p">,</span><span class="s1">&#39;gray&#39;</span><span class="p">);</span></code></pre></div>
+
+<p>Here’s the before/after.</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/before.png" alt="" /></p>
+
+<p> </p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/after.png" alt="" /></p>
+
+<p> </p>
+
+<p>Make sure you test the code on other pages to make sure it works. Now, I’ll go setup the A/B test. In VWO, you’ll create an A/B test, and just put any URL for now when it asks you for one. I’ll just put apple.com</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/next.png" alt="" /></p>
+
+<p> </p>
+
+<p>Next, we are taken to the WYSIWYG editor. Click on the little gear next to “variation 1” and click “Insert Javascript/CSS”. Insert your code there, as shown below.</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/final.png" alt="" /></p>
+
+<p> </p>
+
+<p>That’s it. Save it and move on. Set up your goals and hit next. On the last step where it says “Run test on URL(s):”, put in your test pattern. If you want it on all pages, put domain.com/<em>, if you want just a subdirectory, put domain.com/subdirectory/</em>. You can also exclude URLs. For this test, I’m excluding the checkout process as well as the help section. Below is what that might look like</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/last.png" alt="" /></p>
+
+<p> </p>
+
+<p>What you see in the “Exclude URLs” section is a regular expression. They can be very complex, so you’ll either need to take time to learn it or find someone who knows it well.</p>
+
+<p>Now we launch the test. That literally took me about 5 minutes. Compare <em>that</em> to setting up a sub-domain and cloning the site just to test the background color! Once that’s done we can layer our next test on top of it. We’re going to test the effects of raising the price of iPhone cases by 10%. I’ll use <a href="http://store.apple.com/us/product/HA755ZM/A/power-support-hd-anti-glare-film-set-for-iphone-5?fnode=47&amp;fs=m.iphoneCompatibility%3Diphone_5">this page </a>as the testing page.  Here’s the code I came up with:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">if</span> <span class="p">(</span><span class="sr">/cases/i</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.breadcrumb-nav ol.breadcrumbs li&#39;</span><span class="p">).</span><span class="nx">last</span><span class="p">().</span><span class="nx">text</span><span class="p">()))</span> <span class="p">{</span>
+
+<span class="nx">currentprice</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#price span.current_price span span&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">().</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^ss*/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/ss*$/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">));</span>
+
+<span class="nx">newprice</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">((</span><span class="nx">currentprice</span> <span class="o">+</span> <span class="p">(</span><span class="nx">currentprice</span> <span class="o">*</span> <span class="p">.</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#price span.current_price span span&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="o">+</span><span class="nx">newprice</span><span class="p">);</span>
+
+<span class="p">}</span></code></pre></div>
+
+<p>For sake of time I didn’t test it on every page (and it’s not going to actually submit this price when you hit add to cart), but it’s a good example because it’s somewhat complex and it works on the <a href="http://store.apple.com/us/product/HA755ZM/A/power-support-hd-anti-glare-film-set-for-iphone-5?fnode=47&amp;fs=m.iphoneCompatibility%3Diphone_5">page I tested it on</a>. This took about 15 minutes, and it will be the same for any decent developer.</p>
+
+<p>Real quick, I’ll tell you how this code works:</p>
+
+<ol>
+  <li>Look at the breadcrumbs and make sure the last word is “Cases”</li>
+  <li>If so, save the price of the product into a variable.</li>
+  <li>Add 10% to the price, and overwrite the old price.
+Once we launch this test, we have layered 2 site-wide tests, and in less than an hour. <em>That’s efficient</em><strong>. **To make an <em>entire copy</em> of the apple site just to add this test would have taken **tons</strong> of time, money, and resources.</li>
+</ol>
+
+<p>I hope this is getting you excited – I know I was when I first discovered this! But you probably noticed a small issue with this – when the test completes and you stop the test, you still have to implement this to your site. However, changing the price of something on a site is much easier than duplicating the entire site. Also, if you duplicate the entire site and the test fails, you’ve gone through all that work for nothing.</p>
+
+<p>There’s almost nothing that you can’t manipulate with jQuery – it’s awesome. If you want to go even deeper, you can also read the cookie manually using a server-side language, and have even more options for testing. However, that’s another post in itself that I’ll cover another time.</p>
+
+<h2 id="measuring-efficiently"><strong>Measuring Efficiently</strong></h2>
+
+<p>To iterate even faster, you can take advantage of techniques to lower the confidence level needed by your testing software. Here’s a few ways to analyze tests so you can finish a bit earlier, as well as get a better idea of how your tests are doing.</p>
+
+<h3 id="goal-correlation"><strong>Goal Correlation</strong></h3>
+
+<p>You should always measure as many goals as possible. At minimum, always measure revenue-per-visitor, conversion rate, engagement, and visits to intermediate funnel steps. If you’re not too confident in the results of a test, look at the correlation between the metrics. If they are all green, you can give it a bit more confidence. The test below is only at 70% statistical significance in revenue, but I wouldn’t mind finishing this one at about 75% or so because of the correlation.</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/goal.png" alt="" /></p>
+
+<p> </p>
+
+<p>Tracking multiple goals also gives you more insight as to how your variation is affecting visitors. For example, if you have a lead capture form and notice engagement is down but conversions are up, it usually means you’re doing a better job qualifying your visitors.</p>
+
+<h3 id="chart-path"><strong>Chart Path</strong></h3>
+
+<p>If you look at the line graph for any split-test you’ll notice that it goes up-and-down a lot in the beginning and then starts traveling straighter. As more data is collected, our conversion rate range decreases, which is the basis of the calculation for statistical significance. If you notice the lines on your graph have been parallel for a while, you can have more confidence in the results.</p>
+
+<p><img src="/media/images/2013-02-10-lean-conversion-optimization-strategies-for-fast-implementation-and-results/chart.png" alt="" /></p>
+
+<p> </p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+
+<p>Conversion optimization is simply a method for learning about your visitors. The quicker you learn about them, the quicker you’ll grow. Taking advantage of this methodology for testing will have significant effects on what you can accomplish with your own tests, or what your testing team can do for your business. If you have any technical questions or any feedback, please leave a comment. Now go run some tests!</p>
+
+<p> </p>
+
+<p><a href="http://landersoptimized.com/contact/"><em>Hire Us</em></a></p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/case-studies/optimized-homepage-increases-revenue-by-37-21' title='Optimized Homepage Increases Revenue By 37.21%'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/case-studies/improved-headline-increases-email-submits-by-21-95' title='Improved Headline Increases Email Submits by 21.95%'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '977 http://www.landersoptimized.com/?p=977';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

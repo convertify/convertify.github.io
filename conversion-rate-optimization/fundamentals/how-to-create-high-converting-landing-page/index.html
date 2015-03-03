@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Create a High-Converting Landing Page</title>
+    
+    <meta name="author" content="Convertify">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://convertify.io">
+        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- 
+        
+        
+
+
+
+
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/archive.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page">Archive</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}...
+                  
+                    <a href="/archive.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/categories.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page">Categories</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+	
+		
+			{{ page.title }}
+			
+				
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}	
+				
+			
+		
+	
+	
+		
+			{% for category in site.categories %} 
+				
+					
+					{{ category[0] | join: "/" }}
+				    {% assign pages_list = category[1] %}  
+					{% include JB/pages_list %}
+				
+			{% endfor %}
+		
+	
+
+
+...
+                  
+                    <a href="/categories.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/pages.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page">Pages</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+All Pages
+
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+
+...
+                  
+                    <a href="/pages.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
+                <a href="/tags.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page">Tags</a></h2>
+                  <p>
+                    
+                      {% include JB/setup %}
+
+
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+
+
+
+{% for tag in site.tags %} 
+  {{ tag[0] }}
+  
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  
+{% endfor %}
+...
+                  
+                    <a href="/tags.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+<!-- 
+  
+
+
+ --> -->
+          <li><a href="http://convertify.io">Home</a></li>
+          <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
+          <li class="dropdown yamm-fw">
+            <a href="http://convertify.io/labs" class="dropdown-toggle" data-toggle="dropdown">Labs <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <div class="yamm-content yamm-fw">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <h4>Convertify Labs</h4>
+                          <p>Free apps to help you increase your conversion rate.</p>
+                          <br>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Plugins</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Pre-populator</a>
+                          <p><small>Adds prepopulation to forms to increase conversions.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Scrollmark</a>
+                          <p><small>Optimize your blog's usability and allow linking to certain sections to of your content.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Convertify Apps</strong>
+                          </p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Convertilyzer</a>
+                          <p><small>Analyzes your website design and your analytics to give conversion optimization recommendations.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Boomerang</a>
+                          <p><small>Reduce cart abandonment on your online store.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">SideStage</a>
+                          <p><small>Call-to-actions optimized for today's banner-blindness which allows A/B testing of CTA's.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Personify</a>
+                          <p><small>Personalize your site with URL parameters.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>
+                            <strong>Tools</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/labs/selector-tool">Selector Tool</a>
+                          <p><small>Identify selectors on your site for use in tools &amp; goal-tracking.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Multistepper</a>
+                          <p><small>Adds pre-population to your forms to increase conversions.</small></p>
+                        </li>
+                        <li>
+                          <a href="http://convertify.io/quantify">Quantify</a>
+                          <p><small>Quantify surveys quickly. Integrates with Qualaroo.</small></p>
+                        </li>
+                        <li class="coming-soon">
+                          <a href="#">Event Buddy</a>
+                          <p><small>Easily create GA events without any technical knowledge required.</small></p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
+          <li class=""><a href="/">Blog</a></li>
+          <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+
+      <div class="content">
+        
+
+<div class='row shadow-above postBody'>
+  <div class='col-sm-8 col-sm-offset-2'>
+    
+    <h1 class='postTitle'>How to Create a High-Converting Landing Page</h1>
+    
+    
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='/media/images/2011/05/landing-page-optimization.jpg'>
+    
+    <p>For all of you who are new to optimizing landing pages, we’ve put together a system you can follow that will allow you to avoid making mistakes that cause low conversion rates. If you are not very experienced at making landing pages, you will see much better results by fixing your mistakes rather than trying to add improvements. It’s kind of like fixing a flat tire on a car v.s. adding a turbo. If the tire is flat, fixing it is more important than the turbo since the car cannot operate with a flat regardless of a turbo.</p>
+
+<p>Okay, so let’s get started. My goal with this post is to give you a mental checklist of things to do whenever you are making your landing pages.</p>
+
+<p><strong>1. Identify the ultimate value of the page you will be creating</strong></p>
+
+<p>Let’s assume that your landing page is not allowed to have any images, background, or more than 10 words of content. So pretty much all you get to use is a white background, and 10 words of text - that’s it. What would you write? Even if you are reduced to this you can still have a decent landing page as long as you clearly communicate your true value. Also, don’t use qualitative words like ‘best’ or ‘cheap’. Those words are relative. Online, we are immune to such words. Use words with absolute value, like ‘10 dollars’ or ‘4.5 Ghz Processor’. Here’s some examples:</p>
+
+<p><strong>- Education (Good):</strong> “Offering 34,192+ Accredited Online Colleges” <strong>- Education (Bad):</strong> “We Have The Best Schools For You!” <strong>- Virus Software (Good):</strong> “Remove 100% of Viruses. Updated Daily” <strong>- Virus Software (Bad):</strong> “Viruses Won’t Stand a Chance Against Our Virus Software!” <strong>- Retail (Good):</strong> “Over 1,000+ Products at least 25% off Retail From [Brand], [Brand2], [Brand3]…” - <strong>Retail (Bad):</strong> “Check out our store and find out why it’s the hottest spot in town!”</p>
+
+<p>Don’t ever fall for the belief that adding the right image or that design will boost your conversions rates much. These value propositions are all that matters. Imagine you had a medication for headaches and the value proposition was “Cure your Headache Now.” Now imagine changing that to “Cure your Headache, and any type of Cancer.” A few extra words that would literally make you millions if it were true. Hopefully you can see the difference I’m trying to point out within those value statements. <strong>Every single element on your page should communicate this statement, or be congruent with it!</strong> Once you got your value proposition, you can start building your page.</p>
+
+<p><strong>2. Identify specifically the actions the customer will need to take</strong></p>
+
+<p>You need to know exactly what you want the customer to do. Do they need to fill out a form? If so, what fields? Address? Credit Card Number?</p>
+
+<p><strong>3. Minimize the steps required for the customer to convert</strong></p>
+
+<p>Once you know exactly what they need to do, remove any steps that are not absolutely necessary. You honestly do not need anyone’s city or state if you know their street address and zipcode. However, you would be surprised by how much your conversions will rise by simply removing those 2 fields. Also, take advantage of pre-population on the forms if it’s an option. This is done by using PHP in order to pre-populate the form. For example, if the visitor landed on your page from an e-mail newsletter, then you already have at least their name and e-mail address. Using PHP/Javascript, you can set up your page so that when they get there those 2 fields are already filled out for them. If you don’t know how to do this, just google it or hire someone.</p>
+
+<p><strong>Not this: </strong></p>
+
+<p><img src="/media/images/2011-05-25-how-to-create-high-converting-landing-page/not.png" alt="" /></p>
+
+<p> </p>
+
+<p> </p>
+
+<p><strong>But this: </strong></p>
+
+<p> </p>
+
+<p><img src="/media/images/2011-05-25-how-to-create-high-converting-landing-page/but.png" alt="" /></p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p><strong>4. Relieve any anxiety the customer can experience</strong></p>
+
+<p>Besides your value proposition, this will probably have the biggest effect on your conversions, assuming you have elements causing anxiety. If you have a zip submit you probably won’t experience much but if you are asking for any personal information or a credit card number you will definitely experience this. I read a case study once that resulted in a 400% increase in conversion by adding one of those secure logos on the credit card page. Think about how many free trials you didn’t take just because it asked for your card info. Unless you forget to cancel the trial, you literally would not pay anything for the trial, hence the name ‘free trial’. But as soon as you see that credit card field, you experience anxiety, and leave. Anxiety is a huge thing in landing pages, but for a beginner who hasn’t seen the results firsthand, it is hard to perceive.</p>
+
+<p>The first thing you need to do is identify where anxiety happens. Once you’ve done that, you will need to figure out how to relieve it using an element such as an image or content. Last, you will place that element <strong>as close as possible</strong> to the point where anxiety is caused.</p>
+
+<p>Let’s take an example. Let’s say my landing page offers a phone. I’m obviously going to need a credit card form. Once the customer sees that, they will experience some anxiety, so I must add a secured trust logo immediately under the credit card field, so that they see the logo at the same time that they see the credit card field, and they at least feel a bit more secure about buying. Now, we are going to assume the customer has never seen the phone in person. This is going to cause more anxiety because they will have questions in their head such as ‘How big is it?’, or ‘How much music can it hold?” If this is the case, they aren’t gonna call you and ask - Most likely they will leave. So, think about these questions that your prospect may be thinking of, and answer them <strong>before</strong> they ask it in their heads by putting it on your landing page.</p>
+
+<p><strong>5. Design your page layout</strong></p>
+
+<p>The next thing you need is a page layout. Generally you should use a page that has an up-down format. However, don’t make a sales-letter-type page that is a mile long! Best case scenario, there should not even be a scroll bar for them to scroll unless you need it! I would put a header at the top, a nice video or image, and under that some content. Make sure your value proposition is communicated in BIG letters on the headline. Make sure your content answers all their questions. If you have the form on another page, make sure the lander has many links and buttons to get to that next page. If the form is on the landing page, I prefer to put it under the header, to the right of the image/video.</p>
+
+<p>Once you have a layout thought up, look at it and see where your eyes naturally flow. If you were to draw a line from where your eye starts when you first land on your page, and then where it ends after you took a look at the page, it should look like a line starting at the top, and going straight down. It doesn’t have to be like that exactly, but the simpler it is, the better. If you have a form on the lander however, don’t put it at the bottom. You want it near the top.</p>
+
+<p>Also, don’t put many links on your lander other than the ones leading to the next step in the conversion process.</p>
+
+<p><strong>6. Check for congruence</strong></p>
+
+<p>Once you have your page designed and filled with content, look it over and make sure everything is congruent with each other. Make sure the images are communicating your value proposition. You don’t want a picture of a pale girl if you’re selling tanning lotion. Make sure the same value proposition in your headline is also on the next page, and any ads that led up to the landing page.</p>
+
+<p>If your traffic is coming from a magazine ad, let them know of your special ‘magazine offer discount’ or whatever. You should have your landing pages catered to the traffic source.</p>
+
+<p>There’s a lot more you can do to raise your conversions, but these are the essentials, minus your traffic source. Traffic sources are very diverse and you cannot have one landing page that can cater to them all. If anyone follows this system they will avoid many mistakes that almost all landing pages make. If you want to learn more, check out this <a href="http://conversionlove.com">conversion rate optimization blog</a> Please give feedback on how much this system helped you, I’d love to hear it!</p>
+
+    <hr>
+    <ul class="pager">
+    
+      <li class='previous'>
+        <a href='/conversion-rate-optimization/fundamentals/landing-page-fundamentals' title='Conversion Rate Optimization: Why Most Visitors Don't Convert & How to Optimize'>← Previous</a>
+      </li>
+    
+     <!--  <li>
+        <a href='/archive.html'>Archive</a>
+      </li> -->
+    
+      <li class='next'>
+        <a href='/case-studies/susteen-inc' title='Case Study: Datapilot - 42.7% Increase in Sales'>Next →</a>
+      </li>
+    
+      </li>
+    </ul>
+    <hr>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'convertify'; // required: replace example with your forum shortname
+    var disqus_identifier = '25 http://www.landersoptimized.com/?p=25';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54292ae863f68dce" async="async"></script>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Convertify 2012
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
