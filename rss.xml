@@ -5,10 +5,203 @@
         <description>Convertify - Convertify</description>
         <link>http://blog.convertify.io</link>
         <link>http://blog.convertify.io</link>
-        <lastBuildDate>2015-03-02T20:47:35-08:00</lastBuildDate>
-        <pubDate>2015-03-02T20:47:35-08:00</pubDate>
+        <lastBuildDate>2015-03-04T03:48:08-08:00</lastBuildDate>
+        <pubDate>2015-03-04T03:48:08-08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Why Your Winning A/B Tests Aren't Improving Your Bottom-line</title>
+                <description>
+&lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding-how-testing-platforms-report-a-winner&quot;&gt;Understanding how testing platforms report a &amp;#8220;Winner&amp;#8221;&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;#8217;s say that you ran an A/B test which had the following results when it declared a winner:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Variation&lt;/th&gt;
+      &lt;th&gt;Visitors&lt;/th&gt;
+      &lt;th&gt;Conversions&lt;/th&gt;
+      &lt;th&gt;Conversion Rate&lt;/th&gt;
+      &lt;th&gt;Lift&lt;/th&gt;
+      &lt;th&gt;Significance&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Control&lt;/td&gt;
+      &lt;td&gt;20000&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+      &lt;td&gt;10%&lt;/td&gt;
+      &lt;td&gt;&amp;#8211;&lt;/td&gt;
+      &lt;td&gt;&amp;#8211;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Variation 1&lt;/td&gt;
+      &lt;td&gt;20000&lt;/td&gt;
+      &lt;td&gt;2120&lt;/td&gt;
+      &lt;td&gt;10.6%&lt;/td&gt;
+      &lt;td&gt;+6.00%&lt;/td&gt;
+      &lt;td&gt;97.6%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You&amp;#8217;re probably thinking that what these results are saying is that if you were to implement the winning variation, there&amp;#8217;s a 97.6% probability that you will see a 6% lift in conversions. If that&amp;#8217;s how you interpret these results, then you are &lt;strong&gt;dead wrong.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;What this results &lt;em&gt;actually&lt;/em&gt; means is that there&amp;#8217;s a 97.6% probability that variation 1 will convert better than the control, but &lt;strong&gt;it does not have any confidence in the lift itself.&lt;/strong&gt; So, how come testing tools don&amp;#8217;t adjust their algorithms so that the significance represents the confidence in the &lt;em&gt;improvement,&lt;/em&gt; rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than &lt;em&gt;&lt;strong&gt;ten times as much data, which means you&amp;#8217;d need to run your tests more than ten times longer.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Once you know which one is the better variation, &lt;em&gt;&lt;strong&gt;who cares how much it&amp;#8217;s going to win by?&lt;/strong&gt;&lt;/em&gt; It makes more sense to just implement it right away, and move on to another test. In other words, it&amp;#8217;s more practical to be able to run 10 with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If this is news to you, at least now you&amp;#8217;re aware of this, which is a step forward. Although we shouldn&amp;#8217;t assume that we&amp;#8217;re going to get as big a lift as is reported in the results, it also means that we might get a &lt;strong&gt;bigger&lt;/strong&gt; lift than what is reported! Most of the time though, I&amp;#8217;ve found that the former result tends to be the case.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-tests-that-actually-improve-your-sales&quot;&gt;How to create tests that actually improve your sales&lt;/h2&gt;
+
+&lt;p&gt;The most common reason why winning tests don&amp;#8217;t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I&amp;#8217;ll do my best to drill it into your mind.&lt;/p&gt;
+
+&lt;p&gt;To understand this better, we first need to understand the concept of a &lt;strong&gt;standard deviation.&lt;/strong&gt; The standard deviation is a measure that is used to quantify the amount of ariation in a set of data. Here&amp;#8217;s a good way to think about this: Let&amp;#8217;s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Day&lt;/th&gt;
+      &lt;th&gt;Conversion Rate&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;8%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;5%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;13%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;12%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;5%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;7%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;15%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;20%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;6%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn&amp;#8217;t mean that we are getting that conversion rate every day. Now there&amp;#8217;s no need to know how to calculate the standard variation, but we&amp;#8217;ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of &lt;em&gt;that&lt;/em&gt;, which gives us the average variance. Then we un-square it (square root) so we don&amp;#8217;t have inflated values:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Day&lt;/th&gt;
+      &lt;th&gt;Conversion Rate&lt;/th&gt;
+      &lt;th&gt;Variance (x - mean)^2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;8%&lt;/td&gt;
+      &lt;td&gt;(8 - 10)^2 = &lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;5%&lt;/td&gt;
+      &lt;td&gt;(5 - 10)^2 = &lt;strong&gt;25&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;13%&lt;/td&gt;
+      &lt;td&gt;(13 - 10)^2 =  &lt;strong&gt;9&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;12%&lt;/td&gt;
+      &lt;td&gt;(12 - 10)^2 =  &lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;5%&lt;/td&gt;
+      &lt;td&gt;(5 - 10)^2 = &lt;strong&gt;25&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;7%&lt;/td&gt;
+      &lt;td&gt;(7 - 10)^2 =  &lt;strong&gt;9&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9%&lt;/td&gt;
+      &lt;td&gt;(9 - 10)^2 =  &lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;15%&lt;/td&gt;
+      &lt;td&gt;(15 - 10)^2 = &lt;strong&gt;25&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;20%&lt;/td&gt;
+      &lt;td&gt;(20 - 10)^2 = &lt;strong&gt;100&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;6%&lt;/td&gt;
+      &lt;td&gt;(6 - 10)^2 = &lt;strong&gt;16&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;then we get the average of the differences and get its square root:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\frac{4+25+9+4+25+9+1+25+100+16}{10}} = 4.669&lt;/script&gt;
+
+&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It&amp;#8217;s unlikely that tools such as Optimizely would consider results like this &amp;#8220;conclusive&amp;#8221; unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation means the test will not improve your sales. However, here&amp;#8217;s what you should take from this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you&amp;#8217;ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And with that said, the one thing you need to do is &lt;strong&gt;test changes to variables that actually matter to your visitors.&lt;/strong&gt; If you aren&amp;#8217;t seeing lifts in sales from your winning tests, it&amp;#8217;s most likely because you are focusing too much on &amp;#8216;visual&amp;#8217; aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.&lt;/p&gt;
+
+&lt;p&gt;The first time I saw KISSMetric&amp;#8217;s inforgraphic on &lt;a href=&quot;https://blog.kissmetrics.com/color-psychology/&quot;&gt;how colors affect purchases&lt;/a&gt;, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled after reading it and started running split-tests where they different colors on the elements on their website, inspired by that inforgraphic. When is the last time you changed your mind about buying something because of the color of something on the site? Probably never. When you test something like this, the resulting lift is most likely entirely due to variance, and you probably would&amp;#8217;ve gotten the same result if you did an A/A test.&lt;/p&gt;
+
+&lt;p&gt;If you want to learn more about creating tests that actually increase your sales, check out our free CRO course &lt;a href=&quot;https://convertify.io/no-guesswork&quot;&gt;No Guesswork&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <link>http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline</link>
+                <guid>http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline</guid>
+                <pubDate>2015-03-03T00:00:00-08:00</pubDate>
+        </item>
 
         <item>
                 <title>Working with Clients - Watch out for Back-Seat Driving</title>
@@ -538,7 +731,7 @@ If you run this test and get results, please let us know in the comments section
         <item>
                 <title>How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</title>
                 <description>&lt;script type=&quot;text/javascript&quot;&gt;
-	var disqus_identifier = &#39;2670052270&#39;;
+	var disqus_identifier = '2670052270';
 &lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;Note: If you’d like us to perform this integration for you, we offer a flat rate to do this for you. Please email &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&quot;&gt;&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&lt;/a&gt; to hire us.&lt;/em&gt;&lt;/p&gt;
@@ -609,7 +802,7 @@ Overall it’s a technical process that requires some code, but we’ve done all
     &lt;span class=&quot;c1&quot;&gt;// ]]&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName&#39;.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
+&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName'.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
 
 &lt;h3 id=&quot;if-you-have-universal-analytics&quot;&gt;If you have Universal Analytics&lt;/h3&gt;
 
@@ -659,7 +852,7 @@ Overall it’s a technical process that requires some code, but we’ve done all
 
 &lt;p&gt;&lt;code&gt;https://m179.infusionsoft.com/app/orderForms/Product?&lt;strong&gt;__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&amp;amp;__utmb=145477216.4.10.1392989453&amp;amp;__utmc=145477216&amp;amp;__utmx=-&amp;amp;__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&amp;amp;__utmv=-&amp;amp;__utmk=244849413&lt;/strong&gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;If you have universal analytics, your URL should look like this: &lt;code&gt;https://m179.infusionsoft.com/app/manageCart/showManageOrder?&lt;strong&gt;_ga=1.38339491.1087305745.1390089092&lt;/strong&gt;&amp;amp;clearCart=true&amp;amp;subscriptionPlanQuantity=1&amp;amp;subscriptionPlanId=9&amp;amp;cartSkinId=8632&amp;amp;productId=692&amp;amp;productQuantity=1&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;If you have universal analytics, your URL should look like this: &lt;code&gt;https://m179.infusionsoft.com/app/manageCart/showManageOrder?&lt;strong&gt;_ga=1.38339491.1087305745.1390089092&lt;/strong&gt;&amp;amp;clearCart=true&amp;amp;subscriptionPlanQuantity=1&amp;amp;subscriptionPlanId=9&amp;amp;cartSkinId=8632&amp;amp;productId=692&amp;amp;productQuantity=1&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve bolded the information that should be appended assuming it’s working. Once this is done, you’re ready for the next step! If you’re having trouble, please let us know in the comments below!&lt;/p&gt;
 
@@ -672,7 +865,7 @@ Overall it’s a technical process that requires some code, but we’ve done all
   &lt;li&gt;&lt;strong&gt;Order Form Footer: &lt;/strong&gt;Located at Ecommerce » Ecommerce Setup » Order Form Themes » Edit Theme » HTML Areas » Custom Footer&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Copy the following code into each area, making sure to replace the account ID and domains below with your appropriate information:  &lt;/p&gt;
+&lt;p&gt;Copy the following code into each area, making sure to replace the account ID and domains below with your appropriate information:&lt;/p&gt;
 
 &lt;h4 id=&quot;traditional-analytics-code&quot;&gt;Traditional Analytics Code:&lt;/h4&gt;
 
@@ -1689,56 +1882,56 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
 
         <item>
                 <title>Increase Conversion Rates With Our Multistep Form [Free Plugin]</title>
-                <description>&lt;p&gt;We’ve developed a simple plugin that transforms your form into a sliding multi-step form. It’s extremely easy to implement and has had significant effect on conversion rates of experiments we’ve used it on.  Here’s a demo of a form with a plugin installed: &lt;/p&gt;
+                <description>&lt;p&gt;We’ve developed a simple plugin that transforms your form into a sliding multi-step form. It’s extremely easy to implement and has had significant effect on conversion rates of experiments we’ve used it on.  Here’s a demo of a form with a plugin installed:&lt;/p&gt;
 
 &lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
 
-&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 
-&lt;p&gt;Today, I’d like to take some time to walk you through how to use our plugin and how to convert your existing forms into multi-step forms Make sure to A/B test before implementing it permanently, as we have seen tests where a multi-step form actually decreased the conversion rate.  &lt;/p&gt;
+&lt;p&gt;Today, I’d like to take some time to walk you through how to use our plugin and how to convert your existing forms into multi-step forms Make sure to A/B test before implementing it permanently, as we have seen tests where a multi-step form actually decreased the conversion rate.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. Download the plugin here: &lt;a href=&quot;http://landersoptimized.com/i/multistep.zip&quot;&gt;http://landersoptimized.com/i/multistep.zip&lt;/a&gt;&lt;/strong&gt;&lt;a href=&quot;http://landersoptimized.com/i/multistep.zip&quot;&gt; &lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Download the plugin here: &lt;a href=&quot;http://landersoptimized.com/i/multistep.zip&quot;&gt;http://landersoptimized.com/i/multistep.zip&lt;/a&gt;&lt;/strong&gt;&lt;a href=&quot;http://landersoptimized.com/i/multistep.zip&quot;&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;**2. Unzip, then upload the folder to your server.  **For simplicity’s sake I’ll assume you uploaded the folder to the root of your domain  for the rest of the tutorial.  &lt;/p&gt;
+&lt;p&gt;**2. Unzip, then upload the folder to your server.  **For simplicity’s sake I’ll assume you uploaded the folder to the root of your domain  for the rest of the tutorial.&lt;/p&gt;
 
-&lt;p&gt;**3. Make sure you have jQuery. **If you already have jQuery, skip this step. If you aren’t sure, there’s a simple way to find out. just check the source of your page and do a find (ctrl+f or cmd+f) and type ‘jquery’. You should find a match in a line that looks like the following code. If you find it, move to the next step. If you dont have it, put the following code in-between the &amp;lt;head&amp;gt; tags of your page:  &lt;/p&gt;
+&lt;p&gt;**3. Make sure you have jQuery. **If you already have jQuery, skip this step. If you aren’t sure, there’s a simple way to find out. just check the source of your page and do a find (ctrl+f or cmd+f) and type ‘jquery’. You should find a match in a line that looks like the following code. If you find it, move to the next step. If you dont have it, put the following code in-between the &amp;lt;head&amp;gt; tags of your page:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;4. Add the following tags to the &amp;lt;head&amp;gt; section of your page, AFTER the jQuery code:&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Add the following tags to the &amp;lt;head&amp;gt; section of your page, AFTER the jQuery code:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;/multistep/multistep.css&quot; /&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/multistep/multistep.js&quot;&gt;&lt;/script&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt; $(function() { $(&#39;#multistep-form&#39;).multistep();  
+&lt;script type=&quot;text/javascript&quot;&gt; $(function() { $('#multistep-form').multistep();  
   
 });  
   
 &lt;/script&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;note: use “multistep/multistep.css” and “multistep/multistep.js” if you didn’t place files in the root of the domain.&lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;note: use “multistep/multistep.css” and “multistep/multistep.js” if you didn’t place files in the root of the domain.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;5. Give your form a ID tag of ‘multistep-form’ like so:&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Give your form a ID tag of ‘multistep-form’ like so:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;form id=&quot;multistep=form&quot;&gt;  
   
 &lt;/form&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;6. Separate your steps by wrapping them as follows. Also, give the last step an ID of ‘last-step’:&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. Separate your steps by wrapping them as follows. Also, give the last step an ID of ‘last-step’:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;form id=&quot;multistep-form&quot;&gt;  
   
@@ -1762,13 +1955,13 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
   
 &lt;/form&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7. Give each step a button&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7. Give each step a button&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;form id=&quot;multistep-form&quot;&gt;  
   
@@ -1782,7 +1975,7 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
   
    
   
-**8. You&#39;re finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I&#39;ll help out.
+**8. You're finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I'll help out.
 &lt;/form&gt;
 </description>
                 <link>http://blog.convertify.io/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form</link>
@@ -1792,25 +1985,25 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
 
         <item>
                 <title>Achieve Bigger Gains On Your Conversion Rate Optimization Experiments</title>
-                <description>&lt;p&gt;So you’ve set up your A/B tests with a large amount of variations. You’re excited. You think to yourself, “With this many variations, there’s no doubt one of these variations will double my conversions!” You run the experiments, only to find that out of 20 variations, the winner only converted 8% higher. You’re dumbfounded and out of ideas.  &lt;/p&gt;
+                <description>&lt;p&gt;So you’ve set up your A/B tests with a large amount of variations. You’re excited. You think to yourself, “With this many variations, there’s no doubt one of these variations will double my conversions!” You run the experiments, only to find that out of 20 variations, the winner only converted 8% higher. You’re dumbfounded and out of ideas.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Why is this happening?&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is this happening?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Popular belief tells you to change 1 variable per test. The reasoning for this is actually mathematically sound and valid. Let’s assume we created an experiment with 1 variation. In this 1 variation we make 2 changes – Make the CTA blue, and move the form higher on the page. The conversion increases by 6%. How do we know which variable caused the increase? It’s possible that moving the form up raised conversions by 8% and the button color &lt;em&gt;decreased&lt;/em&gt; conversions by 2%, therefore making the outcome 6%. The basis of a scientific experiment &lt;strong&gt;in and of itself **requires that only 1 variable be changed to arrive at a valid conclusion. But in Landing Page Optimization, there’s a reason as to **why&lt;/strong&gt; you should test multiple variables at once, going against the basis of scientific experimentation – **Money. **Let me explain:  &lt;/p&gt;
+&lt;p&gt;Popular belief tells you to change 1 variable per test. The reasoning for this is actually mathematically sound and valid. Let’s assume we created an experiment with 1 variation. In this 1 variation we make 2 changes – Make the CTA blue, and move the form higher on the page. The conversion increases by 6%. How do we know which variable caused the increase? It’s possible that moving the form up raised conversions by 8% and the button color &lt;em&gt;decreased&lt;/em&gt; conversions by 2%, therefore making the outcome 6%. The basis of a scientific experiment &lt;strong&gt;in and of itself **requires that only 1 variable be changed to arrive at a valid conclusion. But in Landing Page Optimization, there’s a reason as to **why&lt;/strong&gt; you should test multiple variables at once, going against the basis of scientific experimentation – **Money. **Let me explain:&lt;/p&gt;
 
-&lt;p&gt;Let’s say we run the following experiments: &lt;/p&gt;
+&lt;p&gt;Let’s say we run the following experiments:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Test #1:&lt;/strong&gt; Single-variable test – 4 variations. &lt;strong&gt;Result&lt;/strong&gt;: 5% lift in conversion. **Control LP Revenue: **$10,000/mo.  **Increase in Revenue: **$500/mo.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Test #2:&lt;/strong&gt; multi-variable test – 4 variations. &lt;strong&gt;Result&lt;/strong&gt;: 10% lift in conversion. **Control LP Revenue: **$10,000/mo.  **Increase in Revenue: **$1,000/mo.
-&lt;em&gt;Note: do not confuse multi-variable tests with multivariate tests. these are 2 completely different things.&lt;/em&gt;  &lt;/li&gt;
+&lt;em&gt;Note: do not confuse multi-variable tests with multivariate tests. these are 2 completely different things.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;By running a multi-variable test, we can see bigger differences between each variation’s conversion rate, and therefore have made an extra $500/mo. This also means that by **not **running the multivariate test and only running the single-variable test, we would be **losing out **on $500/mo that we could have had by running the multi-variable test. The only downside is that you don’t know for sure which change caused the increases. I’ll explain how to solve that issue.  &lt;/p&gt;
+&lt;p&gt;By running a multi-variable test, we can see bigger differences between each variation’s conversion rate, and therefore have made an extra $500/mo. This also means that by **not **running the multivariate test and only running the single-variable test, we would be **losing out **on $500/mo that we could have had by running the multi-variable test. The only downside is that you don’t know for sure which change caused the increases. I’ll explain how to solve that issue.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Optimization Flow&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Optimization Flow&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We all know that 1 experiment is not enough. We should always be creating new experiments to continually optimize our conversion rate. In order to run multi-variable tests while also singling out variables, you need to follow the following optimization flow: &lt;/p&gt;
+&lt;p&gt;We all know that 1 experiment is not enough. We should always be creating new experiments to continually optimize our conversion rate. In order to run multi-variable tests while also singling out variables, you need to follow the following optimization flow:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Experiment #1 – Multi-variable test&lt;/strong&gt;&lt;/li&gt;
@@ -1821,13 +2014,13 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://convertify.wpengine.com/wp-content/uploads/2012/12/experiment-flow.png&quot;&gt;&lt;img src=&quot;http://convertify.wpengine.com/wp-content/uploads/2012/12/experiment-flow.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;source: MarketingExperiments.com&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;So first, you run experiment #1 so that you get a big differentiation between your variations, then you test the single variables on the winner in order to pluck out the things that didn’t help and to verify the success of the changes that increased conversions. This allows you to also avoid losing out on increases in conversion that would’ve taken much longer to figure out by running a bunch of single variable tests. You should continually be repeating this process over and over. But the questions remains: “&lt;strong&gt;&lt;em&gt;What variables should I test?&lt;/em&gt;”&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;So first, you run experiment #1 so that you get a big differentiation between your variations, then you test the single variables on the winner in order to pluck out the things that didn’t help and to verify the success of the changes that increased conversions. This allows you to also avoid losing out on increases in conversion that would’ve taken much longer to figure out by running a bunch of single variable tests. You should continually be repeating this process over and over. But the questions remains: “&lt;strong&gt;&lt;em&gt;What variables should I test?&lt;/em&gt;”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;strong&gt;Creating Range&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;strong&gt;Creating Range&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;In order to create a test that results in a high increase in conversions, you need to create experiments that have **range. ** Range is the amount of differentiation you have between each variation in your experiment.  &lt;/p&gt;
+&lt;p&gt;In order to create a test that results in a high increase in conversions, you need to create experiments that have **range. ** Range is the amount of differentiation you have between each variation in your experiment.&lt;/p&gt;
 
-&lt;p&gt;Popular belief says you should test things such as: &lt;/p&gt;
+&lt;p&gt;Popular belief says you should test things such as:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Button Color&lt;/li&gt;
@@ -1836,49 +2029,49 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
   &lt;li&gt;Form on right versus left of page&lt;/li&gt;
   &lt;li&gt;Social Icons&lt;/li&gt;
   &lt;li&gt;Adding an incentive (“Fill out this form and we’ll send you a picture of a cute kitten!”)
-Now, I’m not saying not to test those things. You should &lt;strong&gt;definitely **test those things. It just shouldn’t be the first thing you test. You see, things like button color can make a difference, but when was the last time you changed your mind about buying something because of the color of the “Buy” button?  You need to test variables that make a big difference. You need to test **Categorical Variables.&lt;/strong&gt;  &lt;/li&gt;
+Now, I’m not saying not to test those things. You should &lt;strong&gt;definitely **test those things. It just shouldn’t be the first thing you test. You see, things like button color can make a difference, but when was the last time you changed your mind about buying something because of the color of the “Buy” button?  You need to test variables that make a big difference. You need to test **Categorical Variables.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Categorical Testing&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Categorical Testing&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;A **categorical variable **is a variable that is governed by an idea rather than an element on your page. They tend to affect your conversion rate a lot more than the usual things you would test. It’s very important you test these things first, as they are what will bring you the most value out of testing. Let’s explore a few example tests:  &lt;/p&gt;
+&lt;p&gt;A **categorical variable **is a variable that is governed by an idea rather than an element on your page. They tend to affect your conversion rate a lot more than the usual things you would test. It’s very important you test these things first, as they are what will bring you the most value out of testing. Let’s explore a few example tests:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Process-focus v.s. Product-focus v.s. Outcome-focus LP&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Process-focus v.s. Product-focus v.s. Outcome-focus LP&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This experiment tests the best way to present your product or service in terms of what part of your product or service you focus on.  &lt;/p&gt;
+&lt;p&gt;This experiment tests the best way to present your product or service in terms of what part of your product or service you focus on.&lt;/p&gt;
 
-&lt;p&gt;Let’s assume we are making a test for Apple’s MacBook Pro landing page. This is how our tests would look:  &lt;/p&gt;
+&lt;p&gt;Let’s assume we are making a test for Apple’s MacBook Pro landing page. This is how our tests would look:&lt;/p&gt;
 
-&lt;p&gt;**Test #1 (Process-focused): **On this variation I would talk about the process of making a MacBook. I would probably use a picture of a factory worked shaving down the aluminum body of the MBP as a hero image. I would talk about how much precision goes into the process of making a MackBook, therefore showing the visitor how much work goes into making one, and maybe selling the visitor on that fact.  &lt;/p&gt;
+&lt;p&gt;**Test #1 (Process-focused): **On this variation I would talk about the process of making a MacBook. I would probably use a picture of a factory worked shaving down the aluminum body of the MBP as a hero image. I would talk about how much precision goes into the process of making a MackBook, therefore showing the visitor how much work goes into making one, and maybe selling the visitor on that fact.&lt;/p&gt;
 
-&lt;p&gt;**Test #2 (Product-Focused): **On this variation I would use a beautiful picture of the MacBook as the hero image, and talk about it’s specs and capabilities. I would talk about the amount of RAM, screen resolution, CPU speed, etc. The goal would be to sell the visitor on the product itself.  &lt;/p&gt;
+&lt;p&gt;**Test #2 (Product-Focused): **On this variation I would use a beautiful picture of the MacBook as the hero image, and talk about it’s specs and capabilities. I would talk about the amount of RAM, screen resolution, CPU speed, etc. The goal would be to sell the visitor on the product itself.&lt;/p&gt;
 
-&lt;p&gt;**Test #3 (Outcome-Focused): **In the end, we all spend money for one reason: to become happier. In this LP I would try to prove how they would become happier by buying. I would use a picture of a woman looking at photos of her wedding on her MacBook, with a big grin on her face. I’m selling the visitor on the actual **outcome ** of what you get by buying. &lt;/p&gt;
+&lt;p&gt;**Test #3 (Outcome-Focused): **In the end, we all spend money for one reason: to become happier. In this LP I would try to prove how they would become happier by buying. I would use a picture of a woman looking at photos of her wedding on her MacBook, with a big grin on her face. I’m selling the visitor on the actual **outcome ** of what you get by buying.&lt;/p&gt;
 
 &lt;p&gt; &lt;a href=&quot;http://convertify.wpengine.com/wp-content/uploads/2012/12/process-product-focus.png&quot;&gt;&lt;img src=&quot;http://convertify.wpengine.com/wp-content/uploads/2012/12/process-product-focus.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;source: MarketingExperiments.com&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Lead v.s. Sale&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lead v.s. Sale&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;You’re always going to see a lower conversion if you ask the visitor for money on your page. In many cases you will make more money by simply asking for their contact information, then converting the lead afterwards. This is tricky to setup because a conversion on a sale is much more valuable than a lead conversion. This means you can’t test their conversion rates against each other. You have to test the &lt;strong&gt;revenue-per-visitor.&lt;/strong&gt; In order to do this, you total the amount of revenue each page created, then divide it by the amount of visitors to that page.  &lt;/p&gt;
+&lt;p&gt;You’re always going to see a lower conversion if you ask the visitor for money on your page. In many cases you will make more money by simply asking for their contact information, then converting the lead afterwards. This is tricky to setup because a conversion on a sale is much more valuable than a lead conversion. This means you can’t test their conversion rates against each other. You have to test the &lt;strong&gt;revenue-per-visitor.&lt;/strong&gt; In order to do this, you total the amount of revenue each page created, then divide it by the amount of visitors to that page.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;RPV = Revenue/Visitors&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RPV = Revenue/Visitors&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Tonality&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tonality&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Testing the tonality of your page makes a big difference. This post has an informational tone. All bloggers have a different tone. Some make you laugh, and some make you inspired.  &lt;/p&gt;
+&lt;p&gt;Testing the tonality of your page makes a big difference. This post has an informational tone. All bloggers have a different tone. Some make you laugh, and some make you inspired.&lt;/p&gt;
 
-&lt;p&gt;Here’s a few examples of different tonality: &lt;/p&gt;
+&lt;p&gt;Here’s a few examples of different tonality:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;“You need this because…Your life will change…Your time is important…”&lt;/li&gt;
   &lt;li&gt;“We hand-make our…We have been doing this for 30 years…We are committed…”&lt;/li&gt;
   &lt;li&gt;“People always say….What they don’t understand is…”
-   &lt;/li&gt;
+ &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;strong&gt;Design&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;strong&gt;Design&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Completely changing your design can have a big effect. Hire different designers to design variations and test them against each other. &lt;/p&gt;
 
@@ -1886,11 +2079,11 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;source: MarketingExperiments.com&lt;/p&gt;
 
-&lt;p&gt; &lt;strong&gt;Steps to convert&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Steps to convert&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Sometimes when people see a form on a page it scares them away immediately. Rather than having a form on the landing page, try putting it on a 2nd page and use a button on the LP instead.  &lt;/p&gt;
+&lt;p&gt;Sometimes when people see a form on a page it scares them away immediately. Rather than having a form on the landing page, try putting it on a 2nd page and use a button on the LP instead.&lt;/p&gt;
 
-&lt;p&gt;If you these ideas are completely new to you, you are going to see a big effect on your experiments by applying them. I hope this helped. Now, go run some experiments!  &lt;/p&gt;
+&lt;p&gt;If you these ideas are completely new to you, you are going to see a big effect on your experiments by applying them. I hope this helped. Now, go run some experiments!&lt;/p&gt;
 
 &lt;p&gt; &lt;/p&gt;
 </description>
@@ -1901,11 +2094,11 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
         <item>
                 <title>Increase Form Conversions Using X-Autocompletetype</title>
-                <description>&lt;p&gt;Have you ever been filling out a checkout form or any form that asks for your information and noticed that sometimes all your information is filled in automatically? How does that work, and how can you implement it on your own website? We know that forms are a big barrier between a visit and a conversion, so it’s important to make it as easy as possible for your visitors to accomplish the task.  &lt;/p&gt;
+                <description>&lt;p&gt;Have you ever been filling out a checkout form or any form that asks for your information and noticed that sometimes all your information is filled in automatically? How does that work, and how can you implement it on your own website? We know that forms are a big barrier between a visit and a conversion, so it’s important to make it as easy as possible for your visitors to accomplish the task.&lt;/p&gt;
 
-&lt;p&gt;Until this year, browsers had to figure out for themselves what field was asking for what information. Labels on form fields are probably the most popular element referenced to in order to figure out what the field was asking for. Therefore, it’s important to use labels such as “First Name” and “Email” rather than “What should we call you?” and “Where should we send your e-book?” However, &lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2012/01/making-form-filling-faster-easier-and.html&quot;&gt;Google announced in January&lt;/a&gt; that it would be implementing a new html tag called x-autocompletetype that would let developers specify what a field is asking for.  &lt;/p&gt;
+&lt;p&gt;Until this year, browsers had to figure out for themselves what field was asking for what information. Labels on form fields are probably the most popular element referenced to in order to figure out what the field was asking for. Therefore, it’s important to use labels such as “First Name” and “Email” rather than “What should we call you?” and “Where should we send your e-book?” However, &lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2012/01/making-form-filling-faster-easier-and.html&quot;&gt;Google announced in January&lt;/a&gt; that it would be implementing a new html tag called x-autocompletetype that would let developers specify what a field is asking for.&lt;/p&gt;
 
-&lt;p&gt;Even though it’s been almost a year since the announcement, I’ve yet to see many forms using this new tag. The official &lt;a href=&quot;http://wiki.whatwg.org/wiki/Autocompletetype&quot;&gt;tag reference&lt;/a&gt; lists all of the possible values you can use, which even includes a tag for an avatar/photo - great news for dating sites!  &lt;/p&gt;
+&lt;p&gt;Even though it’s been almost a year since the announcement, I’ve yet to see many forms using this new tag. The official &lt;a href=&quot;http://wiki.whatwg.org/wiki/Autocompletetype&quot;&gt;tag reference&lt;/a&gt; lists all of the possible values you can use, which even includes a tag for an avatar/photo - great news for dating sites!&lt;/p&gt;
 
 &lt;p&gt;This change will most likely end in more modern browsers adopting the capability, and may even become a standard html tag in the future.&lt;/p&gt;
 </description>
@@ -1975,7 +2168,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add unique event tracking to every single link on the landing page or website, even for simple text links&lt;/strong&gt;. This is the only accurate way to know which links and buttons are being clicked. You may think this is what GA’s In-page analytics is for, but unfortunately, it uses url paths to determine the number/percent of clicks. That’s why when you have 2 different buttons on a page leading to the same page, the clicks counts are the same when looking at in-page analytics.  An example of tracking a specific link within a paragraph:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true” lines=”2” width=”55%”]Click &lt;a href=&quot;/landing-page.php&quot; onclick=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Click&#39;, &#39;Blog Post 5&#39;, &#39;Paragraph Link #1&#39;])&quot;&gt;Here&lt;/a&gt; [/cc]&lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true” lines=”2” width=”55%”]Click &lt;a href=&quot;/landing-page.php&quot; onclick=&quot;_gaq.push(['_trackEvent', 'Click', 'Blog Post 5', 'Paragraph Link #1'])&quot;&gt;Here&lt;/a&gt; [/cc]&lt;/p&gt;
 
 &lt;p&gt;With this code, every time someone clicks this link, Analytics will register an event in the ‘click’ category, with the ‘Paragraph link #1’ label within the ‘Blog Post 5’ action. Categorize your events as you please. Now, I can see how many people click this specific link, and compare this to all the other links on the same page. I can even derive a CTR for this link.&lt;/p&gt;
 
@@ -1983,7 +2176,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add goal tracking for every conversion, including certain steps within a conversion.&lt;/strong&gt; The more you break down the funnel, the more info you can get. _**Even track which fields within a form are being clicked on! **_When you do this, you can find out at what point on your form or checkout page people tend to leave. This kind of data is priceless. You may have to get a bit technical here, and will need some javascript to get this kind of data. Here’s an example of a form field that records an event in Analytics when someone uses a form field:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”] &lt;input type=&quot;text&quot; name=&quot;firstname&quot; onfocus=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Form&#39;, &#39;Focus&#39;, &#39;First Name Field&#39;])&quot; /&gt;[/cc]&lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”] &lt;input type=&quot;text&quot; name=&quot;firstname&quot; onfocus=&quot;_gaq.push(['_trackEvent', 'Form', 'Focus', 'First Name Field'])&quot; /&gt;[/cc]&lt;/p&gt;
 
 &lt;p&gt;This will record a ‘Focus’ action in the ‘Form’ category labeled ‘First Name Field’. Now, you can compare the use of each field, and find out which ones people aren’t using, as well as which ones are causing anxiety and lowering your conversions. Use these events as steps in your goal funnel.&lt;/p&gt;
 
@@ -2143,9 +2336,9 @@ Now, if you’ve set up your tracking as we recommended in the “Tracking” se
 
         <item>
                 <title>How We Decreased TheRTAStore's Bounce Rate By 20%</title>
-                <description>&lt;p&gt;&lt;a href=&quot;http://thertastore.com&quot;&gt;TheRTAStore.com&lt;/a&gt; is one of the biggest sellers of kitchen cabinets online. They have been featured on channels like HSN and the DIY Network. The page we optimized was their “pre-assembled cabinets” page, which was seeing a bounce rate of about 50%. This means that half of the people who entered the site and saw this page first, decided to leave immediately. This page is a category page, which means it simply lists products and has no add-to-cart button. In order to optimize conversions through category pages, it is more important to focus on the bounce rate rather than a conversion rate since the job of the category page is to let them browse products and engage them by showing them the products they want. After reviewing some keyword data, we found that a lot of the traffic for this specific page was coming from the term “cheap kitchen cabinets”. However, the pre-assembled cabinets are not the cheapest cabinets that they offer. Ready-to-Assemble cabinets allow you to get the same cabinets for a cheaper price because you have to assemble them yourself. We figured that people were landing here looking for cheap cabinets, seeing the prices, then leaving because they really weren’t cheap. We solved this issue by adding a banner at the top that let the visitor know they have cheaper options, directing them to the ready-to-assemble category page. This allowed us to keep 20% more visitors on the site, increasing user engagement as well as adding to their bottom line. We also decided to add a more prominent title, so that the visitors who actually wanted pre-assembled cabinets could know immediately that they were at the right place. Click the images below to see close-ups of the before &amp;amp; afters.  &lt;/p&gt;
+                <description>&lt;p&gt;&lt;a href=&quot;http://thertastore.com&quot;&gt;TheRTAStore.com&lt;/a&gt; is one of the biggest sellers of kitchen cabinets online. They have been featured on channels like HSN and the DIY Network. The page we optimized was their “pre-assembled cabinets” page, which was seeing a bounce rate of about 50%. This means that half of the people who entered the site and saw this page first, decided to leave immediately. This page is a category page, which means it simply lists products and has no add-to-cart button. In order to optimize conversions through category pages, it is more important to focus on the bounce rate rather than a conversion rate since the job of the category page is to let them browse products and engage them by showing them the products they want. After reviewing some keyword data, we found that a lot of the traffic for this specific page was coming from the term “cheap kitchen cabinets”. However, the pre-assembled cabinets are not the cheapest cabinets that they offer. Ready-to-Assemble cabinets allow you to get the same cabinets for a cheaper price because you have to assemble them yourself. We figured that people were landing here looking for cheap cabinets, seeing the prices, then leaving because they really weren’t cheap. We solved this issue by adding a banner at the top that let the visitor know they have cheaper options, directing them to the ready-to-assemble category page. This allowed us to keep 20% more visitors on the site, increasing user engagement as well as adding to their bottom line. We also decided to add a more prominent title, so that the visitors who actually wanted pre-assembled cabinets could know immediately that they were at the right place. Click the images below to see close-ups of the before &amp;amp; afters.&lt;/p&gt;
 
-&lt;p&gt;[image id=”298” size=”large” link=”true” align=”center”]  &lt;/p&gt;
+&lt;p&gt;[image id=”298” size=”large” link=”true” align=”center”]&lt;/p&gt;
 
 &lt;p&gt; &lt;/p&gt;
 </description>
@@ -2156,47 +2349,47 @@ Now, if you’ve set up your tracking as we recommended in the “Tracking” se
 
         <item>
                 <title>Tracking & Optimizing Review Sites with Google Website Optimizer (or Any Page with Multiple Outoing Links)</title>
-                <description>&lt;p&gt;Google Website Optimizer is a great tool for split-testing in order to increase conversions, but it requires a single thank you page. What if you are just trying to improve the outgoing CTR’s going from your review site (or any page with multiple links for the matter) to outgoing links, such as affiliate links? In this case, a “conversion” would be an outgoing click. Since GWO doesn’t have a way to track this, here’s a workaround I’ve been using for clients that should allow you to achieve this for your own sites.  &lt;/p&gt;
+                <description>&lt;p&gt;Google Website Optimizer is a great tool for split-testing in order to increase conversions, but it requires a single thank you page. What if you are just trying to improve the outgoing CTR’s going from your review site (or any page with multiple links for the matter) to outgoing links, such as affiliate links? In this case, a “conversion” would be an outgoing click. Since GWO doesn’t have a way to track this, here’s a workaround I’ve been using for clients that should allow you to achieve this for your own sites.&lt;/p&gt;
 
-&lt;p&gt;The way this works is that we set up a single PHP page where ALL your links will direct visitors to. This page will include some (simple) PHP code that will redirect users to the correct place according to which link they clicked on the previous page. Also, this page will include your GWO thank you page code, so that a conversion is tracked if any of the links are clicked!  &lt;/p&gt;
+&lt;p&gt;The way this works is that we set up a single PHP page where ALL your links will direct visitors to. This page will include some (simple) PHP code that will redirect users to the correct place according to which link they clicked on the previous page. Also, this page will include your GWO thank you page code, so that a conversion is tracked if any of the links are clicked!&lt;/p&gt;
 
-&lt;p&gt;Now.. let’s get down to business…  &lt;/p&gt;
+&lt;p&gt;Now.. let’s get down to business…&lt;/p&gt;
 
-&lt;p&gt;In this guide, we will assume we have a page with 3 links as so:  &lt;/p&gt;
+&lt;p&gt;In this guide, we will assume we have a page with 3 links as so:&lt;/p&gt;
 
-&lt;p&gt;**Link 1: **http://site1.com/somepage.html  &lt;/p&gt;
+&lt;p&gt;**Link 1: **http://site1.com/somepage.html&lt;/p&gt;
 
-&lt;p&gt;**Link 2: **http://site2.com/somepage.html  &lt;/p&gt;
+&lt;p&gt;**Link 2: **http://site2.com/somepage.html&lt;/p&gt;
 
-&lt;p&gt;**Link 3: **http://site3.com/somepage.html  &lt;/p&gt;
+&lt;p&gt;**Link 3: **http://site3.com/somepage.html&lt;/p&gt;
 
-&lt;p&gt;We’ll need to create a php file on the server. Let’s call this redirect.php.  &lt;/p&gt;
+&lt;p&gt;We’ll need to create a php file on the server. Let’s call this redirect.php.&lt;/p&gt;
 
-&lt;p&gt;We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.  &lt;/p&gt;
+&lt;p&gt;We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap] First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.  &lt;/p&gt;
+&lt;p&gt;[dropcap]1[/dropcap] First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]2[/dropcap] Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:  &lt;/p&gt;
+&lt;p&gt;[dropcap]2[/dropcap] Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;link&#39;]) {  
+&lt;?php include('conversion.html'); switch ($_GET['link']) {  
   
-case 1: echo &quot;&lt;script&gt;location.href=&#39;http://site1.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
+case 1: echo &quot;&lt;script&gt;location.href='http://site1.com/somepage.html'&lt;/script&gt;&quot;; break;  
   
-case 2: echo &quot;&lt;script&gt;location.href=&#39;http://site2.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
+case 2: echo &quot;&lt;script&gt;location.href='http://site2.com/somepage.html'&lt;/script&gt;&quot;; break;  
   
-case 3: echo &quot;&lt;script&gt;location.href=&#39;http://site3.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
+case 3: echo &quot;&lt;script&gt;location.href='http://site3.com/somepage.html'&lt;/script&gt;&quot;; break;  
   
 }  
   
 ?&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;[dropcap]3[/dropcap] Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.  &lt;/p&gt;
+&lt;p&gt;[dropcap]3[/dropcap] Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.&lt;/p&gt;
 
-&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 
 &lt;p&gt;All Done! All you have to do to add more links is add a new case statement. Even without any coding knowledge it should be pretty obvious how to do this by looking at the code.&lt;/p&gt;
 </description>
@@ -2207,13 +2400,13 @@ case 3: echo &quot;&lt;script&gt;location.href=&#39;http://site3.com/somepage.ht
 
         <item>
                 <title>Improving Conversions: eCommerce Category Pages</title>
-                <description>&lt;p&gt;When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That’s why it’s important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no ‘Add to Cart’ button on the category pages, but rather links to a bunch of products. &lt;strong&gt;The answer is to optimize the bounce rate and exit rate.&lt;/strong&gt;  &lt;/p&gt;
+                <description>&lt;p&gt;When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That’s why it’s important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no ‘Add to Cart’ button on the category pages, but rather links to a bunch of products. &lt;strong&gt;The answer is to optimize the bounce rate and exit rate.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Bounce &amp;amp; Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who &lt;strong&gt;land&lt;/strong&gt; on that page &lt;strong&gt;leave immediately&lt;/strong&gt; without looking at another page. It’s calculated by dividing &lt;strong&gt;entrances **by **bounces&lt;/strong&gt; while exit rate is calculated by dividing &lt;strong&gt;page views **by ** exits. &lt;/strong&gt;Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it’s no longer considered a bounce. A ’bounce’ in my eyes means the person judged your business as a whole and it didn’t meet their standards, or they didn’t find what they were looking for. I’d say for most people it’s the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The &lt;strong&gt;exit rate&lt;/strong&gt; is just the percentage of people who leave your site from that page. If it’s unusually high, I interpret that the page is poor compared to the rest of the site and see it as a ‘leak’ of visitors, which is up to someone like me to plug.  &lt;/p&gt;
+&lt;p&gt;Bounce &amp;amp; Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who &lt;strong&gt;land&lt;/strong&gt; on that page &lt;strong&gt;leave immediately&lt;/strong&gt; without looking at another page. It’s calculated by dividing &lt;strong&gt;entrances **by **bounces&lt;/strong&gt; while exit rate is calculated by dividing &lt;strong&gt;page views **by ** exits. &lt;/strong&gt;Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it’s no longer considered a bounce. A ’bounce’ in my eyes means the person judged your business as a whole and it didn’t meet their standards, or they didn’t find what they were looking for. I’d say for most people it’s the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The &lt;strong&gt;exit rate&lt;/strong&gt; is just the percentage of people who leave your site from that page. If it’s unusually high, I interpret that the page is poor compared to the rest of the site and see it as a ‘leak’ of visitors, which is up to someone like me to plug.&lt;/p&gt;
 
-&lt;p&gt;Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, “Why don’t I just measure conversions for that category as a whole to compare?” If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you’re running website optimizer on category A and have the conversion tracked on the ‘Order Completed’ page, you will have counted a conversion for a product that has nothing to do with the category you’re optimizing. And that’s only one of the many things that can happen? Do you see the issue?  &lt;/p&gt;
+&lt;p&gt;Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, “Why don’t I just measure conversions for that category as a whole to compare?” If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you’re running website optimizer on category A and have the conversion tracked on the ‘Order Completed’ page, you will have counted a conversion for a product that has nothing to do with the category you’re optimizing. And that’s only one of the many things that can happen? Do you see the issue?&lt;/p&gt;
 
-&lt;p&gt;You need an accurate measure that directly correlates to the page, and bounce rate &amp;amp; exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he’s now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that’s going to be a huge improvement in sales. So now that you know &lt;em&gt;what&lt;/em&gt; to measure, I’ll give out a few pointers from what I’ve learned.’ &lt;/p&gt;
+&lt;p&gt;You need an accurate measure that directly correlates to the page, and bounce rate &amp;amp; exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he’s now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that’s going to be a huge improvement in sales. So now that you know &lt;em&gt;what&lt;/em&gt; to measure, I’ll give out a few pointers from what I’ve learned.’&lt;/p&gt;
 
 &lt;h2 id=&quot;ecommerce-categories-optimization-tips&quot;&gt;eCommerce Categories Optimization Tips&lt;/h2&gt;
 
@@ -2232,43 +2425,43 @@ Hopefully this helps some of you fellow optimizers and eCommerce sites out!&lt;/
 
         <item>
                 <title>Track Clicks as Conversions in Google Website Optimizer</title>
-                <description>&lt;p&gt;Sometimes, you may be interested in optimizing clicks-through-rates using Google Website Optimizer. Since GWO requires a thank-you page link with code in it in order to count as a conversion, we came up with a workaround to make a click count as a conversion. Not only will I be showing you how to track clicks as a conversion, but I’ll also show how you can track &lt;strong&gt;multiple&lt;/strong&gt; clicks as the **same **conversion. My recent client wanted me to improve his click-through-rates on his review site, which meant I needed to count specific outgoing clicks from his website as a conversion. The way the solution works is that you make all the buttons link to the same page, which contains the conversion code in it. The page then redirects them to the proper page based on which button/link they clicked. It’s unnoticeable, and easy to do:  &lt;/p&gt;
+                <description>&lt;p&gt;Sometimes, you may be interested in optimizing clicks-through-rates using Google Website Optimizer. Since GWO requires a thank-you page link with code in it in order to count as a conversion, we came up with a workaround to make a click count as a conversion. Not only will I be showing you how to track clicks as a conversion, but I’ll also show how you can track &lt;strong&gt;multiple&lt;/strong&gt; clicks as the **same **conversion. My recent client wanted me to improve his click-through-rates on his review site, which meant I needed to count specific outgoing clicks from his website as a conversion. The way the solution works is that you make all the buttons link to the same page, which contains the conversion code in it. The page then redirects them to the proper page based on which button/link they clicked. It’s unnoticeable, and easy to do:&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap] First we need to create an HTML page with the conversion code in it. Open up any text-editor, and copy/paste your conversion code from GWO into the file. save it anywhere on your web server. We’ll call it conversion.html for this example. M&lt;strong&gt;ake sure the filename ends in .html before saving!&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;[dropcap]1[/dropcap] First we need to create an HTML page with the conversion code in it. Open up any text-editor, and copy/paste your conversion code from GWO into the file. save it anywhere on your web server. We’ll call it conversion.html for this example. M&lt;strong&gt;ake sure the filename ends in .html before saving!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[dropcap]2[/dropcap]Open up the text-editor again and create another file. We’ll call it gwo.php for this example. Copy the following code into it then save it on your web server in the same folder as conversion.html! If you just want to track 1 destination, look at the first block of code. If you want to track multiple links going to multiple destinations and want to count them all as the same conversion, see the second section of code.  &lt;/p&gt;
+&lt;p&gt;[dropcap]2[/dropcap]Open up the text-editor again and create another file. We’ll call it gwo.php for this example. Copy the following code into it then save it on your web server in the same folder as conversion.html! If you just want to track 1 destination, look at the first block of code. If you want to track multiple links going to multiple destinations and want to count them all as the same conversion, see the second section of code.&lt;/p&gt;
 
-&lt;p&gt;**Single destination: **&lt;em&gt;(Replace ‘http://www.domain.com/page.html’ with the link it should redirect to.)&lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;**Single destination: **&lt;em&gt;(Replace ‘http://www.domain.com/page.html’ with the link it should redirect to.)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include(&#39;conversion.html&#39;); echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;;  
+&lt;?php include('conversion.html'); echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;;  
   
 ?&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;**Multiple Destinations: **&lt;em&gt;Two outgoing links are used in this example. If you have 4 links, there would be 4 “case” statements. You can copy/paste extra ones as needed. Replace the links which follow “href=” with your links. &lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;**Multiple Destinations: **&lt;em&gt;Two outgoing links are used in this example. If you have 4 links, there would be 4 “case” statements. You can copy/paste extra ones as needed. Replace the links which follow “href=” with your links. &lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;id&#39;]) {  
+&lt;?php include('conversion.html'); switch ($_GET['id']) {  
   
-case 1: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
+case 1: echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;; break;  
   
-case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
+case 2: echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;; break;  
   
 }  
   
 ?&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
-&lt;p&gt;Once finished, save the file and move to the next step.  &lt;/p&gt;
+&lt;p&gt;Once finished, save the file and move to the next step.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]3[/dropcap] Now, we have to change the link of your buttons to link to this new page. But first, we need to figure out what link to use. Let’s pretend that our gwo.php file is saved at http://website.com/gwo.php. If we wanted to link to the site in ‘case 1’, we would visit http://website.com/gwo.php?id=1 . If we wanted the button to link to ‘case 2’, we simply change id=1 in the link to id=2. So http://website.com/gwo.php?id=2 would take us to a different site than if we put id=1. In the process, it will also spit out the conversion code so that GWO can track it.  &lt;/p&gt;
+&lt;p&gt;[dropcap]3[/dropcap] Now, we have to change the link of your buttons to link to this new page. But first, we need to figure out what link to use. Let’s pretend that our gwo.php file is saved at http://website.com/gwo.php. If we wanted to link to the site in ‘case 1’, we would visit http://website.com/gwo.php?id=1 . If we wanted the button to link to ‘case 2’, we simply change id=1 in the link to id=2. So http://website.com/gwo.php?id=2 would take us to a different site than if we put id=1. In the process, it will also spit out the conversion code so that GWO can track it.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]4[/dropcap] Last, we need to validate the page. When setting up the experiment in the GWO setup wizard, in this example, we put http://website.com/conversion.html in the thank-you page field. Google Website Optimizer should validate the page successfully if your page is uploaded correctly.  &lt;/p&gt;
+&lt;p&gt;[dropcap]4[/dropcap] Last, we need to validate the page. When setting up the experiment in the GWO setup wizard, in this example, we put http://website.com/conversion.html in the thank-you page field. Google Website Optimizer should validate the page successfully if your page is uploaded correctly.&lt;/p&gt;
 
 &lt;p&gt;That’s it, You’re Done! If you want to add more links to be counted as conversions, all you need to do is add another ‘case’ to the php page we made. Hope this helps!&lt;/p&gt;
 </description>
@@ -2279,17 +2472,17 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
 
         <item>
                 <title>Universal Conversion Code for Google Website Optimizer</title>
-                <description>&lt;p&gt;I was reading a post over at &lt;a href=&quot;http://roirevolution.com&quot;&gt;ROIRevolution&lt;/a&gt; and found an awesome code that allows you to use one snippet of code to track all of your experiments, so I thought I’d share it here. This basically looks at your cookie and pulls out the proper conversion ID then inserts it into the code dynamically using javascript. Here’s the code:  &lt;/p&gt;
+                <description>&lt;p&gt;I was reading a post over at &lt;a href=&quot;http://roirevolution.com&quot;&gt;ROIRevolution&lt;/a&gt; and found an awesome code that allows you to use one snippet of code to track all of your experiments, so I thought I’d share it here. This basically looks at your cookie and pulls out the proper conversion ID then inserts it into the code dynamically using javascript. Here’s the code:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]  &lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt; function readCookie(name) { // function to read cookie var nameRegex = RegExp(&quot;(?:; |^)&quot; + name + &quot;=([^;]+)&quot;); nameValue = nameRegex.exec(document.cookie); if(nameValue) { return nameValue[1]; } else { return null; } } &lt;/script&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt; (function () { try { _gaq.push([&#39;gwo._setAccount&#39;, &#39;UA-XXXXXXX-Y&#39;]); var utmx = readCookie(&quot;__utmx&quot;); var pieces = utmx.split(/(?:^|:)[^.]*(?:.|$)/); for (i = 0; i &lt; pieces.length; i += 1) { if (pieces[i]) { _gaq.push([&#39;gwo._trackPageview&#39;, &#39;/&#39; + pieces[i].substring(10) + &#39;/goal&#39;]); } } } catch (err) { } })();  
+&lt;script type=&quot;text/javascript&quot;&gt; (function () { try { _gaq.push(['gwo._setAccount', 'UA-XXXXXXX-Y']); var utmx = readCookie(&quot;__utmx&quot;); var pieces = utmx.split(/(?:^|:)[^.]*(?:.|$)/); for (i = 0; i &lt; pieces.length; i += 1) { if (pieces[i]) { _gaq.push(['gwo._trackPageview', '/' + pieces[i].substring(10) + '/goal']); } } } catch (err) { } })();  
   
-(function() { var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true; ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;; var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s); })(); &lt;/script&gt;
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); &lt;/script&gt;
 
-&lt;p&gt;[/cc]  &lt;/p&gt;
+&lt;p&gt;[/cc]&lt;/p&gt;
 
 &lt;p&gt;This code should replace all your current GWO-related code on your conversion page.&lt;/p&gt;
 </description>
@@ -2300,19 +2493,19 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
 
         <item>
                 <title>How to Run A/B Split Tests on Volusion eCommerce using Google Website Optimizer</title>
-                <description>&lt;p&gt;I recently had a client who wanted me to optimize a few landing pages on their volusion eCommerce store. Unfortunately, Volusion doesn’t allow you to just insert snippets of code into the header of a specific product page, and when searching through their support all I found was a page that asks for a ridiculous $200 to have them set up A/B split-tests for you. Anyways, this is how I approached it:  &lt;/p&gt;
+                <description>&lt;p&gt;I recently had a client who wanted me to optimize a few landing pages on their volusion eCommerce store. Unfortunately, Volusion doesn’t allow you to just insert snippets of code into the header of a specific product page, and when searching through their support all I found was a page that asks for a ridiculous $200 to have them set up A/B split-tests for you. Anyways, this is how I approached it:&lt;/p&gt;
 
-&lt;p&gt;**EDIT: **I figured out that you can in fact add to the head of the page by using the custom meta tags section, so I’ve removed the javascript code that I was using to get around it.  &lt;/p&gt;
+&lt;p&gt;**EDIT: **I figured out that you can in fact add to the head of the page by using the custom meta tags section, so I’ve removed the javascript code that I was using to get around it.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap]Go to your product page in Volusion. Go down to the ‘Advanced Settings’ section and choose the ‘Search Engine Optimization’ tab on the left. Look for the section that says ‘CUSTOM META TAGS OVERRIDE’. This is where you paste your tracking code from Google Website Optimizer.  &lt;/p&gt;
+&lt;p&gt;[dropcap]1[/dropcap]Go to your product page in Volusion. Go down to the ‘Advanced Settings’ section and choose the ‘Search Engine Optimization’ tab on the left. Look for the section that says ‘CUSTOM META TAGS OVERRIDE’. This is where you paste your tracking code from Google Website Optimizer.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]2[/dropcap]Do the same thing for your variation pages. The meta tags section is meant for inserting meta tags for your site. These meta tags go in the head section which is exactly where your script needs to go, so it works out.  &lt;/p&gt;
+&lt;p&gt;[dropcap]2[/dropcap]Do the same thing for your variation pages. The meta tags section is meant for inserting meta tags for your site. These meta tags go in the head section which is exactly where your script needs to go, so it works out.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]3[/dropcap] &lt;strong&gt;If you want a conversion counted for ANY sale: &lt;/strong&gt;In Volusion, go to the ‘Design’ tab then hit the ‘Site Content’ link in the drop-down menu. Look for article 130 (or use cmd + f or ctrl + f on windows then type ‘130’) and edit the article by hitting the article ID. paste your conversion code in the ‘Article Body’ section.  &lt;/p&gt;
+&lt;p&gt;[dropcap]3[/dropcap] &lt;strong&gt;If you want a conversion counted for ANY sale: &lt;/strong&gt;In Volusion, go to the ‘Design’ tab then hit the ‘Site Content’ link in the drop-down menu. Look for article 130 (or use cmd + f or ctrl + f on windows then type ‘130’) and edit the article by hitting the article ID. paste your conversion code in the ‘Article Body’ section.&lt;/p&gt;
 
-&lt;p&gt;**If you only want specific products to count as a conversion: **Go to the product editor, and click the ‘Advanced Settings’ drop-down. Find the ‘Product Display’ section, and find the box labeled ‘Order Finished Note’. Put your conversion code here. Do the same for other products you want to count as a conversion. This basically just tells Volusion to run code only if that specific product is bought.  &lt;/p&gt;
+&lt;p&gt;**If you only want specific products to count as a conversion: **Go to the product editor, and click the ‘Advanced Settings’ drop-down. Find the ‘Product Display’ section, and find the box labeled ‘Order Finished Note’. Put your conversion code here. Do the same for other products you want to count as a conversion. This basically just tells Volusion to run code only if that specific product is bought.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]4[/dropcap] It gets a little tricky next because GWO wants you to validate the pages. the product pages should validate fine now, but the conversion code wont. This is because there has to be an actual order that gets completed for the script to run. What you need to do is go to the Article 130 edit page again and look for ‘View live article page’ on the top-left of that page. It will show you that page, then save that page by hitting File&amp;gt;Save in your browser. Next, go back to GWO’s validate pages section and upload that file manually. If anyone knows of some kind of variable you can pass in the URL through Volusion to get it to run the script, please let me know in the comments. That would be a better solution for this which I believe Volusion should have implemented.  &lt;/p&gt;
+&lt;p&gt;[dropcap]4[/dropcap] It gets a little tricky next because GWO wants you to validate the pages. the product pages should validate fine now, but the conversion code wont. This is because there has to be an actual order that gets completed for the script to run. What you need to do is go to the Article 130 edit page again and look for ‘View live article page’ on the top-left of that page. It will show you that page, then save that page by hitting File&amp;gt;Save in your browser. Next, go back to GWO’s validate pages section and upload that file manually. If anyone knows of some kind of variable you can pass in the URL through Volusion to get it to run the script, please let me know in the comments. That would be a better solution for this which I believe Volusion should have implemented.&lt;/p&gt;
 
 &lt;p&gt;Once you’ve done these steps, you’re all done! Please let me know how this works out for you guys and if you run into any issues.&lt;/p&gt;
 </description>
@@ -2416,7 +2609,7 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
 
         <item>
                 <title>Case Study: Datapilot - 42.7% Increase in Sales</title>
-                <description>&lt;p&gt;Susteen Inc. is a mobile software company known for their product &lt;a href=&quot;http://datapilot.com&quot;&gt;Datapilot&lt;/a&gt; which is a software that allows non-smartphones to sync all its data with your computer, as well as syncing that data to another phone. We optimized their main product sales page which was converting at 4.81% and were able to increase this conversion rate to 6.86% for an improvement of 42.7%. This also means an increase on advertising ROI of 42.7% and a similar increase in sales for organic traffic! Here’s what the pages looked like and how we achieved it. &lt;/p&gt;
+                <description>&lt;p&gt;Susteen Inc. is a mobile software company known for their product &lt;a href=&quot;http://datapilot.com&quot;&gt;Datapilot&lt;/a&gt; which is a software that allows non-smartphones to sync all its data with your computer, as well as syncing that data to another phone. We optimized their main product sales page which was converting at 4.81% and were able to increase this conversion rate to 6.86% for an improvement of 42.7%. This also means an increase on advertising ROI of 42.7% and a similar increase in sales for organic traffic! Here’s what the pages looked like and how we achieved it.&lt;/p&gt;
 
 &lt;p&gt;[image id=”72” size=”medium” link=”true” align=”left”]&lt;/p&gt;
 
@@ -2424,15 +2617,15 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
 
 &lt;p&gt;[divider]&lt;/p&gt;
 
-&lt;p&gt;The first thing we do when we optimize a page is observe the current one and determine if anything is hurting the page. Most of the increase in performance usually comes from removing flaws rather than adding things. These are the changes I decided needed to be made:  &lt;/p&gt;
+&lt;p&gt;The first thing we do when we optimize a page is observe the current one and determine if anything is hurting the page. Most of the increase in performance usually comes from removing flaws rather than adding things. These are the changes I decided needed to be made:&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap] **Company Value was not displayed. **Visitors will almost always have this question in their mind when visiting a page: _“What makes this product the best? What makes this company the best?”. _One of the main functions of a landing page is to answer questions that the viewer has in their mind. I believed that they were not getting the credibility they deserved. This company supports almost 3,000 phones, and have been in the business for 18 years. I believed it was important to make sure the visitor knows this, thus increasing the credibility of this business in the reader’s eyes. I did this by adding a value proposition in the header that states: _“Over 2,471 Phones Supported. Over 18 years of Experience”. _It’s important to take advantage of these things as they are valuable to a company, and numbers don’t lie. This kind of statement is much more effective than saying words like ‘Best’.  &lt;/p&gt;
+&lt;p&gt;[dropcap]1[/dropcap] **Company Value was not displayed. **Visitors will almost always have this question in their mind when visiting a page: _“What makes this product the best? What makes this company the best?”. _One of the main functions of a landing page is to answer questions that the viewer has in their mind. I believed that they were not getting the credibility they deserved. This company supports almost 3,000 phones, and have been in the business for 18 years. I believed it was important to make sure the visitor knows this, thus increasing the credibility of this business in the reader’s eyes. I did this by adding a value proposition in the header that states: _“Over 2,471 Phones Supported. Over 18 years of Experience”. _It’s important to take advantage of these things as they are valuable to a company, and numbers don’t lie. This kind of statement is much more effective than saying words like ‘Best’.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]2[/dropcap] &lt;strong&gt;Product Value Needed Work, and Should Be Bigger. **The old value proposition did a good job telling you what the product does, but didn’t emphasize how it benefits **you, **the only person that really matters and that actually cares in this context. Therefore I added &lt;em&gt;“Never worry about losing your data again.”&lt;/em&gt; to the main product value proposition. this lets the user know how **they&lt;/strong&gt; will benefit. Also, I made it bigger and more noticeable so that it hold more graphical weight.  &lt;/p&gt;
+&lt;p&gt;[dropcap]2[/dropcap] &lt;strong&gt;Product Value Needed Work, and Should Be Bigger. **The old value proposition did a good job telling you what the product does, but didn’t emphasize how it benefits **you, **the only person that really matters and that actually cares in this context. Therefore I added &lt;em&gt;“Never worry about losing your data again.”&lt;/em&gt; to the main product value proposition. this lets the user know how **they&lt;/strong&gt; will benefit. Also, I made it bigger and more noticeable so that it hold more graphical weight.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]3[/dropcap] **A Different Button Text. **The old button said ‘Add to Cart’, which people associated with buying and spending money. They also associate risk with it. By changing that text to say &lt;em&gt;“Download Now”,&lt;/em&gt; the user feels like clicking the button more. The button is the action they will be taking, and the new text feels the person is getting something out of it rather than paying money. I also added another instance down the page in case they scroll down.  &lt;/p&gt;
+&lt;p&gt;[dropcap]3[/dropcap] **A Different Button Text. **The old button said ‘Add to Cart’, which people associated with buying and spending money. They also associate risk with it. By changing that text to say &lt;em&gt;“Download Now”,&lt;/em&gt; the user feels like clicking the button more. The button is the action they will be taking, and the new text feels the person is getting something out of it rather than paying money. I also added another instance down the page in case they scroll down.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]4[/dropcap] **Removed the tabs. **Each extra element on your page adds weight and options. People may feel like they need to read all the information before buying or they will feel like they aren’t making an informed decision. Sometimes it’s better to test shorter versions because they may already know what they need. In this case, it helped.  &lt;/p&gt;
+&lt;p&gt;[dropcap]4[/dropcap] **Removed the tabs. **Each extra element on your page adds weight and options. People may feel like they need to read all the information before buying or they will feel like they aren’t making an informed decision. Sometimes it’s better to test shorter versions because they may already know what they need. In this case, it helped.&lt;/p&gt;
 
 &lt;p&gt;[dropcap]5[/dropcap] **Added Phone Support Section. **This is a little module that lets customers check if their phone is supported.  Generally you want to do everything you can to keep people on the sales page. By moving the phone support module here, customers no longer had to navigate away to see if their phone is supported.&lt;/p&gt;
 </description>
@@ -2514,45 +2707,45 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
 
         <item>
                 <title>Conversion Rate Optimization: Why Most Visitors Don't Convert & How to Optimize</title>
-                <description>&lt;p&gt;Remember the first time you ever made a landing page, or had one made? At this time, you probably had no idea what to expect. And I’ll bet the first time you saw the conversion rate on it you were stumped. You knew not everyone would click your submit button, but you didn’t expect this low of a conversion rate! I’ll bet you were just as surprised seeing how many people bounce right away! And the worst part - you have no idea why.  &lt;/p&gt;
+                <description>&lt;p&gt;Remember the first time you ever made a landing page, or had one made? At this time, you probably had no idea what to expect. And I’ll bet the first time you saw the conversion rate on it you were stumped. You knew not everyone would click your submit button, but you didn’t expect this low of a conversion rate! I’ll bet you were just as surprised seeing how many people bounce right away! And the worst part - you have no idea why.&lt;/p&gt;
 
-&lt;p&gt;This is most people. They think that if a visitor clicks an ad that says ‘Want a basketball for $5? Click Here!”, then they will buy their 5 dollar basketball. They think that professional picture of their product is going to make the customer want to buy it. Unfortunately, &lt;strong&gt;it ain’t that easy.&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;This is most people. They think that if a visitor clicks an ad that says ‘Want a basketball for $5? Click Here!”, then they will buy their 5 dollar basketball. They think that professional picture of their product is going to make the customer want to buy it. Unfortunately, &lt;strong&gt;it ain’t that easy.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;So, why is this? Is it because the page isn’t pretty enough? Nope. Is it because you don’t have enough other pages? Probably not. So **why **is this happening?  &lt;/p&gt;
+&lt;p&gt;So, why is this? Is it because the page isn’t pretty enough? Nope. Is it because you don’t have enough other pages? Probably not. So **why **is this happening?&lt;/p&gt;
 
-&lt;p&gt;Here’s why - **Because the person creating the page usually doesn’t understand the function/goal of a landing page. **  &lt;/p&gt;
+&lt;p&gt;Here’s why - **Because the person creating the page usually doesn’t understand the function/goal of a landing page. **&lt;/p&gt;
 
-&lt;p&gt;And guess what, just cause you have a great web designer doesn’t mean it will convert well. Your designer is only good at one thing - making things pretty. Only &lt;strong&gt;You (the business owner)&lt;/strong&gt; have the knowledge you will need to make your page convert well, not your designer.  &lt;/p&gt;
+&lt;p&gt;And guess what, just cause you have a great web designer doesn’t mean it will convert well. Your designer is only good at one thing - making things pretty. Only &lt;strong&gt;You (the business owner)&lt;/strong&gt; have the knowledge you will need to make your page convert well, not your designer.&lt;/p&gt;
 
-&lt;p&gt;A landing page is &lt;strong&gt;not **about having cool graphics, or a lot of links, or a video, or a hot girl holding your product (although they may help)…. **It’s about conveying your value. ** Write that down, as it’s one of the most important aspects of any business. Assuming we call your landing page ‘&lt;/strong&gt;x’&lt;strong&gt;, the first thought any human has when seeing your page is: “&lt;/strong&gt;x=?” ** &lt;strong&gt;They are trying to fill in the blank.&lt;/strong&gt; Your landing page needs to fill it in for them, and it should be the highest possible value you can fill in.  &lt;/p&gt;
+&lt;p&gt;A landing page is &lt;strong&gt;not **about having cool graphics, or a lot of links, or a video, or a hot girl holding your product (although they may help)…. **It’s about conveying your value. ** Write that down, as it’s one of the most important aspects of any business. Assuming we call your landing page ‘&lt;/strong&gt;x’&lt;strong&gt;, the first thought any human has when seeing your page is: “&lt;/strong&gt;x=?” ** &lt;strong&gt;They are trying to fill in the blank.&lt;/strong&gt; Your landing page needs to fill it in for them, and it should be the highest possible value you can fill in.&lt;/p&gt;
 
-&lt;p&gt;Think about it - do you think one restaurant will succeed just cause it’s pretty? Just cause it’s in a good location? Just cause it’s got cool napkins? Nope!  &lt;/p&gt;
+&lt;p&gt;Think about it - do you think one restaurant will succeed just cause it’s pretty? Just cause it’s in a good location? Just cause it’s got cool napkins? Nope!&lt;/p&gt;
 
-&lt;p&gt;A good restaurant succeeds because it has &lt;strong&gt;good food.&lt;/strong&gt; Think about all your favorite places to eat. I bet they aren’t all nice - some may be hidden, some may only be open on Mondays, some may be far away, some may suck for parking; but I’ll bet they have &lt;strong&gt;good tasting food.&lt;/strong&gt; One of my favorite foods is tacos from the taco truck. It’s parked on a corner and it’s made in a truck - and they sell **lots of tacos. **You can go there at 3am on a Friday and it will have a line. It is the complete opposite of a ‘5-star restaurant’, but it has 5-star taste, and that’s all that matters. That’s the value that matters in the restaurant business - the taste of your food.  &lt;/p&gt;
+&lt;p&gt;A good restaurant succeeds because it has &lt;strong&gt;good food.&lt;/strong&gt; Think about all your favorite places to eat. I bet they aren’t all nice - some may be hidden, some may only be open on Mondays, some may be far away, some may suck for parking; but I’ll bet they have &lt;strong&gt;good tasting food.&lt;/strong&gt; One of my favorite foods is tacos from the taco truck. It’s parked on a corner and it’s made in a truck - and they sell **lots of tacos. **You can go there at 3am on a Friday and it will have a line. It is the complete opposite of a ‘5-star restaurant’, but it has 5-star taste, and that’s all that matters. That’s the value that matters in the restaurant business - the taste of your food.&lt;/p&gt;
 
-&lt;p&gt;A landing page is meant to prove exactly this: &lt;strong&gt;that the value that the visitor will receive by taking the action that your landing page asks is ACTUALLY worth the COST of taking the action.&lt;/strong&gt; In other words, if &lt;strong&gt;x&lt;/strong&gt; equals your value, and &lt;strong&gt;y&lt;/strong&gt; equals the customer’s cost, &lt;strong&gt;x&lt;/strong&gt; must be greater than &lt;strong&gt;y&lt;/strong&gt;, or  &lt;em&gt;**x&amp;gt;y **.&lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;A landing page is meant to prove exactly this: &lt;strong&gt;that the value that the visitor will receive by taking the action that your landing page asks is ACTUALLY worth the COST of taking the action.&lt;/strong&gt; In other words, if &lt;strong&gt;x&lt;/strong&gt; equals your value, and &lt;strong&gt;y&lt;/strong&gt; equals the customer’s cost, &lt;strong&gt;x&lt;/strong&gt; must be greater than &lt;strong&gt;y&lt;/strong&gt;, or  &lt;em&gt;**x&amp;gt;y **.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;This single factor is by far, the most &lt;strong&gt;important&lt;/strong&gt; thing that your landing page has to convey. It is the difference between succeeding or failing.  &lt;/p&gt;
+&lt;p&gt;This single factor is by far, the most &lt;strong&gt;important&lt;/strong&gt; thing that your landing page has to convey. It is the difference between succeeding or failing.&lt;/p&gt;
 
-&lt;p&gt;So, now that you know what your landing pages needs to &lt;strong&gt;do,&lt;/strong&gt; how do you do it?  &lt;/p&gt;
+&lt;p&gt;So, now that you know what your landing pages needs to &lt;strong&gt;do,&lt;/strong&gt; how do you do it?&lt;/p&gt;
 
-&lt;p&gt;Well, first you need to meet rule #1. Most pages don’t even meet this requirement and therefore are doomed to a bad conversion rate, and it won’t get any better unless they meet this requirement, or lie.  &lt;/p&gt;
+&lt;p&gt;Well, first you need to meet rule #1. Most pages don’t even meet this requirement and therefore are doomed to a bad conversion rate, and it won’t get any better unless they meet this requirement, or lie.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Rule #1: You must _ACTUALLY _have value.&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule #1: You must _ACTUALLY _have value.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If you want to go surf, you need a surfboard. If you want to **convey **value, you must actually **have some value to convey. **So now, figure out the purpose of your business. What does your business actually **do? **Write it down. Don’t put any details or specifics. For example, don’t say “We make the &lt;em&gt;best&lt;/em&gt; chairs” or “We make &lt;em&gt;six-color&lt;/em&gt; printers.” Be as broad as possible. “We provide chairs” or “We clean your car” is good.  &lt;/p&gt;
+&lt;p&gt;If you want to go surf, you need a surfboard. If you want to **convey **value, you must actually **have some value to convey. **So now, figure out the purpose of your business. What does your business actually **do? **Write it down. Don’t put any details or specifics. For example, don’t say “We make the &lt;em&gt;best&lt;/em&gt; chairs” or “We make &lt;em&gt;six-color&lt;/em&gt; printers.” Be as broad as possible. “We provide chairs” or “We clean your car” is good.&lt;/p&gt;
 
-&lt;p&gt;Now you’ve provided the value of x, or at least the basis of it. Now we need to convey a &lt;strong&gt;high **value. This is what will ultimately make the customer not only choose you over others, but to actually convert on your landing page. If we can raise this value high enough, then eventually the value with be higher than it’s perceived cost by the customers, and more importantly than the value of your competitors. In other words, we will show that  &lt;/strong&gt;_x &amp;gt; y. _**This is where rule #2 comes in:  &lt;/p&gt;
+&lt;p&gt;Now you’ve provided the value of x, or at least the basis of it. Now we need to convey a &lt;strong&gt;high **value. This is what will ultimately make the customer not only choose you over others, but to actually convert on your landing page. If we can raise this value high enough, then eventually the value with be higher than it’s perceived cost by the customers, and more importantly than the value of your competitors. In other words, we will show that  &lt;/strong&gt;_x &amp;gt; y. _**This is where rule #2 comes in:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Rule #2: The Value gained by converting must be perceived to _ACTUALLY _be higher than the cost of converting.&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule #2: The Value gained by converting must be perceived to _ACTUALLY _be higher than the cost of converting.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The big difference here between rule #1 and rule #2 is that in rule #1 the product gives itself the value, like when you are browsing through a store and you are looking at items. When they land on your page and see shoes (for example) the value of &lt;strong&gt;x&lt;/strong&gt;, in their eyes, is shoes, not cars (x=x but not y). However, in rule #2, the customer must decide how much value &lt;strong&gt;x&lt;/strong&gt; will add to their life, and if it’s worth the cost.** Nobody &lt;strong&gt;can fill that in but themselves. Mathematically, the customer is thinking **Me + x - y = ?&lt;/strong&gt; In other words, they are asking, “will this add enough value to my life to make up for its costs?” Ultimately, you are trying to make the resulting &lt;strong&gt;perception&lt;/strong&gt; of the value for them as high as possible… through your landing page! Your landing page is simply trying to make &lt;strong&gt;x (your product’s value)&lt;/strong&gt; as &lt;em&gt;high as possible&lt;/em&gt; and &lt;strong&gt;y (cost)&lt;/strong&gt; as &lt;em&gt;low as possible.&lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;The big difference here between rule #1 and rule #2 is that in rule #1 the product gives itself the value, like when you are browsing through a store and you are looking at items. When they land on your page and see shoes (for example) the value of &lt;strong&gt;x&lt;/strong&gt;, in their eyes, is shoes, not cars (x=x but not y). However, in rule #2, the customer must decide how much value &lt;strong&gt;x&lt;/strong&gt; will add to their life, and if it’s worth the cost.** Nobody &lt;strong&gt;can fill that in but themselves. Mathematically, the customer is thinking **Me + x - y = ?&lt;/strong&gt; In other words, they are asking, “will this add enough value to my life to make up for its costs?” Ultimately, you are trying to make the resulting &lt;strong&gt;perception&lt;/strong&gt; of the value for them as high as possible… through your landing page! Your landing page is simply trying to make &lt;strong&gt;x (your product’s value)&lt;/strong&gt; as &lt;em&gt;high as possible&lt;/em&gt; and &lt;strong&gt;y (cost)&lt;/strong&gt; as &lt;em&gt;low as possible.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;This next part is the most important. What I’ve told you so far just makes your page function as it’s supposed to. Now, in order to succeed and attain high conversion rates, we must acknowledge two things. First, we need to realize that our product (x) will have a different amount of value to each and every person. You wouldn’t pay for your favorite shoe if it was 4 sizes too big. A guy would see no value in a tampon, and a girl would see no value in men’s jeans. &lt;strong&gt;This is why you will always see higher conversion rates by making separate landing pages that each cater to your target demographic!&lt;/strong&gt; Second, we need to realize that there may be competition offering higher value, or lower cost.  &lt;/p&gt;
+&lt;p&gt;This next part is the most important. What I’ve told you so far just makes your page function as it’s supposed to. Now, in order to succeed and attain high conversion rates, we must acknowledge two things. First, we need to realize that our product (x) will have a different amount of value to each and every person. You wouldn’t pay for your favorite shoe if it was 4 sizes too big. A guy would see no value in a tampon, and a girl would see no value in men’s jeans. &lt;strong&gt;This is why you will always see higher conversion rates by making separate landing pages that each cater to your target demographic!&lt;/strong&gt; Second, we need to realize that there may be competition offering higher value, or lower cost.&lt;/p&gt;
 
-&lt;p&gt;Before we move on, I’d like to tell you about value-to-cost ratio. We no longer live in a world where people want just their money’s worth. &lt;strong&gt;People want the absolute best for their money, and expect much more than their money’s worth.&lt;/strong&gt; Everybody has this ‘standard’ for value-to-cost ratio in their head that must be met for them to buy. Mathematically, this is shown by taking &lt;strong&gt;x&lt;/strong&gt; - the value, and dividing it by &lt;strong&gt;y&lt;/strong&gt; - the cost. For example, if someone has a standard of a value-to-cost ratio of 2, then they need to &lt;strong&gt;perceive&lt;/strong&gt; that the value that is ultimately added to their life is twice the amount of their cost, or that x must be at least 2y. Notice how I keep emphasizing the word &lt;strong&gt;perceive&lt;/strong&gt;, because I need you to understand that there is no single number of ‘value’ attached to your product. It’s merely a perception the customer makes, and every customer will see a different value to your product. And also, realize that they are not perceiving that value of your product, but merely &lt;strong&gt;the value added to their lives&lt;/strong&gt; by purchasing your product. I’m just trying to put it in a mathematical perspective so you can understand it.  &lt;/p&gt;
+&lt;p&gt;Before we move on, I’d like to tell you about value-to-cost ratio. We no longer live in a world where people want just their money’s worth. &lt;strong&gt;People want the absolute best for their money, and expect much more than their money’s worth.&lt;/strong&gt; Everybody has this ‘standard’ for value-to-cost ratio in their head that must be met for them to buy. Mathematically, this is shown by taking &lt;strong&gt;x&lt;/strong&gt; - the value, and dividing it by &lt;strong&gt;y&lt;/strong&gt; - the cost. For example, if someone has a standard of a value-to-cost ratio of 2, then they need to &lt;strong&gt;perceive&lt;/strong&gt; that the value that is ultimately added to their life is twice the amount of their cost, or that x must be at least 2y. Notice how I keep emphasizing the word &lt;strong&gt;perceive&lt;/strong&gt;, because I need you to understand that there is no single number of ‘value’ attached to your product. It’s merely a perception the customer makes, and every customer will see a different value to your product. And also, realize that they are not perceiving that value of your product, but merely &lt;strong&gt;the value added to their lives&lt;/strong&gt; by purchasing your product. I’m just trying to put it in a mathematical perspective so you can understand it.&lt;/p&gt;
 
-&lt;p&gt;So let’s solve the first part. Let’s assume we are a company making computers. We have 5 prospective customers interested in buying computers. Someone who clicks on your ad and lands on your page is an equivalent of this. We call them a1, a2, a3, a4, and a5. Our computers only run windows, and only the english version. They cost $1,500 each and have 512MB of RAM. Now we’re going to describe our prospective customers: &lt;/p&gt;
+&lt;p&gt;So let’s solve the first part. Let’s assume we are a company making computers. We have 5 prospective customers interested in buying computers. Someone who clicks on your ad and lands on your page is an equivalent of this. We call them a1, a2, a3, a4, and a5. Our computers only run windows, and only the english version. They cost $1,500 each and have 512MB of RAM. Now we’re going to describe our prospective customers:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;a1 -  male, $2,000 budget, prefers windows&lt;/li&gt;
@@ -2561,21 +2754,21 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
   &lt;li&gt;a4 - male, $2,000 budget, die-hard mac fan&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;a5 - male, $3,000 budget, wants at least 1GB RAM.
-Now, we’re assuming that these people arrived at our site by clicking an ad showing a picture of a computer, which gave them their first bit of the value of your product (x) - computers. Once they land on our page, we can assume they are interested in getting a computer. Now, at first, they will all have this one thought: &lt;strong&gt;“Is the value of this product higher than my cost?” **They need to know they are going to get their money’s worth, that **&lt;em&gt;x&amp;gt;y.&lt;/em&gt;&lt;/strong&gt; The answer to that will be different for every single customer that ever encounters your landing page. Let’s take a look at what our customers thought. &lt;/p&gt;
+Now, we’re assuming that these people arrived at our site by clicking an ad showing a picture of a computer, which gave them their first bit of the value of your product (x) - computers. Once they land on our page, we can assume they are interested in getting a computer. Now, at first, they will all have this one thought: &lt;strong&gt;“Is the value of this product higher than my cost?” **They need to know they are going to get their money’s worth, that **&lt;em&gt;x&amp;gt;y.&lt;/em&gt;&lt;/strong&gt; The answer to that will be different for every single customer that ever encounters your landing page. Let’s take a look at what our customers thought.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;a1 - “It’s within my budget, has windows which is what I want, it’s worth it!” &lt;strong&gt;(x&amp;gt;y)&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;a2 - “I only decided I would spend $1,000 on a computer. This one costs too much!” &lt;strong&gt;(x&amp;lt;y)&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;a3 - “I don’t speak english, and it’s english only. I can’t even use it!” &lt;strong&gt;(x&amp;lt;y)&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;a4 - “Ewwww Windows!… Mac for life, why would I ever buy anything but a mac?!” &lt;strong&gt;(x&amp;lt;y)&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;a5 - “Only 512MB RAM? Not enough, no thanks!” &lt;strong&gt;(x&amp;lt;y)&lt;/strong&gt;
-So there you have it. I didn’t mention competition to keep it simple, but don’t forget that your competition will affect your sales.  &lt;strong&gt;This **is how a customer is thinking on your page.&lt;/strong&gt; This is why you see low conversion rates on most landing pages!** A customer may click on your ad, because they &lt;strong&gt;really do want a computer&lt;/strong&gt;, but if they didn’t convert, all it means is that they either &lt;strong&gt;a)&lt;/strong&gt; believe the value-to-cost ratio wasn’t high enough (x/y) or &lt;strong&gt;b)&lt;/strong&gt; believe they can get a better value-to-cost ratio somewhere else (x1/y). Every element in your page should either show that x &amp;gt; y or help show it!! That’s why a company like Nike would endorse professional basketball players. They want to show you that the value of their product is the highest in the industry, and therefore the best players use it. For the computer company in this example, I would state all the specs of the computer, some detailed pictures, an incentive to buy the computer, show side-by-side comparisons against competitors, and explain every feature. This all adds to the perceived value. Most important, I would **only **advertise to those in my buying-range, by including keywords in campaigns like ‘512MB’ and such. I can also add true value, which is the most effective, by doing something like lowering the price or upgrading it to 1GB of RAM at no extra cost. So keep this in mind when designing your next landing page, and master it.  &lt;/li&gt;
+So there you have it. I didn’t mention competition to keep it simple, but don’t forget that your competition will affect your sales.  &lt;strong&gt;This **is how a customer is thinking on your page.&lt;/strong&gt; This is why you see low conversion rates on most landing pages!** A customer may click on your ad, because they &lt;strong&gt;really do want a computer&lt;/strong&gt;, but if they didn’t convert, all it means is that they either &lt;strong&gt;a)&lt;/strong&gt; believe the value-to-cost ratio wasn’t high enough (x/y) or &lt;strong&gt;b)&lt;/strong&gt; believe they can get a better value-to-cost ratio somewhere else (x1/y). Every element in your page should either show that x &amp;gt; y or help show it!! That’s why a company like Nike would endorse professional basketball players. They want to show you that the value of their product is the highest in the industry, and therefore the best players use it. For the computer company in this example, I would state all the specs of the computer, some detailed pictures, an incentive to buy the computer, show side-by-side comparisons against competitors, and explain every feature. This all adds to the perceived value. Most important, I would **only **advertise to those in my buying-range, by including keywords in campaigns like ‘512MB’ and such. I can also add true value, which is the most effective, by doing something like lowering the price or upgrading it to 1GB of RAM at no extra cost. So keep this in mind when designing your next landing page, and master it.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now, that last part was only half the battle. Now, we need to deal with the hardest part. We need to show that we provide **Higher Value Than The Competition. **If there is a computer just like yours at the same price but with a few upgrades, the prospective customer ‘a1’ would have bought from them instead of you. Even though we met a1’s standards, they will still not convert as long as someone else is offering a better value-to-cost ratio. You easily can lose **every single customer **that would have bought from you, as long as someone else is offering a higher value product. In other words, **you are not the only ‘x’. **There is also x2, x3, x4, x5, and so on.  &lt;/p&gt;
+&lt;p&gt;Now, that last part was only half the battle. Now, we need to deal with the hardest part. We need to show that we provide **Higher Value Than The Competition. **If there is a computer just like yours at the same price but with a few upgrades, the prospective customer ‘a1’ would have bought from them instead of you. Even though we met a1’s standards, they will still not convert as long as someone else is offering a better value-to-cost ratio. You easily can lose **every single customer **that would have bought from you, as long as someone else is offering a higher value product. In other words, **you are not the only ‘x’. **There is also x2, x3, x4, x5, and so on.&lt;/p&gt;
 
-&lt;p&gt;This is the toughest part. That is why people lie in order to compete. Here’s what the customer thinks next, and every single one will think this: &lt;strong&gt;“Will I gain more value by buying this product, for the lowest cost, than from any other competitor?” **It also gets a little tricky mathematically. Let’s assume we are x1, and we only have 9 competitors. Once a customer has confirmed that x&amp;gt;y, they want to know if **&lt;em&gt;x1 &amp;gt; x(n) where n is the competitor.&lt;/em&gt;&lt;/strong&gt; This means that X1 has to be greater than x2,x3,x4, and so on. Obviously your customer will not compare you to every single competitor,  but they will all compare you to different competitors. Lots of businesses don’t even have anything to convey in order to show this, since they have not put in the work to be the best, or to provide the most value. In other words, &lt;strong&gt;only one can be the best.&lt;/strong&gt; The iPhone 3G was my favorite phone until the iPhone 4 came out. The phone never changed, only my perception of it’s value. Luckily, people have “preferences”. Just cause something is green rather than blue doesn’t make it better, but some people will pay double to have that. So for our computer company in the example, I would make sure people knew that no other computer in that price range comes with the high-end Intel processor that mine has in it. I would give a 2-year warranty instead of the 1-year that my competition is offering. I would show off the awards that my computer has won. I would put side-by-side comparison charts showing that my product has more features. I would lower the price.  &lt;/p&gt;
+&lt;p&gt;This is the toughest part. That is why people lie in order to compete. Here’s what the customer thinks next, and every single one will think this: &lt;strong&gt;“Will I gain more value by buying this product, for the lowest cost, than from any other competitor?” **It also gets a little tricky mathematically. Let’s assume we are x1, and we only have 9 competitors. Once a customer has confirmed that x&amp;gt;y, they want to know if **&lt;em&gt;x1 &amp;gt; x(n) where n is the competitor.&lt;/em&gt;&lt;/strong&gt; This means that X1 has to be greater than x2,x3,x4, and so on. Obviously your customer will not compare you to every single competitor,  but they will all compare you to different competitors. Lots of businesses don’t even have anything to convey in order to show this, since they have not put in the work to be the best, or to provide the most value. In other words, &lt;strong&gt;only one can be the best.&lt;/strong&gt; The iPhone 3G was my favorite phone until the iPhone 4 came out. The phone never changed, only my perception of it’s value. Luckily, people have “preferences”. Just cause something is green rather than blue doesn’t make it better, but some people will pay double to have that. So for our computer company in the example, I would make sure people knew that no other computer in that price range comes with the high-end Intel processor that mine has in it. I would give a 2-year warranty instead of the 1-year that my competition is offering. I would show off the awards that my computer has won. I would put side-by-side comparison charts showing that my product has more features. I would lower the price.&lt;/p&gt;
 
-&lt;p&gt;I hope this helps - this is the missing key(s) that most landing pages ignore. I wouldn’t call this Landing Page Optimization, as this is simply a basis you should have before even beginning on the landing page. This is more like the Landing Page Framework. &lt;strong&gt;This is the job of a landing page, to show this - and the design and content is your medium to convey this.&lt;/strong&gt; If you can do this, I can assure you will see great results, even with a bad design. Think - If I made gloves that fit people who had 6 fingers, how much of the market share do you think I’d take for the 6-fingered glove market? To most, the value of my product is nil, but to people with 6 fingers, it’s a whole different story.  &lt;/p&gt;
+&lt;p&gt;I hope this helps - this is the missing key(s) that most landing pages ignore. I wouldn’t call this Landing Page Optimization, as this is simply a basis you should have before even beginning on the landing page. This is more like the Landing Page Framework. &lt;strong&gt;This is the job of a landing page, to show this - and the design and content is your medium to convey this.&lt;/strong&gt; If you can do this, I can assure you will see great results, even with a bad design. Think - If I made gloves that fit people who had 6 fingers, how much of the market share do you think I’d take for the 6-fingered glove market? To most, the value of my product is nil, but to people with 6 fingers, it’s a whole different story.&lt;/p&gt;
 
 &lt;p&gt;Go apply this to your pages, and enjoy! I’d love to hear feedback about results after implementing these ideas!&lt;/p&gt;
 </description>

@@ -23,9 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
@@ -48,275 +47,6 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!-- 
-        
-        
-
-
-
-
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/archive.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/e-commerce/scripts/how-to-run-ab-split-tests-on-volusion-ecommerce-using-google-website-optimizer-2">Archive</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}...
-                  
-                    <a href="/archive.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/categories.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/e-commerce/scripts/how-to-run-ab-split-tests-on-volusion-ecommerce-using-google-website-optimizer-2">Categories</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-	
-		
-			{{ page.title }}
-			
-				
-					{% assign categories_list = site.categories %}
-					{% include JB/categories_list %}	
-				
-			
-		
-	
-	
-		
-			{% for category in site.categories %} 
-				
-					
-					{{ category[0] | join: "/" }}
-				    {% assign pages_list = category[1] %}  
-					{% include JB/pages_list %}
-				
-			{% endfor %}
-		
-	
-
-
-...
-                  
-                    <a href="/categories.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/pages.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/e-commerce/scripts/how-to-run-ab-split-tests-on-volusion-ecommerce-using-google-website-optimizer-2">Pages</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-All Pages
-
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-
-...
-                  
-                    <a href="/pages.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/tags.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/e-commerce/scripts/how-to-run-ab-split-tests-on-volusion-ecommerce-using-google-website-optimizer-2">Tags</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
-
-
-
-{% for tag in site.tags %} 
-  {{ tag[0] }}
-  
-    {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
-  
-{% endfor %}
-...
-                  
-                    <a href="/tags.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-
-
-
-
-
-
-<!-- 
-  
-
-
- --> -->
           <li><a href="http://convertify.io">Home</a></li>
           <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
           <li class="dropdown yamm-fw">
@@ -419,24 +149,24 @@ All Pages
 <div class='row shadow-above postBody'>
   <div class='col-sm-8 col-sm-offset-2'>
     
-    <h1 class='postTitle'>How to Run A/B Split Tests on Volusion eCommerce using Google Website Optimizer</h1>
-    
-    
     <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/03/volusionshiny.jpg'>
     
-    <p>I recently had a client who wanted me to optimize a few landing pages on their volusion eCommerce store. Unfortunately, Volusion doesn’t allow you to just insert snippets of code into the header of a specific product page, and when searching through their support all I found was a page that asks for a ridiculous $200 to have them set up A/B split-tests for you. Anyways, this is how I approached it:  </p>
+    
+    <h1 class='postTitle'>How to Run A/B Split Tests on Volusion eCommerce using Google Website Optimizer</h1>
+    
+    <p>I recently had a client who wanted me to optimize a few landing pages on their volusion eCommerce store. Unfortunately, Volusion doesn’t allow you to just insert snippets of code into the header of a specific product page, and when searching through their support all I found was a page that asks for a ridiculous $200 to have them set up A/B split-tests for you. Anyways, this is how I approached it:</p>
 
-<p>**EDIT: **I figured out that you can in fact add to the head of the page by using the custom meta tags section, so I’ve removed the javascript code that I was using to get around it.  </p>
+<p>**EDIT: **I figured out that you can in fact add to the head of the page by using the custom meta tags section, so I’ve removed the javascript code that I was using to get around it.</p>
 
-<p>[dropcap]1[/dropcap]Go to your product page in Volusion. Go down to the ‘Advanced Settings’ section and choose the ‘Search Engine Optimization’ tab on the left. Look for the section that says ‘CUSTOM META TAGS OVERRIDE’. This is where you paste your tracking code from Google Website Optimizer.  </p>
+<p>[dropcap]1[/dropcap]Go to your product page in Volusion. Go down to the ‘Advanced Settings’ section and choose the ‘Search Engine Optimization’ tab on the left. Look for the section that says ‘CUSTOM META TAGS OVERRIDE’. This is where you paste your tracking code from Google Website Optimizer.</p>
 
-<p>[dropcap]2[/dropcap]Do the same thing for your variation pages. The meta tags section is meant for inserting meta tags for your site. These meta tags go in the head section which is exactly where your script needs to go, so it works out.  </p>
+<p>[dropcap]2[/dropcap]Do the same thing for your variation pages. The meta tags section is meant for inserting meta tags for your site. These meta tags go in the head section which is exactly where your script needs to go, so it works out.</p>
 
-<p>[dropcap]3[/dropcap] <strong>If you want a conversion counted for ANY sale: </strong>In Volusion, go to the ‘Design’ tab then hit the ‘Site Content’ link in the drop-down menu. Look for article 130 (or use cmd + f or ctrl + f on windows then type ‘130’) and edit the article by hitting the article ID. paste your conversion code in the ‘Article Body’ section.  </p>
+<p>[dropcap]3[/dropcap] <strong>If you want a conversion counted for ANY sale: </strong>In Volusion, go to the ‘Design’ tab then hit the ‘Site Content’ link in the drop-down menu. Look for article 130 (or use cmd + f or ctrl + f on windows then type ‘130’) and edit the article by hitting the article ID. paste your conversion code in the ‘Article Body’ section.</p>
 
-<p>**If you only want specific products to count as a conversion: **Go to the product editor, and click the ‘Advanced Settings’ drop-down. Find the ‘Product Display’ section, and find the box labeled ‘Order Finished Note’. Put your conversion code here. Do the same for other products you want to count as a conversion. This basically just tells Volusion to run code only if that specific product is bought.  </p>
+<p>**If you only want specific products to count as a conversion: **Go to the product editor, and click the ‘Advanced Settings’ drop-down. Find the ‘Product Display’ section, and find the box labeled ‘Order Finished Note’. Put your conversion code here. Do the same for other products you want to count as a conversion. This basically just tells Volusion to run code only if that specific product is bought.</p>
 
-<p>[dropcap]4[/dropcap] It gets a little tricky next because GWO wants you to validate the pages. the product pages should validate fine now, but the conversion code wont. This is because there has to be an actual order that gets completed for the script to run. What you need to do is go to the Article 130 edit page again and look for ‘View live article page’ on the top-left of that page. It will show you that page, then save that page by hitting File&gt;Save in your browser. Next, go back to GWO’s validate pages section and upload that file manually. If anyone knows of some kind of variable you can pass in the URL through Volusion to get it to run the script, please let me know in the comments. That would be a better solution for this which I believe Volusion should have implemented.  </p>
+<p>[dropcap]4[/dropcap] It gets a little tricky next because GWO wants you to validate the pages. the product pages should validate fine now, but the conversion code wont. This is because there has to be an actual order that gets completed for the script to run. What you need to do is go to the Article 130 edit page again and look for ‘View live article page’ on the top-left of that page. It will show you that page, then save that page by hitting File&gt;Save in your browser. Next, go back to GWO’s validate pages section and upload that file manually. If anyone knows of some kind of variable you can pass in the URL through Volusion to get it to run the script, please let me know in the comments. That would be a better solution for this which I believe Volusion should have implemented.</p>
 
 <p>Once you’ve done these steps, you’re all done! Please let me know how this works out for you guys and if you run into any issues.</p>
 
@@ -484,6 +214,7 @@ All Pages
 
   </div>
 </div>
+
 
 
       </div>
