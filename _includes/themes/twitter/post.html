@@ -18,13 +18,13 @@
 {% endif %}
 <div class='row shadow-above postBody'>
   <div class='col-sm-8 col-sm-offset-2'>
-    {% unless page.fluid_image and page.title_image %}
-    <h1 class='postTitle'>{{ page.title }}</h1>
-    {% endunless %}
     {% unless page.fluid_image %}
     <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='{{ page.featured_image }}'>
     {% endunless %}
-    {{ content }}
+    {% unless page.fluid_image and page.title_image %}
+    <h1 class='postTitle'>{{ page.title }}</h1>
+    {% endunless %}
+    {{ content | replace: '<table>', '<table class="table table-hover table-condensed">' | replace_regex: '(<table[^\>]+>.*?<\/table>)', '<div class="table-responsive">\1</div>' }}
     <hr>
     <ul class="pager">
     {% if page.previous %}
@@ -54,3 +54,7 @@
   {% include addthis.html %}
   </div>
 </div>
+
+{% if page.use_math %}
+  {% include custom/mathjax %}
+{% endif %}
