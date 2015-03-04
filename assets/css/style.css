@@ -52,6 +52,9 @@ body {
 /*==============================================================================
 =            LAYOUT                                                            =
 ==============================================================================*/
+#navbar {
+  border-bottom: 1px solid #a0ce4e; }
+
 p.lead {
   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", arial, sans-serif; }
 

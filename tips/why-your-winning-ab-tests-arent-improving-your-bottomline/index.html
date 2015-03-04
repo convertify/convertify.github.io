@@ -168,7 +168,7 @@
     
     
     
-<p class="lead">Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.</p>
+<p class="lead">Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.</p>
 
 <h2 id="understanding-how-testing-platforms-report-a-winner">Understanding how testing platforms report a &#8220;Winner&#8221;</h2>
 
@@ -207,11 +207,11 @@
 
 <p>You&#8217;re probably thinking that what these results are saying is that if you were to implement the winning variation, there&#8217;s a 97.6% probability that you will see a 6% lift in conversions. If that&#8217;s how you interpret these results, then you are <strong>dead wrong.</strong></p>
 
-<p>What this results <em>actually</em> means is that there&#8217;s a 97.6% probability that variation 1 will convert better than the control, but <strong>it does not have any confidence in the lift itself.</strong> So, how come testing tools don&#8217;t adjust their algorithms so that the significance represents the confidence in the <em>improvement,</em> rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:</p>
+<p>What this result <em>actually</em> means is that there&#8217;s a 97.6% probability that variation 1 will convert better than the control, but <strong>it does not have any confidence in the lift itself.</strong> So, how come testing tools don&#8217;t adjust their algorithms so that the significance represents the confidence in the <em>improvement,</em> rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:</p>
 
 <ol>
   <li>It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than <em><strong>ten times as much data, which means you&#8217;d need to run your tests more than ten times longer.</strong></em></li>
-  <li>Once you know which one is the better variation, <em><strong>who cares how much it&#8217;s going to win by?</strong></em> It makes more sense to just implement it right away, and move on to another test. In other words, it&#8217;s more practical to be able to run 10 with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.</li>
+  <li>Once you know which one is the better variation, <em><strong>who cares how much it&#8217;s going to win by?</strong></em> It makes more sense to just implement it right away, and move on to another test. In other words, it&#8217;s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.</li>
 </ol>
 
 <p>If this is news to you, at least now you&#8217;re aware of this, which is a step forward. Although we shouldn&#8217;t assume that we&#8217;re going to get as big a lift as is reported in the results, it also means that we might get a <strong>bigger</strong> lift than what is reported! Most of the time though, I&#8217;ve found that the former result tends to be the case.</p>
