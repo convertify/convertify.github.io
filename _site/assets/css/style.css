@@ -42,9 +42,19 @@ body {
 .content {
   font-size: 16px; }
 
+.postBody table {
+  font-size: 14px;
+  font-family: "Proxima Nova"; }
+.postBody table thead {
+  font-size: 16px;
+  white-space: nowrap; }
+
 /*==============================================================================
 =            LAYOUT                                                            =
 ==============================================================================*/
+p.lead {
+  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+
 .content img {
   max-width: 100%;
   display: block;
@@ -61,26 +71,62 @@ body {
   letter-spacing: .15px; }
   .postBody p {
     margin: 0 0 30px 0; }
+  .postBody h1, .postBody h2, .postBody h3, .postBody h4, .postBody h5, .postBody h6 {
+    letter-spacing: -0.02em;
+    margin-top: 40px;
+    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+  .postBody h2 {
+    font-size: 42px;
+    margin-left: -3px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    padding-top: 0;
+    margin-bottom: 8px; }
+  .postBody h3, .postBody h4 {
+    font-weight: 300; }
+  .postBody h3 {
+    font-size: 35px;
+    margin-left: -1.8px;
+    line-height: 1.2;
+    margin-bottom: 4px; }
+  .postBody h4 {
+    font-style: normal;
+    font-size: 32px;
+    margin-left: -1.6px;
+    line-height: 1.2;
+    margin-bottom: 2px; }
+  .postBody h4, .postBody h5, .postBody h6 {
+    color: rgba(0, 0, 0, 0.44); }
+  .postBody h5, .postBody h6 {
+    font-weight: 200; }
+  .postBody h5 {
+    font-size: 26px; }
+  .postBody h6 {
+    font-size: 22px; }
 
 h1.postTitle {
-  font-size: 32px;
+  font-size: 30px;
   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", arial, sans-serif;
-  margin-top: -10px; }
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: -1px; }
   @media (min-width: 490px) {
     h1.postTitle {
-      font-size: 35.2px; } }
+      font-size: 36px; } }
   @media (min-width: 580px) {
     h1.postTitle {
-      font-size: 38.4px; } }
+      font-size: 39px; } }
   @media (min-width: 768px) {
     h1.postTitle {
-      font-size: 41.6px; } }
+      font-size: 36px; } }
   @media (min-width: 992px) {
     h1.postTitle {
-      font-size: 44.8px; } }
+      font-size: 45px; } }
   @media (min-width: 1200px) {
     h1.postTitle {
-      font-size: 54.4px; } }
+      margin-top: 50px auto;
+      font-size: 63px; } }
 
 /*==============================================================================
 =            MODULES                                                           =
@@ -159,19 +205,29 @@ li.coming-soon p {
   transform: translateY(-50%); }
 
 .featuredImage-content h1.postTitle {
-  text-shadow: 1px 1px 1px black; }
+  text-shadow: 1px 1px 1px black;
+  font-size: 26px; }
+  @media (min-width: 490px) {
+    .featuredImage-content h1.postTitle {
+      font-size: 32px; } }
   @media (min-width: 580px) {
     .featuredImage-content h1.postTitle {
-      font-size: 28px; } }
+      font-size: 38px; } }
+  @media (min-width: 650px) {
+    .featuredImage-content h1.postTitle {
+      font-size: 40px; } }
   @media (min-width: 768px) {
     .featuredImage-content h1.postTitle {
-      font-size: 36px; } }
+      font-size: 41px; } }
   @media (min-width: 992px) {
     .featuredImage-content h1.postTitle {
-      font-size: 42px; } }
+      font-size: 45px; } }
   @media (min-width: 1200px) {
     .featuredImage-content h1.postTitle {
-      font-size: 50px; } }
+      font-size: 48px; } }
+  @media (min-width: 1350px) {
+    .featuredImage-content h1.postTitle {
+      font-size: 52px; } }
 
 .nav-sidebar {
   width: 100%;

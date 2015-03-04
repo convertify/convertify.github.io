@@ -23,9 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
@@ -48,275 +47,6 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!-- 
-        
-        
-
-
-
-
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/archive.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Archive</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}...
-                  
-                    <a href="/archive.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/categories.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Categories</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-	
-		
-			{{ page.title }}
-			
-				
-					{% assign categories_list = site.categories %}
-					{% include JB/categories_list %}	
-				
-			
-		
-	
-	
-		
-			{% for category in site.categories %} 
-				
-					
-					{{ category[0] | join: "/" }}
-				    {% assign pages_list = category[1] %}  
-					{% include JB/pages_list %}
-				
-			{% endfor %}
-		
-	
-
-
-...
-                  
-                    <a href="/categories.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/pages.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Pages</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-All Pages
-
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-
-...
-                  
-                    <a href="/pages.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/tags.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/bounce-rates/e-commerce/optimizing-category-pages-on-ecommerce-sites-2">Tags</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
-
-
-
-{% for tag in site.tags %} 
-  {{ tag[0] }}
-  
-    {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
-  
-{% endfor %}
-...
-                  
-                    <a href="/tags.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-
-
-
-
-
-
-<!-- 
-  
-
-
- --> -->
           <li><a href="http://convertify.io">Home</a></li>
           <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
           <li class="dropdown yamm-fw">
@@ -419,18 +149,18 @@ All Pages
 <div class='row shadow-above postBody'>
   <div class='col-sm-8 col-sm-offset-2'>
     
-    <h1 class='postTitle'>Improving Conversions: eCommerce Category Pages</h1>
-    
-    
     <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/04/shopping_cart_stucco11.png'>
     
-    <p>When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That’s why it’s important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no ‘Add to Cart’ button on the category pages, but rather links to a bunch of products. <strong>The answer is to optimize the bounce rate and exit rate.</strong>  </p>
+    
+    <h1 class='postTitle'>Improving Conversions: eCommerce Category Pages</h1>
+    
+    <p>When clients need pages on eCommerce sites optimized, I often get asked to do a category page rather than a product page. They usually prefer this because the category pages get a lot more traffic than the product pages, therefore affecting revenue more after optimization. If you charge per page, then it would cost the client a lot more to optimize every product page in a category rather than just optimize the category page. Also, eCommerce sites tend to spend a lot bidding on category-related keywords rather than product keywords. If you are experienced in CPC you probably already know that bidding on product-related keywords is usually more profitable than bidding on category-related keywords. However, you also know that the category keywords have way more traffic available. That’s why it’s important to be able to send people to category pages and still see good conversions. But the challenge is, how do you optimize a category page when there is no direct conversion to be measured with it? In other words, there is no ‘Add to Cart’ button on the category pages, but rather links to a bunch of products. <strong>The answer is to optimize the bounce rate and exit rate.</strong></p>
 
-<p>Bounce &amp; Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who <strong>land</strong> on that page <strong>leave immediately</strong> without looking at another page. It’s calculated by dividing <strong>entrances **by **bounces</strong> while exit rate is calculated by dividing <strong>page views **by ** exits. </strong>Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it’s no longer considered a bounce. A ’bounce’ in my eyes means the person judged your business as a whole and it didn’t meet their standards, or they didn’t find what they were looking for. I’d say for most people it’s the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The <strong>exit rate</strong> is just the percentage of people who leave your site from that page. If it’s unusually high, I interpret that the page is poor compared to the rest of the site and see it as a ‘leak’ of visitors, which is up to someone like me to plug.  </p>
+<p>Bounce &amp; Exit rates used to confuse me because they are so similar in the way they are measured, but they tell you very different things. The bounce rate measures how many percent of visitors who <strong>land</strong> on that page <strong>leave immediately</strong> without looking at another page. It’s calculated by dividing <strong>entrances **by **bounces</strong> while exit rate is calculated by dividing <strong>page views **by ** exits. </strong>Some tracking systems use time as a factor, for example, if the visitor stays for at least 10 seconds, it’s no longer considered a bounce. A ’bounce’ in my eyes means the person judged your business as a whole and it didn’t meet their standards, or they didn’t find what they were looking for. I’d say for most people it’s the latter, but if you are sending targeted traffic like I usually am, you know you were showing them what they were looking for. The <strong>exit rate</strong> is just the percentage of people who leave your site from that page. If it’s unusually high, I interpret that the page is poor compared to the rest of the site and see it as a ‘leak’ of visitors, which is up to someone like me to plug.</p>
 
-<p>Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, “Why don’t I just measure conversions for that category as a whole to compare?” If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you’re running website optimizer on category A and have the conversion tracked on the ‘Order Completed’ page, you will have counted a conversion for a product that has nothing to do with the category you’re optimizing. And that’s only one of the many things that can happen? Do you see the issue?  </p>
+<p>Anyways, the reason I explained these is because this is the statistic you should be focusing on when optimizing category pages. You may ask, “Why don’t I just measure conversions for that category as a whole to compare?” If you have a very small amount of products which are all very similar, this might work for you. But for most eCommerce sites, this is not the case. Visitors enter the category page, and what happens next can be basically **anything. **They can land on category A, then go to Category B, then buy something from category B which has nothing to do with category A, and if you’re running website optimizer on category A and have the conversion tracked on the ‘Order Completed’ page, you will have counted a conversion for a product that has nothing to do with the category you’re optimizing. And that’s only one of the many things that can happen? Do you see the issue?</p>
 
-<p>You need an accurate measure that directly correlates to the page, and bounce rate &amp; exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he’s now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that’s going to be a huge improvement in sales. So now that you know <em>what</em> to measure, I’ll give out a few pointers from what I’ve learned.’ </p>
+<p>You need an accurate measure that directly correlates to the page, and bounce rate &amp; exit rates are awesome for this. For my last client I was able to bring bounce rate from about 32% to 15%. That means he’s now getting **50% more visitors **staying on his site and browsing around (and maybe buying) rather than just leaving. If you have big traffic numbers, that’s going to be a huge improvement in sales. So now that you know <em>what</em> to measure, I’ll give out a few pointers from what I’ve learned.’</p>
 
 <h2 id="ecommerce-categories-optimization-tips">eCommerce Categories Optimization Tips</h2>
 
@@ -486,6 +216,7 @@ Hopefully this helps some of you fellow optimizers and eCommerce sites out!</li>
 
   </div>
 </div>
+
 
 
       </div>

@@ -23,9 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
@@ -48,275 +47,6 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <!-- 
-        
-        
-
-
-
-
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/archive.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/archive.html">Archive</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/case-studies/susteen-inc">Archive</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}...
-                  
-                    <a href="/archive.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/categories.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/categories.html">Categories</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/case-studies/susteen-inc">Categories</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-	
-		
-			{{ page.title }}
-			
-				
-					{% assign categories_list = site.categories %}
-					{% include JB/categories_list %}	
-				
-			
-		
-	
-	
-		
-			{% for category in site.categories %} 
-				
-					
-					{{ category[0] | join: "/" }}
-				    {% assign pages_list = category[1] %}  
-					{% include JB/pages_list %}
-				
-			{% endfor %}
-		
-	
-
-
-...
-                  
-                    <a href="/categories.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/pages.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/pages.html">Pages</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/case-studies/susteen-inc">Pages</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-All Pages
-
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-
-...
-                  
-                    <a href="/pages.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/tags.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/tags.html">Tags</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/case-studies/susteen-inc">Tags</a></h2>
-                  <p>
-                    
-                      {% include JB/setup %}
-
-
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
-
-
-
-{% for tag in site.tags %} 
-  {{ tag[0] }}
-  
-    {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
-  
-{% endfor %}
-...
-                  
-                    <a href="/tags.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-
-
-
-
-
-
-<!-- 
-  
-
-
- --> -->
           <li><a href="http://convertify.io">Home</a></li>
           <li class=""><a href="http://convertify.io/no-guesswork">No Guesswork</a></li>
           <li class="dropdown yamm-fw">
@@ -419,12 +149,12 @@ All Pages
 <div class='row shadow-above postBody'>
   <div class='col-sm-8 col-sm-offset-2'>
     
-    <h1 class='postTitle'>Case Study: Datapilot - 42.7% Increase in Sales</h1>
-    
-    
     <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='http://convertify.staging.wpengine.com/wp-content/uploads/2012/02/Screen-Shot-2011-11-24-at-5.12.29-PM.png'>
     
-    <p>Susteen Inc. is a mobile software company known for their product <a href="http://datapilot.com">Datapilot</a> which is a software that allows non-smartphones to sync all its data with your computer, as well as syncing that data to another phone. We optimized their main product sales page which was converting at 4.81% and were able to increase this conversion rate to 6.86% for an improvement of 42.7%. This also means an increase on advertising ROI of 42.7% and a similar increase in sales for organic traffic! Here’s what the pages looked like and how we achieved it. </p>
+    
+    <h1 class='postTitle'>Case Study: Datapilot - 42.7% Increase in Sales</h1>
+    
+    <p>Susteen Inc. is a mobile software company known for their product <a href="http://datapilot.com">Datapilot</a> which is a software that allows non-smartphones to sync all its data with your computer, as well as syncing that data to another phone. We optimized their main product sales page which was converting at 4.81% and were able to increase this conversion rate to 6.86% for an improvement of 42.7%. This also means an increase on advertising ROI of 42.7% and a similar increase in sales for organic traffic! Here’s what the pages looked like and how we achieved it.</p>
 
 <p>[image id=”72” size=”medium” link=”true” align=”left”]</p>
 
@@ -432,15 +162,15 @@ All Pages
 
 <p>[divider]</p>
 
-<p>The first thing we do when we optimize a page is observe the current one and determine if anything is hurting the page. Most of the increase in performance usually comes from removing flaws rather than adding things. These are the changes I decided needed to be made:  </p>
+<p>The first thing we do when we optimize a page is observe the current one and determine if anything is hurting the page. Most of the increase in performance usually comes from removing flaws rather than adding things. These are the changes I decided needed to be made:</p>
 
-<p>[dropcap]1[/dropcap] **Company Value was not displayed. **Visitors will almost always have this question in their mind when visiting a page: _“What makes this product the best? What makes this company the best?”. _One of the main functions of a landing page is to answer questions that the viewer has in their mind. I believed that they were not getting the credibility they deserved. This company supports almost 3,000 phones, and have been in the business for 18 years. I believed it was important to make sure the visitor knows this, thus increasing the credibility of this business in the reader’s eyes. I did this by adding a value proposition in the header that states: _“Over 2,471 Phones Supported. Over 18 years of Experience”. _It’s important to take advantage of these things as they are valuable to a company, and numbers don’t lie. This kind of statement is much more effective than saying words like ‘Best’.  </p>
+<p>[dropcap]1[/dropcap] **Company Value was not displayed. **Visitors will almost always have this question in their mind when visiting a page: _“What makes this product the best? What makes this company the best?”. _One of the main functions of a landing page is to answer questions that the viewer has in their mind. I believed that they were not getting the credibility they deserved. This company supports almost 3,000 phones, and have been in the business for 18 years. I believed it was important to make sure the visitor knows this, thus increasing the credibility of this business in the reader’s eyes. I did this by adding a value proposition in the header that states: _“Over 2,471 Phones Supported. Over 18 years of Experience”. _It’s important to take advantage of these things as they are valuable to a company, and numbers don’t lie. This kind of statement is much more effective than saying words like ‘Best’.</p>
 
-<p>[dropcap]2[/dropcap] <strong>Product Value Needed Work, and Should Be Bigger. **The old value proposition did a good job telling you what the product does, but didn’t emphasize how it benefits **you, **the only person that really matters and that actually cares in this context. Therefore I added <em>“Never worry about losing your data again.”</em> to the main product value proposition. this lets the user know how **they</strong> will benefit. Also, I made it bigger and more noticeable so that it hold more graphical weight.  </p>
+<p>[dropcap]2[/dropcap] <strong>Product Value Needed Work, and Should Be Bigger. **The old value proposition did a good job telling you what the product does, but didn’t emphasize how it benefits **you, **the only person that really matters and that actually cares in this context. Therefore I added <em>“Never worry about losing your data again.”</em> to the main product value proposition. this lets the user know how **they</strong> will benefit. Also, I made it bigger and more noticeable so that it hold more graphical weight.</p>
 
-<p>[dropcap]3[/dropcap] **A Different Button Text. **The old button said ‘Add to Cart’, which people associated with buying and spending money. They also associate risk with it. By changing that text to say <em>“Download Now”,</em> the user feels like clicking the button more. The button is the action they will be taking, and the new text feels the person is getting something out of it rather than paying money. I also added another instance down the page in case they scroll down.  </p>
+<p>[dropcap]3[/dropcap] **A Different Button Text. **The old button said ‘Add to Cart’, which people associated with buying and spending money. They also associate risk with it. By changing that text to say <em>“Download Now”,</em> the user feels like clicking the button more. The button is the action they will be taking, and the new text feels the person is getting something out of it rather than paying money. I also added another instance down the page in case they scroll down.</p>
 
-<p>[dropcap]4[/dropcap] **Removed the tabs. **Each extra element on your page adds weight and options. People may feel like they need to read all the information before buying or they will feel like they aren’t making an informed decision. Sometimes it’s better to test shorter versions because they may already know what they need. In this case, it helped.  </p>
+<p>[dropcap]4[/dropcap] **Removed the tabs. **Each extra element on your page adds weight and options. People may feel like they need to read all the information before buying or they will feel like they aren’t making an informed decision. Sometimes it’s better to test shorter versions because they may already know what they need. In this case, it helped.</p>
 
 <p>[dropcap]5[/dropcap] **Added Phone Support Section. **This is a little module that lets customers check if their phone is supported.  Generally you want to do everything you can to keep people on the sales page. By moving the phone support module here, customers no longer had to navigate away to see if their phone is supported.</p>
 
@@ -488,6 +218,7 @@ All Pages
 
   </div>
 </div>
+
 
 
       </div>
