@@ -43,6 +43,7 @@ end #JB
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
+  puts "building post.."
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
@@ -68,6 +69,9 @@ task :post do
     post.puts 'description: ""'
     post.puts "category: #{category}"
     post.puts "tags: #{tags}"
+    post.puts "featured_image: "
+    post.puts "fluid_image: false"
+    post.puts "title_image: false"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
