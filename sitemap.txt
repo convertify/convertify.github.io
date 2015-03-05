@@ -6,6 +6,7 @@ http://blog.convertify.io/categories.html
 http://blog.convertify.io/index.html
 http://blog.convertify.io/pages.html
 http://blog.convertify.io/rss.xml
+http://blog.convertify.io/search.json
 http://blog.convertify.io/sitemap.txt
 http://blog.convertify.io/assets/css/style.css
 http://blog.convertify.io/tags.html
