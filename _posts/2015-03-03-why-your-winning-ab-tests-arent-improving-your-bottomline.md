@@ -38,7 +38,7 @@ If this is news to you, at least now you're aware of this, which is a step forwa
 
 The most common reason why winning tests don't turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I'll do my best to drill it into your mind. 
 
-To understand this better, we first need to understand the concept of a **standard deviation.** The standard deviation is a measure that is used to quantify the amount of ariation in a set of data. Here's a good way to think about this: Let's assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:
+To understand this better, we first need to understand the concept of a **standard deviation.** The standard deviation is a measure that is used to quantify the amount of variance in a set of data. Here's a good way to think about this: Let's assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:
 
 | Day | Conversion Rate |
 | --- | --------------- |
