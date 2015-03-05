@@ -4,7 +4,7 @@
  <title>Convertify</title>
  <link href="http://blog.convertify.io/" rel="self"/>
  <link href="http://blog.convertify.io"/>
- <updated>2015-03-04T08:26:52-08:00</updated>
+ <updated>2015-03-04T17:10:37-08:00</updated>
  <id>http://blog.convertify.io</id>
  <author>
    <name>Convertify</name>
@@ -20,9 +20,9 @@
    <content type="html">
 &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.&lt;/p&gt;
 
-&lt;h2 id=&quot;understanding-how-testing-platforms-report-a-winner&quot;&gt;Understanding how testing platforms report a &amp;#8220;Winner&amp;#8221;&lt;/h2&gt;
+&lt;h2 id=&quot;understanding-how-testing-platforms-report-a-winner&quot;&gt;Understanding how testing platforms report a “Winner”&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;#8217;s say that you ran an A/B test which had the following results when it declared a winner:&lt;/p&gt;
+&lt;p&gt;Let’s say that you ran an A/B test which had the following results when it declared a winner:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -41,8 +41,8 @@
       &lt;td&gt;20000&lt;/td&gt;
       &lt;td&gt;2000&lt;/td&gt;
       &lt;td&gt;10%&lt;/td&gt;
-      &lt;td&gt;&amp;#8211;&lt;/td&gt;
-      &lt;td&gt;&amp;#8211;&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;–&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Variation 1&lt;/td&gt;
@@ -55,22 +55,22 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;You&amp;#8217;re probably thinking that what these results are saying is that if you were to implement the winning variation, there&amp;#8217;s a 97.6% probability that you will see a 6% lift in conversions. If that&amp;#8217;s how you interpret these results, then you are &lt;strong&gt;dead wrong.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You’re probably thinking that what these results are saying is that if you were to implement the winning variation, there’s a 97.6% probability that you will see a 6% lift in conversions. If that’s how you interpret these results, then you are &lt;strong&gt;dead wrong.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;What this result &lt;em&gt;actually&lt;/em&gt; means is that there&amp;#8217;s a 97.6% probability that variation 1 will convert better than the control, but &lt;strong&gt;it does not have any confidence in the lift itself.&lt;/strong&gt; So, how come testing tools don&amp;#8217;t adjust their algorithms so that the significance represents the confidence in the &lt;em&gt;improvement,&lt;/em&gt; rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:&lt;/p&gt;
+&lt;p&gt;What this result &lt;em&gt;actually&lt;/em&gt; means is that there’s a 97.6% probability that variation 1 will convert better than the control, but &lt;strong&gt;it does not have any confidence in the lift itself.&lt;/strong&gt; So, how come testing tools don’t adjust their algorithms so that the significance represents the confidence in the &lt;em&gt;improvement,&lt;/em&gt; rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than &lt;em&gt;&lt;strong&gt;ten times as much data, which means you&amp;#8217;d need to run your tests more than ten times longer.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Once you know which one is the better variation, &lt;em&gt;&lt;strong&gt;who cares how much it&amp;#8217;s going to win by?&lt;/strong&gt;&lt;/em&gt; It makes more sense to just implement it right away, and move on to another test. In other words, it&amp;#8217;s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.&lt;/li&gt;
+  &lt;li&gt;It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than &lt;em&gt;&lt;strong&gt;ten times as much data, which means you’d need to run your tests more than ten times longer.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Once you know which one is the better variation, &lt;em&gt;&lt;strong&gt;who cares how much it’s going to win by?&lt;/strong&gt;&lt;/em&gt; It makes more sense to just implement it right away, and move on to another test. In other words, it’s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;If this is news to you, at least now you&amp;#8217;re aware of this, which is a step forward. Although we shouldn&amp;#8217;t assume that we&amp;#8217;re going to get as big a lift as is reported in the results, it also means that we might get a &lt;strong&gt;bigger&lt;/strong&gt; lift than what is reported! Most of the time though, I&amp;#8217;ve found that the former result tends to be the case.&lt;/p&gt;
+&lt;p&gt;If this is news to you, at least now you’re aware of this, which is a step forward. Although we shouldn’t assume that we’re going to get as big a lift as is reported in the results, it also means that we might get a &lt;strong&gt;bigger&lt;/strong&gt; lift than what is reported! Most of the time though, I’ve found that the former result tends to be the case.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-create-tests-that-actually-improve-your-sales&quot;&gt;How to create tests that actually improve your sales&lt;/h2&gt;
 
-&lt;p&gt;The most common reason why winning tests don&amp;#8217;t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I&amp;#8217;ll do my best to drill it into your mind.&lt;/p&gt;
+&lt;p&gt;The most common reason why winning tests don’t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I’ll do my best to drill it into your mind.&lt;/p&gt;
 
-&lt;p&gt;To understand this better, we first need to understand the concept of a &lt;strong&gt;standard deviation.&lt;/strong&gt; The standard deviation is a measure that is used to quantify the amount of ariation in a set of data. Here&amp;#8217;s a good way to think about this: Let&amp;#8217;s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:&lt;/p&gt;
+&lt;p&gt;To understand this better, we first need to understand the concept of a &lt;strong&gt;standard deviation.&lt;/strong&gt; The standard deviation is a measure that is used to quantify the amount of variance in a set of data. Here’s a good way to think about this: Let’s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -123,7 +123,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn&amp;#8217;t mean that we are getting that conversion rate every day. Now there&amp;#8217;s no need to know how to calculate the standard variation, but we&amp;#8217;ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of &lt;em&gt;that&lt;/em&gt;, which gives us the average variance. Then we un-square it (square root) so we don&amp;#8217;t have inflated values:&lt;/p&gt;
+&lt;p&gt;For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn’t mean that we are getting that conversion rate every day. Now there’s no need to know how to calculate the standard variation, but we’ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of &lt;em&gt;that&lt;/em&gt;, which gives us the average variance. Then we un-square it (square root) so we don’t have inflated values:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -191,15 +191,15 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\frac{4+25+9+4+25+9+1+25+100+16}{10}} = 4.669&lt;/script&gt;
 
-&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It&amp;#8217;s unlikely that tools such as Optimizely would consider results like this &amp;#8220;conclusive&amp;#8221; unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation means the test will not improve your sales. However, here&amp;#8217;s what you should take from this:&lt;/p&gt;
+&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It’s unlikely that tools such as Optimizely would consider results like this “conclusive” unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation means the test will not improve your sales. However, here’s what you should take from this:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you&amp;#8217;ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you’ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;And with that said, the one thing you need to do is &lt;strong&gt;test changes to variables that actually matter to your visitors.&lt;/strong&gt; If you aren&amp;#8217;t seeing lifts in sales from your winning tests, it&amp;#8217;s most likely because you are focusing too much on &amp;#8216;visual&amp;#8217; aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.&lt;/p&gt;
+&lt;p&gt;And with that said, the one thing you need to do is &lt;strong&gt;test changes to variables that actually matter to your visitors.&lt;/strong&gt; If you aren’t seeing lifts in sales from your winning tests, it’s most likely because you are focusing too much on ‘visual’ aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.&lt;/p&gt;
 
-&lt;p&gt;The first time I saw KISSMetric&amp;#8217;s inforgraphic on &lt;a href=&quot;https://blog.kissmetrics.com/color-psychology/&quot;&gt;how colors affect purchases&lt;/a&gt;, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled after reading it and started running split-tests where they different colors on the elements on their website, inspired by that inforgraphic. When is the last time you changed your mind about buying something because of the color of something on the site? Probably never. When you test something like this, the resulting lift is most likely entirely due to variance, and you probably would&amp;#8217;ve gotten the same result if you did an A/A test.&lt;/p&gt;
+&lt;p&gt;The first time I saw KISSMetric’s inforgraphic on &lt;a href=&quot;https://blog.kissmetrics.com/color-psychology/&quot;&gt;how colors affect purchases&lt;/a&gt;, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled after reading it and started running split-tests where they different colors on the elements on their website, inspired by that inforgraphic. When is the last time you changed your mind about buying something because of the color of something on the site? Probably never. When you test something like this, the resulting lift is most likely entirely due to variance, and you probably would’ve gotten the same result if you did an A/A test.&lt;/p&gt;
 
 &lt;p&gt;If you want to learn more about creating tests that actually increase your sales, check out our free CRO course &lt;a href=&quot;https://convertify.io/no-guesswork&quot;&gt;No Guesswork&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -736,7 +736,7 @@ If you run this test and get results, please let us know in the comments section
    <updated>2014-02-21T07:39:03-08:00</updated>
    <id>http://blog.convertify.io/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking</id>
    <content type="html">&lt;script type=&quot;text/javascript&quot;&gt;
-	var disqus_identifier = '2670052270';
+	var disqus_identifier = &#39;2670052270&#39;;
 &lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;Note: If you’d like us to perform this integration for you, we offer a flat rate to do this for you. Please email &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&quot;&gt;&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&lt;/a&gt; to hire us.&lt;/em&gt;&lt;/p&gt;
@@ -807,7 +807,7 @@ Overall it’s a technical process that requires some code, but we’ve done all
     &lt;span class=&quot;c1&quot;&gt;// ]]&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName'.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
+&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName&#39;.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
 
 &lt;h3 id=&quot;if-you-have-universal-analytics&quot;&gt;If you have Universal Analytics&lt;/h3&gt;
 
@@ -1914,7 +1914,7 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
 &lt;link rel=&quot;stylesheet&quot; href=&quot;/multistep/multistep.css&quot; /&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/multistep/multistep.js&quot;&gt;&lt;/script&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt; $(function() { $('#multistep-form').multistep();  
+&lt;script type=&quot;text/javascript&quot;&gt; $(function() { $(&#39;#multistep-form&#39;).multistep();  
   
 });  
   
@@ -1980,7 +1980,7 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
   
    
   
-**8. You're finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I'll help out.
+**8. You&#39;re finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I&#39;ll help out.
 &lt;/form&gt;
 </content>
  </entry>
@@ -2173,7 +2173,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add unique event tracking to every single link on the landing page or website, even for simple text links&lt;/strong&gt;. This is the only accurate way to know which links and buttons are being clicked. You may think this is what GA’s In-page analytics is for, but unfortunately, it uses url paths to determine the number/percent of clicks. That’s why when you have 2 different buttons on a page leading to the same page, the clicks counts are the same when looking at in-page analytics.  An example of tracking a specific link within a paragraph:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true” lines=”2” width=”55%”]Click &lt;a href=&quot;/landing-page.php&quot; onclick=&quot;_gaq.push(['_trackEvent', 'Click', 'Blog Post 5', 'Paragraph Link #1'])&quot;&gt;Here&lt;/a&gt; [/cc]&lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true” lines=”2” width=”55%”]Click &lt;a href=&quot;/landing-page.php&quot; onclick=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Click&#39;, &#39;Blog Post 5&#39;, &#39;Paragraph Link #1&#39;])&quot;&gt;Here&lt;/a&gt; [/cc]&lt;/p&gt;
 
 &lt;p&gt;With this code, every time someone clicks this link, Analytics will register an event in the ‘click’ category, with the ‘Paragraph link #1’ label within the ‘Blog Post 5’ action. Categorize your events as you please. Now, I can see how many people click this specific link, and compare this to all the other links on the same page. I can even derive a CTR for this link.&lt;/p&gt;
 
@@ -2181,7 +2181,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add goal tracking for every conversion, including certain steps within a conversion.&lt;/strong&gt; The more you break down the funnel, the more info you can get. _**Even track which fields within a form are being clicked on! **_When you do this, you can find out at what point on your form or checkout page people tend to leave. This kind of data is priceless. You may have to get a bit technical here, and will need some javascript to get this kind of data. Here’s an example of a form field that records an event in Analytics when someone uses a form field:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”] &lt;input type=&quot;text&quot; name=&quot;firstname&quot; onfocus=&quot;_gaq.push(['_trackEvent', 'Form', 'Focus', 'First Name Field'])&quot; /&gt;[/cc]&lt;/p&gt;
+&lt;p&gt;[cc lang=”html” escaped=”true”] &lt;input type=&quot;text&quot; name=&quot;firstname&quot; onfocus=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Form&#39;, &#39;Focus&#39;, &#39;First Name Field&#39;])&quot; /&gt;[/cc]&lt;/p&gt;
 
 &lt;p&gt;This will record a ‘Focus’ action in the ‘Form’ category labeled ‘First Name Field’. Now, you can compare the use of each field, and find out which ones people aren’t using, as well as which ones are causing anxiety and lowering your conversions. Use these events as steps in your goal funnel.&lt;/p&gt;
 
@@ -2378,13 +2378,13 @@ Now, if you’ve set up your tracking as we recommended in the “Tracking” se
 
 &lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include('conversion.html'); switch ($_GET['link']) {  
+&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;link&#39;]) {  
   
-case 1: echo &quot;&lt;script&gt;location.href='http://site1.com/somepage.html'&lt;/script&gt;&quot;; break;  
+case 1: echo &quot;&lt;script&gt;location.href=&#39;http://site1.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
   
-case 2: echo &quot;&lt;script&gt;location.href='http://site2.com/somepage.html'&lt;/script&gt;&quot;; break;  
+case 2: echo &quot;&lt;script&gt;location.href=&#39;http://site2.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
   
-case 3: echo &quot;&lt;script&gt;location.href='http://site3.com/somepage.html'&lt;/script&gt;&quot;; break;  
+case 3: echo &quot;&lt;script&gt;location.href=&#39;http://site3.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
   
 }  
   
@@ -2440,7 +2440,7 @@ Hopefully this helps some of you fellow optimizers and eCommerce sites out!&lt;/
 
 &lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include('conversion.html'); echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;;  
+&lt;?php include(&#39;conversion.html&#39;); echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;;  
   
 ?&gt;
 
@@ -2450,11 +2450,11 @@ Hopefully this helps some of you fellow optimizers and eCommerce sites out!&lt;/
 
 &lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
 
-&lt;?php include('conversion.html'); switch ($_GET['id']) {  
+&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;id&#39;]) {  
   
-case 1: echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;; break;  
+case 1: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
   
-case 2: echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'&lt;/script&gt;&quot;; break;  
+case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
   
 }  
   
@@ -2483,9 +2483,9 @@ case 2: echo &quot;&lt;script&gt;location.href='http://www.domain.com/page.html'
 
 &lt;script type=&quot;text/javascript&quot;&gt; function readCookie(name) { // function to read cookie var nameRegex = RegExp(&quot;(?:; |^)&quot; + name + &quot;=([^;]+)&quot;); nameValue = nameRegex.exec(document.cookie); if(nameValue) { return nameValue[1]; } else { return null; } } &lt;/script&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt; (function () { try { _gaq.push(['gwo._setAccount', 'UA-XXXXXXX-Y']); var utmx = readCookie(&quot;__utmx&quot;); var pieces = utmx.split(/(?:^|:)[^.]*(?:.|$)/); for (i = 0; i &lt; pieces.length; i += 1) { if (pieces[i]) { _gaq.push(['gwo._trackPageview', '/' + pieces[i].substring(10) + '/goal']); } } } catch (err) { } })();  
+&lt;script type=&quot;text/javascript&quot;&gt; (function () { try { _gaq.push([&#39;gwo._setAccount&#39;, &#39;UA-XXXXXXX-Y&#39;]); var utmx = readCookie(&quot;__utmx&quot;); var pieces = utmx.split(/(?:^|:)[^.]*(?:.|$)/); for (i = 0; i &lt; pieces.length; i += 1) { if (pieces[i]) { _gaq.push([&#39;gwo._trackPageview&#39;, &#39;/&#39; + pieces[i].substring(10) + &#39;/goal&#39;]); } } } catch (err) { } })();  
   
-(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); &lt;/script&gt;
+(function() { var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true; ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;; var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s); })(); &lt;/script&gt;
 
 &lt;p&gt;[/cc]&lt;/p&gt;
 
