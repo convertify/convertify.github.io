@@ -8,6 +8,7 @@ Convertify's blog ([blog.convertify.io](blog.convertify.io))
   - Category archive plugin ([Github](https://github.com/shigeya/jekyll-category-archive-plugin))
   - Slugify permalink category ([Link](https://github.com/jekyll/jekyll-help/issues/129#issuecomment-61255284))
   - Regex filter (`_plugins/regex_filter.rb`)
+  - Jekyll Search ([Github](https://github.com/christian-fei/Simple-Jekyll-Search))
 
 ## Style Guide
 ---
