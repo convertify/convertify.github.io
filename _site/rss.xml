@@ -5,8 +5,8 @@
         <description>Convertify - Convertify</description>
         <link>http://blog.convertify.io</link>
         <link>http://blog.convertify.io</link>
-        <lastBuildDate>2015-03-04T17:10:37-08:00</lastBuildDate>
-        <pubDate>2015-03-04T17:10:37-08:00</pubDate>
+        <lastBuildDate>2015-03-04T17:26:45-08:00</lastBuildDate>
+        <pubDate>2015-03-04T17:26:45-08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -186,7 +186,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\frac{4+25+9+4+25+9+1+25+100+16}{10}} = 4.669&lt;/script&gt;
 
-&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It’s unlikely that tools such as Optimizely would consider results like this “conclusive” unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation means the test will not improve your sales. However, here’s what you should take from this:&lt;/p&gt;
+&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It’s unlikely that tools such as Optimizely would consider results like this “conclusive” unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation doesn’t necessarily mean the test will not improve your sales. However, here’s what you &lt;em&gt;should&lt;/em&gt; take from this:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you’ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
