@@ -28,6 +28,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+    <script type="text/javascript" src="/bower_components/simple-jekyll-search/dest/jekyll-search.js"></script>
   </head>
 
   <body>
@@ -136,6 +137,9 @@
           <li class=""><a href="/">Blog</a></li>
           <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
         </ul>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#search"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
@@ -303,6 +307,47 @@
         <p>&copy; Convertify 2012
         </p>
       </footer>
+      <div id="search">
+    <button type="button" class="close">×</button>
+    <form class="form--search">
+        <input id="search-input" type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <div class="list-searches">
+    	<div class="col-xs-12">
+    		<ul id="list--searchResults" class="thumbnails"></ul>
+    	</div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(function () {
+	    $('a[href="#search"]').on('click', function(event) {
+	        event.preventDefault();
+	        $('#search').addClass('open');
+	        $('#search > form > input[type="search"]').focus();
+	        $("body").addClass("is--searching");
+	    });
+	    
+	    $('#search, #search button.close').on('click keyup', function(event) {
+	        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+	            $(this).removeClass('open');
+	            $("body").removeClass("is--searching");
+	        }
+	    });
+	    
+	    $('form.form--search').submit(function(event) {
+	        event.preventDefault();
+	        return false;
+	    });
+	    // Init search datasource
+	    SimpleJekyllSearch.init({
+	      searchInput: document.getElementById('search-input'),
+	      resultsContainer: document.getElementById('list--searchResults'),
+	      dataSource: '/search.json',
+	      searchResultTemplate: '<div class="col-sm-4 searchResult"><div class="thumbnail"><a href="{url}"><img class="img-responsive" src="{image}"></a><div class="caption"><h4><a href="{url}">{title}</a></h4><p>{excerpt}</p></div></div></div>'
+	    })
+	});
+</script>
 
     </div> <!-- /container -->
 

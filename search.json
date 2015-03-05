@@ -1,0 +1,21 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}",
+      {% if post.featured_image %}
+      "image": "{{ post.featured_image }}",
+      {% endif %}
+      {% if post.excerpt.size > 250 %}
+       "excerpt": "{{ post.excerpt | strip_html | truncatewords: 10 | strip_newlines }}"
+      {% else %}
+       "excerpt": "{{ post.content| strip_html | truncatewords: 10 | strip_newlines }}"
+      {% endif %}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
