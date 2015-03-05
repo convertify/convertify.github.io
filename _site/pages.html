@@ -219,7 +219,7 @@
                 <h2><a class="post-title visible-xs" href="/pages.html">Atom Feed</a></h2>
                   <p>
                     
-                      Convertify 2015-03-05T01:15:11-08:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
+                      Convertify 2015-03-05T10:40:55-08:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
                   
                     <a href="/atom.xml">Read More</a>
                 </p>
@@ -912,6 +912,29 @@ All Pages
     </div>
 </div>
 <script type="text/javascript">
+	/*
+	 * jQuery throttle / debounce - v1.1 - 3/7/2010
+	 * http://benalman.com/projects/jquery-throttle-debounce-plugin/
+	 * 
+	 * Copyright (c) 2010 "Cowboy" Ben Alman
+	 * Dual licensed under the MIT and GPL licenses.
+	 * http://benalman.com/about/license/
+	 */
+	(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
+	// end jquery.debounce
+	function updateQueryStringParameter(uri, key, value) {
+	  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+	  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+	  if (uri.match(re)) {
+	    return uri.replace(re, '$1' + key + "=" + value + '$2');
+	  }
+	  else {
+	    return uri + separator + key + "=" + value;
+	  }
+	}
+	// end plugins
+
+
 	$(function () {
 	    $('a[href="#search"]').on('click', function(event) {
 	        event.preventDefault();
@@ -926,6 +949,11 @@ All Pages
 	            $("body").removeClass("is--searching");
 	        }
 	    });
+	    $("#search-input").on('keyup', $.debounce( 500, false, function(e)  {
+	    	console.log("tracking search "+$(this).val());
+	    	var newURL = updateQueryStringParameter(window.location.href, "q", $(this).val());
+	    	ga('send', 'pageview', newURL);
+	    }));
 	    
 	    $('form.form--search').submit(function(event) {
 	        event.preventDefault();
