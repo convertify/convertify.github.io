@@ -343,6 +343,8 @@ li.coming-soon p {
   #search #list--searchResults li {
     height: 100px;
     overflow-y: visible; }
+  #search #list--searchResults img {
+    max-height: 180px; }
   #search .searchResult .thumbnail {
     height: 321px;
     opacity: .7;

@@ -27,15 +27,15 @@ Today, I'd like to take some time to walk you through how to use our plugin and 
   
 **3. Make sure you have jQuery. **If you already have jQuery, skip this step. If you aren't sure, there's a simple way to find out. just check the source of your page and do a find (ctrl+f or cmd+f) and type 'jquery'. You should find a match in a line that looks like the following code. If you find it, move to the next step. If you dont have it, put the following code in-between the <head> tags of your page:  
   
-[cc lang="html" escaped="true"]  
+{% highlight html %}  
   
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>  
   
-[/cc]  
+{% endhighlight %}  
   
 **4. Add the following tags to the <head> section of your page, AFTER the jQuery code:**  
   
-[cc lang="html" escaped="true"]  
+{% highlight html %}  
   
 <link rel="stylesheet" href="/multistep/multistep.css"> <script type="text/javascript" src="/multistep/multistep.js"></script>  
   
@@ -45,23 +45,23 @@ Today, I'd like to take some time to walk you through how to use our plugin and 
   
 </script>  
   
-[/cc]  
+{% endhighlight %}  
   
 _note: use "multistep/multistep.css" and "multistep/multistep.js" if you didn't place files in the root of the domain._  
   
 **5. Give your form a ID tag of 'multistep-form' like so:**  
   
-[cc lang="html" escaped="true"]  
+{% highlight html %}  
   
 <form id="multistep=form">  
   
 </form>  
   
-[/cc]  
+{% endhighlight %}  
   
 **6. Separate your steps by wrapping them as follows. Also, give the last step an ID of 'last-step':**  
   
-[cc lang="html" escaped="true"]  
+{% highlight html %}  
   
 <form id="multistep-form">  
   
@@ -85,13 +85,13 @@ _note: use "multistep/multistep.css" and "multistep/multistep.js" if you didn't 
   
 </form>  
   
-[/cc]  
+{% endhighlight %}  
   
    
   
 **7. Give each step a button**  
   
-[cc lang="html" escaped="true"]  
+{% highlight html %}  
   
 <form id="multistep-form">  
   
@@ -101,7 +101,7 @@ _note: use "multistep/multistep.css" and "multistep/multistep.js" if you didn't 
   
 ..............  
   
-[/cc]  
+{% endhighlight %}  
   
    
   

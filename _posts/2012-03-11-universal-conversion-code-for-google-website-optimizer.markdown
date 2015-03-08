@@ -14,7 +14,7 @@ categories:
 
 I was reading a post over at [ROIRevolution](http://roirevolution.com) and found an awesome code that allows you to use one snippet of code to track all of your experiments, so I thought I'd share it here. This basically looks at your cookie and pulls out the proper conversion ID then inserts it into the code dynamically using javascript. Here's the code:  
   
-[cc lang="html" escaped="true"]  
+{% highlight js %}
   
 <script type="text/javascript"> function readCookie(name) { // function to read cookie var nameRegex = RegExp("(?:; |^)" + name + "=([^;]+)"); nameValue = nameRegex.exec(document.cookie); if(nameValue) { return nameValue[1]; } else { return null; } } </script>  
   
@@ -22,6 +22,6 @@ I was reading a post over at [ROIRevolution](http://roirevolution.com) and foun
   
 (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>  
   
-[/cc]  
+{% endhighlight %}
   
 This code should replace all your current GWO-related code on your conversion page.

@@ -31,11 +31,11 @@ We'll need to create a php file on the server. Let's call this redirect.php.
   
 We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.  
   
-[dropcap]1[/dropcap] First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be " http://yoursite.com/redirect.php?link=1". Notice how we added the '?link=1' at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.  
+  - First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be " http://yoursite.com/redirect.php?link=1". Notice how we added the '?link=1' at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.  
   
-[dropcap]2[/dropcap] Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:  
+  - Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:  
   
-[cc lang="html" escaped="true"]  
+{% highlight php %}  
   
 <?php include('conversion.html'); switch ($_GET['link']) {  
   
@@ -49,9 +49,9 @@ case 3: echo "<script>location.href='http://site3.com/somepage.html'</script>"; 
   
 ?>  
   
-[/cc]  
+{% endhighlight %}  
   
-[dropcap]3[/dropcap] Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the 'thank you' page in GWO.  
+  - Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the 'thank you' page in GWO.  
   
    
   

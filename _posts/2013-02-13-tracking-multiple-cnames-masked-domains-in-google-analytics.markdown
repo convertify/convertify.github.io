@@ -17,13 +17,13 @@ Let's say you have www.domainA.com and www.domainB.com - whereas www.domainB.com
 
 Change your GA code to look like this:
 
-[cc lang="javascript" escaped="true"]
+{% highlight js %}
 
 var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12345-1']); _gaq.push(['_setDomainName', window.location.hostname]); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']);
 
 (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
 
-[/cc]
+{% endhighlight %}
 
 And then set up your standard cross-domain profile filter:
 

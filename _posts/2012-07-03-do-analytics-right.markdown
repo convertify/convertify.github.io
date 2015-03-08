@@ -23,7 +23,9 @@ By far the most important first step is to track every single thing possible. Th
 
 **Add unique event tracking to every single link on the landing page or website, even for simple text links**. This is the only accurate way to know which links and buttons are being clicked. You may think this is what GA's In-page analytics is for, but unfortunately, it uses url paths to determine the number/percent of clicks. That's why when you have 2 different buttons on a page leading to the same page, the clicks counts are the same when looking at in-page analytics.  An example of tracking a specific link within a paragraph:
 
-[cc lang="html" escaped="true" lines="2" width="55%"]Click <a href="/landing-page.php" onclick="_gaq.push(['_trackEvent', 'Click', 'Blog Post 5', 'Paragraph Link #1'])">Here</a> [/cc]
+{% highlight html %}
+Click <a href="/landing-page.php" onclick="_gaq.push(['_trackEvent', 'Click', 'Blog Post 5', 'Paragraph Link #1'])">Here</a> 
+{% endhighlight %} 
 
 With this code, every time someone clicks this link, Analytics will register an event in the 'click' category, with the 'Paragraph link #1' label within the 'Blog Post 5' action. Categorize your events as you please. Now, I can see how many people click this specific link, and compare this to all the other links on the same page. I can even derive a CTR for this link.
 
@@ -31,7 +33,9 @@ With this code, every time someone clicks this link, Analytics will register an 
 
 **Add goal tracking for every conversion, including certain steps within a conversion.** The more you break down the funnel, the more info you can get. _**Even track which fields within a form are being clicked on! **_When you do this, you can find out at what point on your form or checkout page people tend to leave. This kind of data is priceless. You may have to get a bit technical here, and will need some javascript to get this kind of data. Here's an example of a form field that records an event in Analytics when someone uses a form field:
 
-[cc lang="html" escaped="true"] <input type="text" name="firstname" onfocus="_gaq.push(['_trackEvent', 'Form', 'Focus', 'First Name Field'])">[/cc]
+{% highlight html %}
+<input type="text" name="firstname" onfocus="_gaq.push(['_trackEvent', 'Form', 'Focus', 'First Name Field'])">
+{% endhighlight %} 
 
 This will record a 'Focus' action in the 'Form' category labeled 'First Name Field'. Now, you can compare the use of each field, and find out which ones people aren't using, as well as which ones are causing anxiety and lowering your conversions. Use these events as steps in your goal funnel.
 

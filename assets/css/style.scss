@@ -402,10 +402,15 @@ li.coming-soon p {
         /* height: 209px; */
     }
 
-    #list--searchResults li {
-        height: 100px;
-        overflow-y: visible;
-    }
+    #list--searchResults {
+	    li {
+	        height: 100px;
+	        overflow-y: visible;
+	    }
+	    img {
+	    	max-height: 180px;
+	    }
+	}
     .searchResult .thumbnail {
         height: 321px;
         opacity: .7;

@@ -172,87 +172,65 @@
 
 <p>**3. Make sure you have jQuery. **If you already have jQuery, skip this step. If you aren’t sure, there’s a simple way to find out. just check the source of your page and do a find (ctrl+f or cmd+f) and type ‘jquery’. You should find a match in a line that looks like the following code. If you find it, move to the next step. If you dont have it, put the following code in-between the &lt;head&gt; tags of your page:</p>
 
-<p>[cc lang=”html” escaped=”true”]</p>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<p>[/cc]</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
 
 <p><strong>4. Add the following tags to the &lt;head&gt; section of your page, AFTER the jQuery code:</strong></p>
 
-<p>[cc lang=”html” escaped=”true”]</p>
-
-<link rel="stylesheet" href="/multistep/multistep.css" />
-<script type="text/javascript" src="/multistep/multistep.js"></script>
-
-<script type="text/javascript"> $(function() { $('#multistep-form').multistep();  
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/multistep/multistep.css&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;/multistep/multistep.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>  
   
-});  
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span> <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#multistep-form&#39;</span><span class="p">).</span><span class="nx">multistep</span><span class="p">();</span>  
   
-</script>
-
-<p>[/cc]</p>
+<span class="p">});</span>  
+  
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
 
 <p><em>note: use “multistep/multistep.css” and “multistep/multistep.js” if you didn’t place files in the root of the domain.</em></p>
 
 <p><strong>5. Give your form a ID tag of ‘multistep-form’ like so:</strong></p>
 
-<p>[cc lang=”html” escaped=”true”]</p>
-
-<form id="multistep=form">  
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;multistep=form&quot;</span><span class="nt">&gt;</span>  
   
-</form>
-
-<p>[/cc]</p>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <p><strong>6. Separate your steps by wrapping them as follows. Also, give the last step an ID of ‘last-step’:</strong></p>
 
-<p>[cc lang=”html” escaped=”true”]</p>
-
-<form id="multistep-form">  
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;multistep-form&quot;</span><span class="nt">&gt;</span>  
   
-<div class="step">  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;step&quot;</span><span class="nt">&gt;</span>  
   
-<!-- Stuff for step 1 here... -->  
+<span class="c">&lt;!-- Stuff for step 1 here... --&gt;</span>  
   
-</div>  
+<span class="nt">&lt;/div&gt;</span>  
   
-<div class="step">  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;step&quot;</span><span class="nt">&gt;</span>  
   
-&lt;~-- Stuff for step 2 -- &gt;  
+<span class="err">&lt;</span>~-- Stuff for step 2 -- &gt;  
   
-</div>  
+<span class="nt">&lt;/div&gt;</span>  
   
-<div class="step" id="last-step">  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;step&quot;</span> <span class="na">id=</span><span class="s">&quot;last-step&quot;</span><span class="nt">&gt;</span>  
   
-&lt;~-- Stuff for step 3 (last step) -- &gt;  
+<span class="err">&lt;</span>~-- Stuff for step 3 (last step) -- &gt;  
   
-</div>  
+<span class="nt">&lt;/div&gt;</span>  
   
-</form>
-
-<p>[/cc]</p>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <p> </p>
 
 <p><strong>7. Give each step a button</strong></p>
 
-<p>[cc lang=”html” escaped=”true”]</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;multistep-form&quot;</span><span class="nt">&gt;</span>  
+  
+<span class="nt">&lt;div&gt;</span>  
+  
+<span class="c">&lt;!-- Stuff for step 1 here... --&gt;</span> <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Continue<span class="nt">&lt;/button&gt;</span> <span class="nt">&lt;/div&gt;</span>  
+  
+..............</code></pre></div>
 
-<form id="multistep-form">  
-  
-<div>  
-  
-<!-- Stuff for step 1 here... --> <button type="submit" class="submit">Continue</button> </div>  
-  
-..............  
-  
-[/cc]  
-  
-   
-  
-**8. You're finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I'll help out.
-</form>
+<p> </p>
+
+<p>**8. You’re finished! **If you are having trouble or want more info, visit the <a href="https://github.com/coopermaruyama/multistep.js">project page</a> or leave a comment below and I’ll help out.</p>
 
     <hr>
     <ul class="pager">
