@@ -5,8 +5,8 @@
         <description>Convertify - Convertify</description>
         <link>http://blog.convertify.io</link>
         <link>http://blog.convertify.io</link>
-        <lastBuildDate>2015-03-05T10:40:55-08:00</lastBuildDate>
-        <pubDate>2015-03-05T10:40:55-08:00</pubDate>
+        <lastBuildDate>2015-03-08T13:21:25-07:00</lastBuildDate>
+        <pubDate>2015-03-08T13:21:25-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -15,9 +15,9 @@
                 <description>
 &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.&lt;/p&gt;
 
-&lt;h2 id=&quot;understanding-how-testing-platforms-report-a-winner&quot;&gt;Understanding how testing platforms report a “Winner”&lt;/h2&gt;
+&lt;h2 id=&quot;understanding-how-testing-platforms-report-a-winner&quot;&gt;Understanding how testing platforms report a &amp;#8220;Winner&amp;#8221;&lt;/h2&gt;
 
-&lt;p&gt;Let’s say that you ran an A/B test which had the following results when it declared a winner:&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s say that you ran an A/B test which had the following results when it declared a winner:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -36,8 +36,8 @@
       &lt;td&gt;20000&lt;/td&gt;
       &lt;td&gt;2000&lt;/td&gt;
       &lt;td&gt;10%&lt;/td&gt;
-      &lt;td&gt;–&lt;/td&gt;
-      &lt;td&gt;–&lt;/td&gt;
+      &lt;td&gt;&amp;#8211;&lt;/td&gt;
+      &lt;td&gt;&amp;#8211;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Variation 1&lt;/td&gt;
@@ -50,22 +50,22 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;You’re probably thinking that what these results are saying is that if you were to implement the winning variation, there’s a 97.6% probability that you will see a 6% lift in conversions. If that’s how you interpret these results, then you are &lt;strong&gt;dead wrong.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;#8217;re probably thinking that what these results are saying is that if you were to implement the winning variation, there&amp;#8217;s a 97.6% probability that you will see a 6% lift in conversions. If that&amp;#8217;s how you interpret these results, then you are &lt;strong&gt;dead wrong.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;What this result &lt;em&gt;actually&lt;/em&gt; means is that there’s a 97.6% probability that variation 1 will convert better than the control, but &lt;strong&gt;it does not have any confidence in the lift itself.&lt;/strong&gt; So, how come testing tools don’t adjust their algorithms so that the significance represents the confidence in the &lt;em&gt;improvement,&lt;/em&gt; rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:&lt;/p&gt;
+&lt;p&gt;What this result &lt;em&gt;actually&lt;/em&gt; means is that there&amp;#8217;s a 97.6% probability that variation 1 will convert better than the control, but &lt;strong&gt;it does not have any confidence in the lift itself.&lt;/strong&gt; So, how come testing tools don&amp;#8217;t adjust their algorithms so that the significance represents the confidence in the &lt;em&gt;improvement,&lt;/em&gt; rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than &lt;em&gt;&lt;strong&gt;ten times as much data, which means you’d need to run your tests more than ten times longer.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Once you know which one is the better variation, &lt;em&gt;&lt;strong&gt;who cares how much it’s going to win by?&lt;/strong&gt;&lt;/em&gt; It makes more sense to just implement it right away, and move on to another test. In other words, it’s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.&lt;/li&gt;
+  &lt;li&gt;It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than &lt;em&gt;&lt;strong&gt;ten times as much data, which means you&amp;#8217;d need to run your tests more than ten times longer.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Once you know which one is the better variation, &lt;em&gt;&lt;strong&gt;who cares how much it&amp;#8217;s going to win by?&lt;/strong&gt;&lt;/em&gt; It makes more sense to just implement it right away, and move on to another test. In other words, it&amp;#8217;s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;If this is news to you, at least now you’re aware of this, which is a step forward. Although we shouldn’t assume that we’re going to get as big a lift as is reported in the results, it also means that we might get a &lt;strong&gt;bigger&lt;/strong&gt; lift than what is reported! Most of the time though, I’ve found that the former result tends to be the case.&lt;/p&gt;
+&lt;p&gt;If this is news to you, at least now you&amp;#8217;re aware of this, which is a step forward. Although we shouldn&amp;#8217;t assume that we&amp;#8217;re going to get as big a lift as is reported in the results, it also means that we might get a &lt;strong&gt;bigger&lt;/strong&gt; lift than what is reported! Most of the time though, I&amp;#8217;ve found that the former result tends to be the case.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-create-tests-that-actually-improve-your-sales&quot;&gt;How to create tests that actually improve your sales&lt;/h2&gt;
 
-&lt;p&gt;The most common reason why winning tests don’t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I’ll do my best to drill it into your mind.&lt;/p&gt;
+&lt;p&gt;The most common reason why winning tests don&amp;#8217;t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I&amp;#8217;ll do my best to drill it into your mind.&lt;/p&gt;
 
-&lt;p&gt;To understand this better, we first need to understand the concept of a &lt;strong&gt;standard deviation.&lt;/strong&gt; The standard deviation is a measure that is used to quantify the amount of variance in a set of data. Here’s a good way to think about this: Let’s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:&lt;/p&gt;
+&lt;p&gt;To understand this better, we first need to understand the concept of a &lt;strong&gt;standard deviation.&lt;/strong&gt; The standard deviation is a measure that is used to quantify the amount of variance in a set of data. Here&amp;#8217;s a good way to think about this: Let&amp;#8217;s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -118,7 +118,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn’t mean that we are getting that conversion rate every day. Now there’s no need to know how to calculate the standard variation, but we’ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of &lt;em&gt;that&lt;/em&gt;, which gives us the average variance. Then we un-square it (square root) so we don’t have inflated values:&lt;/p&gt;
+&lt;p&gt;For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn&amp;#8217;t mean that we are getting that conversion rate every day. Now there&amp;#8217;s no need to know how to calculate the standard variation, but we&amp;#8217;ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of &lt;em&gt;that&lt;/em&gt;, which gives us the average variance. Then we un-square it (square root) so we don&amp;#8217;t have inflated values:&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -186,15 +186,15 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\frac{4+25+9+4+25+9+1+25+100+16}{10}} = 4.669&lt;/script&gt;
 
-&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It’s unlikely that tools such as Optimizely would consider results like this “conclusive” unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation doesn’t necessarily mean the test will not improve your sales. However, here’s what you &lt;em6&gt;should&lt;/em6&gt; take from this:&lt;/p&gt;
+&lt;p&gt;As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It&amp;#8217;s unlikely that tools such as Optimizely would consider results like this &amp;#8220;conclusive&amp;#8221; unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation doesn&amp;#8217;t necessarily mean the test will not improve your sales. However, here&amp;#8217;s what you &lt;em6&gt;should&lt;/em6&gt; take from this:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you’ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you&amp;#8217;ll see when you implement the variation.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;And with that said, the one thing you need to do is &lt;strong&gt;test changes to variables that actually matter to your visitors.&lt;/strong&gt; If you aren’t seeing lifts in sales from your winning tests, it’s most likely because you are focusing too much on ‘visual’ aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.&lt;/p&gt;
+&lt;p&gt;And with that said, the one thing you need to do is &lt;strong&gt;test changes to variables that actually matter to your visitors.&lt;/strong&gt; If you aren&amp;#8217;t seeing lifts in sales from your winning tests, it&amp;#8217;s most likely because you are focusing too much on &amp;#8216;visual&amp;#8217; aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.&lt;/p&gt;
 
-&lt;p&gt;The first time I saw KISSMetric’s infographic on &lt;a href=&quot;https://blog.kissmetrics.com/color-psychology/&quot;&gt;how colors affect purchases&lt;/a&gt;, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled to run an experiment to test different colors on their website, inspired by that infographic. When is the last time you changed your mind about buying something because of the color of something on the site? &lt;strong&gt;Probably never&lt;/strong&gt;. When you test something insignificant like this, the affect to the conversion rate due to the change cannot overcome your variance, and therefore your result is actually due to natural variance, which results in tests that don’t make a difference to sales when implemented. You must not forget that in order for a change to your site to improve your sales, that change needs to literally make someone who would &lt;strong&gt;not&lt;/strong&gt; have bought from you &lt;strong&gt;change their mind&lt;/strong&gt;. So next time you build a test, think to yourself - &lt;em&gt;“Is this change enough to make someone &lt;strong&gt;change their mind?&lt;/strong&gt;“&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The first time I saw KISSMetric&amp;#8217;s infographic on &lt;a href=&quot;https://blog.kissmetrics.com/color-psychology/&quot;&gt;how colors affect purchases&lt;/a&gt;, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled to run an experiment to test different colors on their website, inspired by that infographic. When is the last time you changed your mind about buying something because of the color of something on the site? &lt;strong&gt;Probably never&lt;/strong&gt;. When you test something insignificant like this, the affect to the conversion rate due to the change cannot overcome your variance, and therefore your result is actually due to natural variance, which results in tests that don&amp;#8217;t make a difference to sales when implemented. You must not forget that in order for a change to your site to improve your sales, that change needs to literally make someone who would &lt;strong&gt;not&lt;/strong&gt; have bought from you &lt;strong&gt;change their mind&lt;/strong&gt;. So next time you build a test, think to yourself - &lt;em&gt;&amp;#8220;Is this change enough to make someone &lt;strong&gt;change their mind?&lt;/strong&gt;&amp;#8220;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to learn more about creating tests that actually increase your sales, check out our free CRO course &lt;a href=&quot;https://convertify.io/no-guesswork&quot;&gt;No Guesswork&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -731,7 +731,7 @@ If you run this test and get results, please let us know in the comments section
         <item>
                 <title>How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</title>
                 <description>&lt;script type=&quot;text/javascript&quot;&gt;
-	var disqus_identifier = &#39;2670052270&#39;;
+	var disqus_identifier = '2670052270';
 &lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;Note: If you’d like us to perform this integration for you, we offer a flat rate to do this for you. Please email &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&quot;&gt;&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#064;&amp;#099;&amp;#111;&amp;#110;&amp;#118;&amp;#101;&amp;#114;&amp;#116;&amp;#105;&amp;#102;&amp;#121;&amp;#046;&amp;#105;&amp;#111;&lt;/a&gt; to hire us.&lt;/em&gt;&lt;/p&gt;
@@ -802,7 +802,7 @@ Overall it’s a technical process that requires some code, but we’ve done all
     &lt;span class=&quot;c1&quot;&gt;// ]]&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName&#39;.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
+&lt;p&gt;Make sure not to overwrite your original Account ID (&lt;code&gt;UA-XXXXX-X&lt;/code&gt;) or your domain name (The part after &lt;code&gt;_setDomainName'.&lt;/code&gt;) with the information from the example code. Also, replace the “m48” part in  &lt;code&gt;var infusionsoft_app_id = &quot;m48&quot;;&lt;/code&gt; with your actual Infusionsoft App ID.&lt;/p&gt;
 
 &lt;h3 id=&quot;if-you-have-universal-analytics&quot;&gt;If you have Universal Analytics&lt;/h3&gt;
 
@@ -1432,21 +1432,9 @@ Hope this helps. Enjoy!&lt;/li&gt;
 
 &lt;p&gt;Change your GA code to look like this:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”javascript” escaped=”true”]&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_setAccount&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;UA-12345-1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_setDomainName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_setAllowLinker&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;_trackPageview&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;var _gaq = _gaq&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;[]; _gaq.push([‘_setAccount’, ‘UA-12345-1’]); _gaq.push([‘_setDomainName’, window.location.hostname]); _gaq.push([‘_setAllowLinker’, true]); _gaq.push([‘_trackPageview’]);&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;(function() { var ga = document.createElement(‘script’); ga.type = ‘text/javascript’; ga.async = true; ga.src = (‘https:’ == document.location.protocol ? ‘https://ssl’ : ‘http://www’) + ‘.google-analytics.com/ga.js’; var s = document.getElementsByTagName(‘script’)[0]; s.parentNode.insertBefore(ga, s); })();&lt;/p&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;https:&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;protocol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://ssl&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://www&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;.google-analytics.com/ga.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parentNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;insertBefore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And then set up your standard cross-domain profile filter:&lt;/p&gt;
 
@@ -1896,87 +1884,65 @@ Once we launch this test, we have layered 2 site-wide tests, and in less than an
 
 &lt;p&gt;**3. Make sure you have jQuery. **If you already have jQuery, skip this step. If you aren’t sure, there’s a simple way to find out. just check the source of your page and do a find (ctrl+f or cmd+f) and type ‘jquery’. You should find a match in a line that looks like the following code. If you find it, move to the next step. If you dont have it, put the following code in-between the &amp;lt;head&amp;gt; tags of your page:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;4. Add the following tags to the &amp;lt;head&amp;gt; section of your page, AFTER the jQuery code:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/multistep/multistep.css&quot; /&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/multistep/multistep.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt; $(function() { $(&#39;#multistep-form&#39;).multistep();  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/multistep/multistep.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/multistep/multistep.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;  
   
-});  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#multistep-form&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;multistep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;  
   
-&lt;/script&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;  
+  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;note: use “multistep/multistep.css” and “multistep/multistep.js” if you didn’t place files in the root of the domain.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;5. Give your form a ID tag of ‘multistep-form’ like so:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;form id=&quot;multistep=form&quot;&gt;  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;multistep=form&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
   
-&lt;/form&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;6. Separate your steps by wrapping them as follows. Also, give the last step an ID of ‘last-step’:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;form id=&quot;multistep-form&quot;&gt;  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;multistep-form&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
   
-&lt;div class=&quot;step&quot;&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
   
-&lt;!-- Stuff for step 1 here... --&gt;  
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Stuff for step 1 here... --&amp;gt;&lt;/span&gt;  
   
-&lt;/div&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;  
   
-&lt;div class=&quot;step&quot;&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
   
-&amp;lt;~-- Stuff for step 2 -- &amp;gt;  
+&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;~-- Stuff for step 2 -- &amp;gt;  
   
-&lt;/div&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;  
   
-&lt;div class=&quot;step&quot; id=&quot;last-step&quot;&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;step&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;last-step&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
   
-&amp;lt;~-- Stuff for step 3 (last step) -- &amp;gt;  
+&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;~-- Stuff for step 3 (last step) -- &amp;gt;  
   
-&lt;/div&gt;  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;  
   
-&lt;/form&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt; &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;7. Give each step a button&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;multistep-form&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
+  
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;  
+  
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Stuff for step 1 here... --&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Continue&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;  
+  
+..............&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;form id=&quot;multistep-form&quot;&gt;  
-  
-&lt;div&gt;  
-  
-&lt;!-- Stuff for step 1 here... --&gt; &lt;button type=&quot;submit&quot; class=&quot;submit&quot;&gt;Continue&lt;/button&gt; &lt;/div&gt;  
-  
-..............  
-  
-[/cc]  
-  
-   
-  
-**8. You&#39;re finished! **If you are having trouble or want more info, visit the [project page](https://github.com/coopermaruyama/multistep.js) or leave a comment below and I&#39;ll help out.
-&lt;/form&gt;
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;**8. You’re finished! **If you are having trouble or want more info, visit the &lt;a href=&quot;https://github.com/coopermaruyama/multistep.js&quot;&gt;project page&lt;/a&gt; or leave a comment below and I’ll help out.&lt;/p&gt;
 </description>
                 <link>http://blog.convertify.io/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form</link>
                 <guid>http://blog.convertify.io/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form</guid>
@@ -2168,7 +2134,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add unique event tracking to every single link on the landing page or website, even for simple text links&lt;/strong&gt;. This is the only accurate way to know which links and buttons are being clicked. You may think this is what GA’s In-page analytics is for, but unfortunately, it uses url paths to determine the number/percent of clicks. That’s why when you have 2 different buttons on a page leading to the same page, the clicks counts are the same when looking at in-page analytics.  An example of tracking a specific link within a paragraph:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true” lines=”2” width=”55%”]Click &lt;a href=&quot;/landing-page.php&quot; onclick=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Click&#39;, &#39;Blog Post 5&#39;, &#39;Paragraph Link #1&#39;])&quot;&gt;Here&lt;/a&gt; [/cc]&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;Click &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/landing-page.php&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_gaq.push([&amp;#39;_trackEvent&amp;#39;, &amp;#39;Click&amp;#39;, &amp;#39;Blog Post 5&amp;#39;, &amp;#39;Paragraph Link #1&amp;#39;])&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this code, every time someone clicks this link, Analytics will register an event in the ‘click’ category, with the ‘Paragraph link #1’ label within the ‘Blog Post 5’ action. Categorize your events as you please. Now, I can see how many people click this specific link, and compare this to all the other links on the same page. I can even derive a CTR for this link.&lt;/p&gt;
 
@@ -2176,7 +2142,7 @@ Now, I’m not saying not to test those things. You should &lt;strong&gt;definit
 
 &lt;p&gt;&lt;strong&gt;Add goal tracking for every conversion, including certain steps within a conversion.&lt;/strong&gt; The more you break down the funnel, the more info you can get. _**Even track which fields within a form are being clicked on! **_When you do this, you can find out at what point on your form or checkout page people tend to leave. This kind of data is priceless. You may have to get a bit technical here, and will need some javascript to get this kind of data. Here’s an example of a form field that records an event in Analytics when someone uses a form field:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”] &lt;input type=&quot;text&quot; name=&quot;firstname&quot; onfocus=&quot;_gaq.push([&#39;_trackEvent&#39;, &#39;Form&#39;, &#39;Focus&#39;, &#39;First Name Field&#39;])&quot; /&gt;[/cc]&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;firstname&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onfocus=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;_gaq.push([&amp;#39;_trackEvent&amp;#39;, &amp;#39;Form&amp;#39;, &amp;#39;Focus&amp;#39;, &amp;#39;First Name Field&amp;#39;])&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This will record a ‘Focus’ action in the ‘Form’ category labeled ‘First Name Field’. Now, you can compare the use of each field, and find out which ones people aren’t using, as well as which ones are causing anxiety and lowering your conversions. Use these events as steps in your goal funnel.&lt;/p&gt;
 
@@ -2367,27 +2333,30 @@ Now, if you’ve set up your tracking as we recommended in the “Tracking” se
 
 &lt;p&gt;We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap] First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;[dropcap]2[/dropcap] Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;conversion.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_GET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;link&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
+  
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://site1.com/somepage.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+  
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://site2.com/somepage.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+  
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://site3.com/somepage.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
+  
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;link&#39;]) {  
-  
-case 1: echo &quot;&lt;script&gt;location.href=&#39;http://site1.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
-  
-case 2: echo &quot;&lt;script&gt;location.href=&#39;http://site2.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
-  
-case 3: echo &quot;&lt;script&gt;location.href=&#39;http://site3.com/somepage.html&#39;&lt;/script&gt;&quot;; break;  
-  
-}  
-  
-?&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
-
-&lt;p&gt;[dropcap]3[/dropcap] Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt; &lt;/p&gt;
 
@@ -2427,41 +2396,43 @@ Hopefully this helps some of you fellow optimizers and eCommerce sites out!&lt;/
                 <title>Track Clicks as Conversions in Google Website Optimizer</title>
                 <description>&lt;p&gt;Sometimes, you may be interested in optimizing clicks-through-rates using Google Website Optimizer. Since GWO requires a thank-you page link with code in it in order to count as a conversion, we came up with a workaround to make a click count as a conversion. Not only will I be showing you how to track clicks as a conversion, but I’ll also show how you can track &lt;strong&gt;multiple&lt;/strong&gt; clicks as the **same **conversion. My recent client wanted me to improve his click-through-rates on his review site, which meant I needed to count specific outgoing clicks from his website as a conversion. The way the solution works is that you make all the buttons link to the same page, which contains the conversion code in it. The page then redirects them to the proper page based on which button/link they clicked. It’s unnoticeable, and easy to do:&lt;/p&gt;
 
-&lt;p&gt;[dropcap]1[/dropcap] First we need to create an HTML page with the conversion code in it. Open up any text-editor, and copy/paste your conversion code from GWO into the file. save it anywhere on your web server. We’ll call it conversion.html for this example. M&lt;strong&gt;ake sure the filename ends in .html before saving!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;[dropcap]2[/dropcap]Open up the text-editor again and create another file. We’ll call it gwo.php for this example. Copy the following code into it then save it on your web server in the same folder as conversion.html! If you just want to track 1 destination, look at the first block of code. If you want to track multiple links going to multiple destinations and want to count them all as the same conversion, see the second section of code.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First we need to create an HTML page with the conversion code in it. Open up any text-editor, and copy/paste your conversion code from GWO into the file. save it anywhere on your web server. We’ll call it conversion.html for this example. M&lt;strong&gt;ake sure the filename ends in .html before saving!&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open up the text-editor again and create another file. We’ll call it gwo.php for this example. Copy the following code into it then save it on your web server in the same folder as conversion.html! If you just want to track 1 destination, look at the first block of code. If you want to track multiple links going to multiple destinations and want to count them all as the same conversion, see the second section of code.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;**Single destination: **&lt;em&gt;(Replace ‘http://www.domain.com/page.html’ with the link it should redirect to.)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;?php include(&#39;conversion.html&#39;); echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;;  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;conversion.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://www.domain.com/page.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
   
-?&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;**Multiple Destinations: **&lt;em&gt;Two outgoing links are used in this example. If you have 4 links, there would be 4 “case” statements. You can copy/paste extra ones as needed. Replace the links which follow “href=” with your links. &lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;?php include(&#39;conversion.html&#39;); switch ($_GET[&#39;id&#39;]) {  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;conversion.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_GET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  
   
-case 1: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://www.domain.com/page.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
   
-case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.html&#39;&lt;/script&gt;&quot;; break;  
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;script&amp;gt;location.href=&amp;#39;http://www.domain.com/page.html&amp;#39;&amp;lt;/script&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
   
-}  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
   
-?&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Once finished, save the file and move to the next step.&lt;/p&gt;
 
-&lt;p&gt;[dropcap]3[/dropcap] Now, we have to change the link of your buttons to link to this new page. But first, we need to figure out what link to use. Let’s pretend that our gwo.php file is saved at http://website.com/gwo.php. If we wanted to link to the site in ‘case 1’, we would visit http://website.com/gwo.php?id=1 . If we wanted the button to link to ‘case 2’, we simply change id=1 in the link to id=2. So http://website.com/gwo.php?id=2 would take us to a different site than if we put id=1. In the process, it will also spit out the conversion code so that GWO can track it.&lt;/p&gt;
-
-&lt;p&gt;[dropcap]4[/dropcap] Last, we need to validate the page. When setting up the experiment in the GWO setup wizard, in this example, we put http://website.com/conversion.html in the thank-you page field. Google Website Optimizer should validate the page successfully if your page is uploaded correctly.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now, we have to change the link of your buttons to link to this new page. But first, we need to figure out what link to use. Let’s pretend that our gwo.php file is saved at http://website.com/gwo.php. If we wanted to link to the site in ‘case 1’, we would visit http://website.com/gwo.php?id=1 . If we wanted the button to link to ‘case 2’, we simply change id=1 in the link to id=2. So http://website.com/gwo.php?id=2 would take us to a different site than if we put id=1. In the process, it will also spit out the conversion code so that GWO can track it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Last, we need to validate the page. When setting up the experiment in the GWO setup wizard, in this example, we put http://website.com/conversion.html in the thank-you page field. Google Website Optimizer should validate the page successfully if your page is uploaded correctly.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;That’s it, You’re Done! If you want to add more links to be counted as conversions, all you need to do is add another ‘case’ to the php page we made. Hope this helps!&lt;/p&gt;
 </description>
@@ -2474,15 +2445,11 @@ case 2: echo &quot;&lt;script&gt;location.href=&#39;http://www.domain.com/page.h
                 <title>Universal Conversion Code for Google Website Optimizer</title>
                 <description>&lt;p&gt;I was reading a post over at &lt;a href=&quot;http://roirevolution.com&quot;&gt;ROIRevolution&lt;/a&gt; and found an awesome code that allows you to use one snippet of code to track all of your experiments, so I thought I’d share it here. This basically looks at your cookie and pulls out the proper conversion ID then inserts it into the code dynamically using javascript. Here’s the code:&lt;/p&gt;
 
-&lt;p&gt;[cc lang=”html” escaped=”true”]&lt;/p&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt; function readCookie(name) { // function to read cookie var nameRegex = RegExp(&quot;(?:; |^)&quot; + name + &quot;=([^;]+)&quot;); nameValue = nameRegex.exec(document.cookie); if(nameValue) { return nameValue[1]; } else { return null; } } &lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt; (function () { try { _gaq.push([&#39;gwo._setAccount&#39;, &#39;UA-XXXXXXX-Y&#39;]); var utmx = readCookie(&quot;__utmx&quot;); var pieces = utmx.split(/(?:^|:)[^.]*(?:.|$)/); for (i = 0; i &lt; pieces.length; i += 1) { if (pieces[i]) { _gaq.push([&#39;gwo._trackPageview&#39;, &#39;/&#39; + pieces[i].substring(10) + &#39;/goal&#39;]); } } } catch (err) { } })();  
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;readCookie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// function to read cookie var nameRegex = RegExp(&amp;quot;(?:; |^)&amp;quot; + name + &amp;quot;=([^;]+)&amp;quot;); nameValue = nameRegex.exec(document.cookie); if(nameValue) { return nameValue[1]; } else { return null; } } &amp;lt;/script&amp;gt;  &lt;/span&gt;
   
-(function() { var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true; ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;; var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s); })(); &lt;/script&gt;
-
-&lt;p&gt;[/cc]&lt;/p&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gwo._setAccount&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;UA-XXXXXXX-Y&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;utmx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;readCookie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;__utmx&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;utmx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/(?:^|:)[^.]*(?:.|$)/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_gaq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gwo._trackPageview&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pieces&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/goal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;  
+  
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;https:&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;protocol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://ssl&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://www&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;.google-analytics.com/ga.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parentNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;insertBefore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This code should replace all your current GWO-related code on your conversion page.&lt;/p&gt;
 </description>

@@ -176,27 +176,30 @@
 
 <p>We will assume the page you are trying to optimize is at http://yoursite.com/page-to-be-optimized.html.</p>
 
-<p>[dropcap]1[/dropcap] First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.</p>
+<ul>
+  <li>
+    <p>First, we start by changing all the links to link to this redirect page. So on the link that links to Link 1, we will change the link to be “ http://yoursite.com/redirect.php?link=1”. Notice how we added the ‘?link=1’ at the end? Thanks to php, the redirect page will be able to use this information and send the visitor to the correct place. Do this for the other links as well.</p>
+  </li>
+  <li>
+    <p>Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:</p>
+  </li>
+</ul>
 
-<p>[dropcap]2[/dropcap] Now, we create the redirect page. Create a file called redirect.php using any text or HTML editor and copy in the following code:</p>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">include</span><span class="p">(</span><span class="s1">&#39;conversion.html&#39;</span><span class="p">);</span> <span class="k">switch</span> <span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;link&#39;</span><span class="p">])</span> <span class="p">{</span>  
+  
+<span class="k">case</span> <span class="mi">1</span><span class="o">:</span> <span class="k">echo</span> <span class="s2">&quot;&lt;script&gt;location.href=&#39;http://site1.com/somepage.html&#39;&lt;/script&gt;&quot;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>  
+  
+<span class="k">case</span> <span class="mi">2</span><span class="o">:</span> <span class="k">echo</span> <span class="s2">&quot;&lt;script&gt;location.href=&#39;http://site2.com/somepage.html&#39;&lt;/script&gt;&quot;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>  
+  
+<span class="k">case</span> <span class="mi">3</span><span class="o">:</span> <span class="k">echo</span> <span class="s2">&quot;&lt;script&gt;location.href=&#39;http://site3.com/somepage.html&#39;&lt;/script&gt;&quot;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>  
+  
+<span class="p">}</span>  
+  
+<span class="cp">?&gt;</span><span class="x"></span></code></pre></div>
 
-<p>[cc lang=”html” escaped=”true”]</p>
-
-<?php include('conversion.html'); switch ($_GET['link']) {  
-  
-case 1: echo "<script>location.href='http://site1.com/somepage.html'</script>"; break;  
-  
-case 2: echo "<script>location.href='http://site2.com/somepage.html'</script>"; break;  
-  
-case 3: echo "<script>location.href='http://site3.com/somepage.html'</script>"; break;  
-  
-}  
-  
-?>
-
-<p>[/cc]</p>
-
-<p>[dropcap]3[/dropcap] Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.</p>
+<ul>
+  <li>Create a page named conversion.html and copy your tracking code in there. This is the page you will use as the ‘thank you’ page in GWO.</li>
+</ul>
 
 <p> </p>
 
