@@ -33,7 +33,63 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
+    <div id="wrapper">
+      <div class="overlay"></div>
+
+      <!-- sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+          <ul class="nav sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="#">
+                     Categories
+                  </a>
+              </li>
+              <li>
+                  <a href="/case-studies/">Case Studies</a>
+              </li>
+              <li>
+                  <a href="/analytics/">Analytics</a>
+              </li>
+              <li>
+                  <a href="/e-commerce/">E-Commerce</a>
+              </li>
+              <li>
+                  <a href="/guides/">Guides</a>
+              </li>
+              <li>
+                  <a href="/scripts/">Scripts</a>
+              </li>
+              <li>
+                  <a href="/tips/">Tips</a>
+              </li>
+              <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header">Dropdown heading</li>
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+              <!-- <li>
+                  <a href="https://twitter.com/maridlcrmn">Follow me</a>
+              </li> -->
+          </ul>
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <button class="hamburger is-closed" type="button" data-toggle="offcanvas">
+          <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+          <span class="hamb-bottom"></span>
+        </button>
+        <div class="row">
+
+          <div class="navbar navbar-inverse navbar-fixed-top yamm" id="navbar" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,8 +98,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://convertify.io">
-        <img class="img-responsive brand nav-logo" src="/assets/images/convertify-white-sm.png" alt="">
+      <a class="navbar-brand" href="/">
+        <img class="img-responsive brand nav-logo" src="/assets/images/blog.png" alt="">
       </a>
     </div>
     <div class="collapse navbar-collapse">
@@ -134,7 +190,7 @@
             </ul>
           </li>
           <li><a href="/categories.html#case-studies-ref">Case Studies</a></li>
-          <li class=""><a href="/">Blog</a></li>
+          <li class="active"><a href="/">Blog</a></li>
           <li class=""><a href="mailto:c@convertify.io">Contact</a></li>
         </ul>
       </ul>
@@ -145,24 +201,24 @@
   </div>
 </div>
 
-    <div class="container-fluid">
+          <div class="container-fluid">
 
-      <div class="content">
-        <div class="category-archive">
+            <div class="content">
+              <div class="category-archive">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
       <div class="page-header text-center title--hero">
     		<img class="img-responsive" src="/assets/images/logo--hero.png">
     	  <h1>Guides</h1>
     	</div>
-        <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments"><img class="img-responsive" src="http://convertify.staging.wpengine.com/wp-content/uploads/2012/12/CAT-VS-SINGLE.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>07 December 2012</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Achieve Bigger Gains On Your Conversion Rate Optimization Experiments</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="http://convertify.staging.wpengine.com/wp-content/uploads/2012/12/CAT-VS-SINGLE.jpg"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Achieve Bigger Gains On Your Conversion Rate Optimization Experiments</a></h2><p>So you’ve set up your A/B tests with a large amount of variations. You’re excited. You think to yourself, “With this many variations, there’s no doubt one of these variations will double my conversions!” You run the experiments, only to find that out of 20 variations, the winner only converted 8% higher. You’re dumbfounded and out of ideas. Why is this happening? Popular belief tells you to change 1 variable......<a href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Read More</a></p></div></div></div></div>
-  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form"><img class="img-responsive" src="http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/framework_seo.gif"></a></div><div class="col-xs-7"><h3 class="postDate"><small>20 January 2013</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form">Increase Conversion Rates With Our Multistep Form [Free Plugin]</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/framework_seo.gif"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form">Increase Conversion Rates With Our Multistep Form [Free Plugin]</a></h2><p>We’ve developed a simple plugin that transforms your form into a sliding multi-step form. It’s extremely easy to implement and has had significant effect on conversion rates of experiments we’ve used it on.  Here’s a demo of a form with a plugin installed:
+        <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments"><img class="img-responsive" src="https://s3.amazonaws.com/convertify-s3/blog/images/2012/12/CAT-VS-SINGLE.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>07 December 2012</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Achieve Bigger Gains On Your Conversion Rate Optimization Experiments</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="https://s3.amazonaws.com/convertify-s3/blog/images/2012/12/CAT-VS-SINGLE.jpg"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Achieve Bigger Gains On Your Conversion Rate Optimization Experiments</a></h2><p>So you’ve set up your A/B tests with a large amount of variations. You’re excited. You think to yourself, “With this many variations, there’s no doubt one of these variations will double my conversions!” You run the experiments, only to find that out of 20 variations, the winner only converted 8% higher. You’re dumbfounded and out of ideas. Why is this happening? Popular belief tells you to change 1 variable......<a href="/conversion-rate-optimization/guides/achieve-bigger-gains-conversion-rate-optimization-experiments">Read More</a></p></div></div></div></div>
+  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form"><img class="img-responsive" src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/01/framework_seo.gif"></a></div><div class="col-xs-7"><h3 class="postDate"><small>20 January 2013</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form">Increase Conversion Rates With Our Multistep Form [Free Plugin]</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/01/framework_seo.gif"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form">Increase Conversion Rates With Our Multistep Form [Free Plugin]</a></h2><p>We’ve developed a simple plugin that transforms your form into a sliding multi-step form. It’s extremely easy to implement and has had significant effect on conversion rates of experiments we’ve used it on.  Here’s a demo of a form with a plugin installed:
 
 ...<a href="/conversion-rate-optimization/guides/scripts/increase-conversion-rates-multistep-form">Read More</a></p></div></div></div></div>
-  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results"><img class="img-responsive" src="http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Chart.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>10 February 2013</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Lean Conversion Optimization: Strategies for Fast Implementation and Results</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Chart.jpg"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Lean Conversion Optimization: Strategies for Fast Implementation and Results</a></h2><p>Recently I read The Lean Startup by Eric Ries – A popular book that many of you have probably read. At the core of his concept is the Build-Measure-Learn loop, which is exactly what Conversion Rate Optimization is about. For those who haven’t read it, the quick outline is this:
+  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results"><img class="img-responsive" src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/02/Chart.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>10 February 2013</small></h3><h2><a class="post-title" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Lean Conversion Optimization: Strategies for Fast Implementation and Results</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/02/Chart.jpg"><h2><a class="post-title visible-xs" href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Lean Conversion Optimization: Strategies for Fast Implementation and Results</a></h2><p>Recently I read The Lean Startup by Eric Ries – A popular book that many of you have probably read. At the core of his concept is the Build-Measure-Learn loop, which is exactly what Conversion Rate Optimization is about. For those who haven’t read it, the quick outline is this:
 
 ...<a href="/conversion-rate-optimization/guides/lean-conversion-optimization-strategies-for-fast-implementation-and-results">Read More</a></p></div></div></div></div>
-  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking"><img class="img-responsive" src="http://convertify.staging.wpengine.com/wp-content/uploads/2014/02/infusionsoft-google-analytics-ecommerce.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>21 February 2014</small></h3><h2><a class="post-title" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="http://convertify.staging.wpengine.com/wp-content/uploads/2014/02/infusionsoft-google-analytics-ecommerce.jpg"><h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</a></h2><p>
+  <div class="row"><div class="col-md-12 post"><div class="row post-content hidden-xs"><div class="col-xs-5"><a href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking"><img class="img-responsive" src="https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/infusionsoft-google-analytics-ecommerce.jpg"></a></div><div class="col-xs-7"><h3 class="postDate"><small>21 February 2014</small></h3><h2><a class="post-title" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</a></h2></div></div><div class="row"><div class="col-md-12"><img class="img-responsive visible-xs" src="https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/infusionsoft-google-analytics-ecommerce.jpg"><h2><a class="post-title visible-xs" href="/analytics/e-commerce/guides/scripts/how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking">How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking</a></h2><p>
 
 Note: If you&#8217;d like us to perform this integration for you, we offer a flat rate to do this for you. Please email &#105;&#110;&#102;&#111;&#064;&#099;&#111;&#110;&#118;&#101;&#114;&#116;&#105;&#102;&#121;&#046;&#105;&#111; to hire us.
 
@@ -173,13 +229,13 @@ Note: If you&#8217;d like us to perform this integration for you, we offer a fla
   </div>
 </div>
 
-      </div>
+            </div>
 
-      <footer>
-        <p>&copy; Convertify 2012
-        </p>
-      </footer>
-      <div id="search">
+            <footer>
+              <p>&copy; Convertify 2012
+              </p>
+            </footer>
+            <div id="search">
     <button type="button" class="close">×</button>
     <form class="form--search">
         <input id="search-input" type="search" value="" placeholder="type keyword(s) here" />
@@ -249,9 +305,43 @@ Note: If you&#8217;d like us to perform this integration for you, we offer a fla
 	});
 </script>
 
-    </div> <!-- /container -->
+          </div> <!-- /container -->
+        </div>
+      </div>
+    </div>
 
     <!--  -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+           isClosed = false;
+
+          trigger.click(function () {
+            hamburger_cross();      
+          });
+
+          function hamburger_cross() {
+
+            if (isClosed == true) {          
+              overlay.hide();
+              trigger.removeClass('is-open');
+              trigger.addClass('is-closed');
+              isClosed = false;
+            } else {   
+              overlay.show();
+              trigger.removeClass('is-closed');
+              trigger.addClass('is-open');
+              isClosed = true;
+            }
+        }
+        
+        $('[data-toggle="offcanvas"]').click(function () {
+              $('#wrapper').toggleClass('toggled');
+        });  
+      });
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
