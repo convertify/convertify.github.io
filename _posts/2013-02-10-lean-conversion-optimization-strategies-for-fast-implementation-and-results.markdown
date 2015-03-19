@@ -6,7 +6,7 @@ slug: lean-conversion-optimization-strategies-for-fast-implementation-and-result
 status: publish
 title: 'Lean Conversion Optimization: Strategies for Fast Implementation and Results'
 wordpress_id: '977'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Chart.jpg
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/02/Chart.jpg
 categories:
 - Conversion Rate Optimization
 - Guides

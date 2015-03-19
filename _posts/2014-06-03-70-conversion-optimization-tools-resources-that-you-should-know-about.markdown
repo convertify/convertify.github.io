@@ -6,7 +6,7 @@ slug: 70-conversion-optimization-tools-resources-that-you-should-know-about
 status: publish
 title: 70 Conversion Optimization Tools & Resources That You Should Know About
 wordpress_id: '1272'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2014/06/Tools.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2014/06/Tools.png
 categories:
 - Tips
 ---

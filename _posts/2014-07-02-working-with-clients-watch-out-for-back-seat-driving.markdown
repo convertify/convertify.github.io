@@ -5,7 +5,7 @@ layout: post
 slug: working-with-clients-watch-out-for-back-seat-driving
 status: publish
 title: Working with Clients - Watch out for Back-Seat Driving
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2014/07/the-joker-backseat-driver.jpg
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2014/07/the-joker-backseat-driver.jpg
 fluid_image: true
 title_image: true
 wordpress_id: '1359'

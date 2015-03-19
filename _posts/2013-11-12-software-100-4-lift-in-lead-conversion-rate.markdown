@@ -6,7 +6,7 @@ slug: software-100-4-lift-in-lead-conversion-rate
 status: publish
 title: 'Software: 100.4% Lift in Lead Conversion Rate'
 wordpress_id: '1078'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/11/Screenshot-2013-11-08-19.56.49.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/11/Screenshot-2013-11-08-19.56.49.png
 categories:
 - Case Studies
 tags: ['b2b', 'saas', 'multi-variable']

@@ -6,7 +6,7 @@ slug: improved-headline-increases-email-submits-by-21-95
 status: publish
 title: Improved Headline Increases Email Submits by 21.95%
 wordpress_id: '992'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-11-at-5.57.11-PM.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/02/Screen-Shot-2013-02-11-at-5.57.11-PM.png
 categories:
 - Case Studies
 ---

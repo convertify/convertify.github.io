@@ -6,7 +6,7 @@ slug: optimized-homepage-increases-revenue-by-37-21
 status: publish
 title: Optimized Homepage Increases Revenue By 37.21%
 wordpress_id: '932'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/Screen-Shot-2013-01-30-at-8.37.41-PM.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/01/Screen-Shot-2013-01-30-at-8.37.41-PM.png
 categories:
 - Case Studies
 ---

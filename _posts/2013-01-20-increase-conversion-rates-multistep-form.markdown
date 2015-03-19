@@ -6,7 +6,7 @@ slug: increase-conversion-rates-multistep-form
 status: publish
 title: Increase Conversion Rates With Our Multistep Form [Free Plugin]
 wordpress_id: '814'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/01/framework_seo.gif
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/01/framework_seo.gif
 categories:
 - Conversion Rate Optimization
 - Guides

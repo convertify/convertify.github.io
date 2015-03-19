@@ -3,7 +3,7 @@ layout: post
 author: Cooper Maruyama
 title: "Why Your Winning A/B Tests Aren't Improving Your Bottom-line"
 description: ""
-featured_image: https://s3.amazonaws.com/convertify/blog/media/images/2015/03/angry-man-computer.jpg
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2015/03/angry-man-computer.jpg
 fluid_image: true
 title_image: true
 use_math: true

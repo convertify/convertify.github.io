@@ -6,7 +6,7 @@ slug: education-24-8-lift-in-course-browses-by-increasing-credibility
 status: publish
 title: 'Education: 24.8% Lift in Course Browses by Increasing Credibility'
 wordpress_id: '1070'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/09/Screen-Shot-2013-09-15-at-6.49.49-PM.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/09/Screen-Shot-2013-09-15-at-6.49.49-PM.png
 categories:
 - Case Studies
 tags: ['education', 'credibility', 'b2c']

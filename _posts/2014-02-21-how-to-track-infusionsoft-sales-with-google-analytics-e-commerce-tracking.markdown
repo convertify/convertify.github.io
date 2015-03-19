@@ -6,7 +6,7 @@ slug: how-to-track-infusionsoft-sales-with-google-analytics-e-commerce-tracking
 status: publish
 title: How to Track Infusionsoft Sales With Google Analytics E-Commerce Tracking
 wordpress_id: '1084'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2014/02/infusionsoft-google-analytics-ecommerce.jpg
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/infusionsoft-google-analytics-ecommerce.jpg
 categories:
 - Analytics
 - E-Commerce

@@ -6,7 +6,7 @@ slug: tracking-multiple-cnames-masked-domains-in-google-analytics
 status: publish
 title: Tracking Multiple CNAMEs & Masked Domains in Google Analytics
 wordpress_id: '998'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/02/Untitled-2.jpg
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/02/Untitled-2.jpg
 categories:
 - Scripts
 ---

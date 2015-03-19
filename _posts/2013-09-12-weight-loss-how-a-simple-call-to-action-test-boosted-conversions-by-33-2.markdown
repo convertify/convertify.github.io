@@ -6,7 +6,7 @@ slug: weight-loss-how-a-simple-call-to-action-test-boosted-conversions-by-33-2
 status: publish
 title: 'Weight Loss: How a Simple Call-to-Action Test Boosted Conversions by 33%'
 wordpress_id: '1118'
-featured_image: http://convertify.staging.wpengine.com/wp-content/uploads/2013/08/Screen-Shot-2013-07-31-at-3.21.41-AM.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2013/08/Screen-Shot-2013-07-31-at-3.21.41-AM.png
 categories:
 - Case Studies
 ---
