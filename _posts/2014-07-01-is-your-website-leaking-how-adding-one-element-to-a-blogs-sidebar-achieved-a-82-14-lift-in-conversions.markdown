@@ -7,7 +7,7 @@ status: publish
 title: Is Your Website Leaking? How Adding One Element to a Blog's Sidebar Achieved
   a 82.14% Lift in Conversions
 wordpress_id: '1347'
-featured_image: /media/images/2014/06/Result1.png
+featured_image: https://s3.amazonaws.com/convertify-s3/blog/images/2014/06/Result1.png
 fluid_image: true
 title_image: true
 categories:
