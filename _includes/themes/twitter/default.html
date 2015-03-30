@@ -97,7 +97,11 @@
             </div>
 
             <footer>
-              <p>&copy; {{ site.author.name }} 2012
+              <p class="pull-left">
+                &copy; {{ site.author.name }} 2012
+              </p>
+              <p class="pull-right">
+                <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
               </p>
             </footer>
             {% include custom/search.html %}
@@ -116,27 +120,27 @@
            isClosed = false;
 
           trigger.click(function () {
-            hamburger_cross();      
+            hamburger_cross();
           });
 
           function hamburger_cross() {
 
-            if (isClosed == true) {          
+            if (isClosed == true) {
               overlay.hide();
               trigger.removeClass('is-open');
               trigger.addClass('is-closed');
               isClosed = false;
-            } else {   
+            } else {
               overlay.show();
               trigger.removeClass('is-closed');
               trigger.addClass('is-open');
               isClosed = true;
             }
         }
-        
+
         $('[data-toggle="offcanvas"]').click(function () {
               $('#wrapper').toggleClass('toggled');
-        });  
+        });
       });
     </script>
     <script>
