@@ -275,7 +275,7 @@
                 <h2><a class="post-title visible-xs" href="/pages.html">Atom Feed</a></h2>
                   <p>
                     
-                      Convertify 2015-03-27T16:22:39-07:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
+                      Convertify 2015-03-30T10:04:06-07:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
                   
                     <a href="/atom.xml">Read More</a>
                 </p>
@@ -952,7 +952,11 @@ All Pages
             </div>
 
             <footer>
-              <p>&copy; Convertify 2012
+              <p class="pull-left">
+                &copy; Convertify 2012
+              </p>
+              <p class="pull-right">
+                <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
               </p>
             </footer>
             <div id="search">
@@ -1039,27 +1043,27 @@ All Pages
            isClosed = false;
 
           trigger.click(function () {
-            hamburger_cross();      
+            hamburger_cross();
           });
 
           function hamburger_cross() {
 
-            if (isClosed == true) {          
+            if (isClosed == true) {
               overlay.hide();
               trigger.removeClass('is-open');
               trigger.addClass('is-closed');
               isClosed = false;
-            } else {   
+            } else {
               overlay.show();
               trigger.removeClass('is-closed');
               trigger.addClass('is-open');
               isClosed = true;
             }
         }
-        
+
         $('[data-toggle="offcanvas"]').click(function () {
               $('#wrapper').toggleClass('toggled');
-        });  
+        });
       });
     </script>
     <script>
