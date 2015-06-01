@@ -117,3 +117,6 @@ DEPENDENCIES
   guard-livereload
   jekyll
   jekyll-haml
+
+BUNDLED WITH
+   1.10.2
