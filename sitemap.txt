@@ -12,13 +12,13 @@ http://blog.convertify.io/assets/css/style.css
 http://blog.convertify.io/tags.html
 http://blog.convertify.io/conversion-rate-optimization/index.html
 http://blog.convertify.io/fundamentals/index.html
+http://blog.convertify.io/guides/index.html
 http://blog.convertify.io/case-studies/index.html
 http://blog.convertify.io/e-commerce/index.html
 http://blog.convertify.io/scripts/index.html
 http://blog.convertify.io/bounce-rates/index.html
 http://blog.convertify.io/analytics/index.html
 http://blog.convertify.io/tips/index.html
-http://blog.convertify.io/guides/index.html
 http://blog.convertify.io/page/2/index.html
 http://blog.convertify.io/page/3/index.html
 http://blog.convertify.io/page/4/index.html
@@ -57,5 +57,5 @@ http://blog.convertify.io/case-studies/conversion-rate-optimization/best-dating-
 http://blog.convertify.io/case-studies/conversion-rate-optimization/bogtus-optimization-case-study
 http://blog.convertify.io/case-studies/conversion-rate-optimization/meet-christians-case-study
 http://blog.convertify.io/case-studies/susteen-inc
-http://blog.convertify.io/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page
+http://blog.convertify.io/conversion-rate-optimization/fundamentals/guides/how-to-create-high-converting-landing-page
 http://blog.convertify.io/conversion-rate-optimization/fundamentals/landing-page-fundamentals

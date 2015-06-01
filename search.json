@@ -1,7 +1,7 @@
 [
   
     {
-      "title"    : "Why Your Winning A/B Tests Aren't Improving Your Bottom-line",
+      "title"    : "Why Your Winning A/B Tests Aren&#39;t Improving Your Bottom-line",
       "category" : "tips",
       "tags"     : "tips, testing platforms",
       "url"      : "/tips/why-your-winning-ab-tests-arent-improving-your-bottomline",
@@ -29,7 +29,7 @@
     } ,
   
     {
-      "title"    : "Is Your Website Leaking? How Adding One Element to a Blog's Sidebar Achieved a 82.14% Lift in Conversions",
+      "title"    : "Is Your Website Leaking? How Adding One Element to a Blog&#39;s Sidebar Achieved a 82.14% Lift in Conversions",
       "category" : "",
       "tags"     : "b2c, layout', responsive, design",
       "url"      : "/case-studies/is-your-website-leaking-how-adding-one-element-to-a-blogs-sidebar-achieved-a-82-14-lift-in-conversions",
@@ -66,7 +66,7 @@
       "image": "https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/infusionsoft-google-analytics-ecommerce.jpg",
       
       
-       "excerpt": "Note: If you&#8217;d like us to perform this integration for..."
+       "excerpt": "Note: If you’d like us to perform this integration for..."
       
     } ,
   
@@ -332,12 +332,12 @@
       "image": "https://s3.amazonaws.com/convertify-s3/blog/images/2012/07/se.jpg",
       
       
-       "excerpt": "Analytics - unlike you, it doesn&#8217;t make assumptions. When we..."
+       "excerpt": "Analytics - unlike you, it doesn’t make assumptions. When we..."
       
     } ,
   
     {
-      "title"    : "How We Decreased TheRTAStore's Bounce Rate By 20%",
+      "title"    : "How We Decreased TheRTAStore&#39;s Bounce Rate By 20%",
       "category" : "",
       "tags"     : "",
       "url"      : "/bounce-rates/case-studies/how-we-decreased-thertastores-bounce-rate-by-20",
@@ -480,7 +480,7 @@
       "title"    : "How to Create a High-Converting Landing Page",
       "category" : "",
       "tags"     : "high conversion, landing page",
-      "url"      : "/conversion-rate-optimization/fundamentals/how-to-create-high-converting-landing-page",
+      "url"      : "/conversion-rate-optimization/fundamentals/guides/how-to-create-high-converting-landing-page",
       "date"     : "2011-05-25 02:56:05 -0700",
       
       "image": "/media/images/2011/05/landing-page-optimization.jpg",
@@ -491,7 +491,7 @@
     } ,
   
     {
-      "title"    : "Conversion Rate Optimization: Why Most Visitors Don't Convert &amp; How to Optimize",
+      "title"    : "Conversion Rate Optimization: Why Most Visitors Don&#39;t Convert &amp; How to Optimize",
       "category" : "",
       "tags"     : "",
       "url"      : "/conversion-rate-optimization/fundamentals/landing-page-fundamentals",

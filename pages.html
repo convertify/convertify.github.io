@@ -275,7 +275,7 @@
                 <h2><a class="post-title visible-xs" href="/pages.html">Atom Feed</a></h2>
                   <p>
                     
-                      Convertify 2015-03-30T10:04:06-07:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
+                      Convertify 2015-05-31T21:19:14-07:00 http://blog.convertify.io Convertify admin@convertify.io Why Your Winning A/B Tests Aren't Improving Your Bottom-line 2015-03-03T00:00:00-08:00 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline &lt;p class=&quot;lead&quot;&gt;Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner......
                   
                     <a href="/atom.xml">Read More</a>
                 </p>
@@ -309,7 +309,7 @@
                 <h2><a class="post-title visible-xs" href="/pages.html">Categories</a></h2>
                   <p>
                     
-                      Categories conversion rate optimization fundamentals case studies e-commerce scripts bounce rates analytics tips guides conversion rate optimization 10 February 2013 Lean Conversion Optimization: Strategies for Fast Implementation and Results Lean Conversion Optimization: Strategies for Fast Implementation and Results Recently I read The Lean Startup by Eric Ries – A popular book that many of you have probably read. At the core of his concept is the Build-Measure-Learn loop, which is......
+                      Categories conversion rate optimization fundamentals guides case studies e-commerce scripts bounce rates analytics tips conversion rate optimization 10 February 2013 Lean Conversion Optimization: Strategies for Fast Implementation and Results Lean Conversion Optimization: Strategies for Fast Implementation and Results Recently I read The Lean Startup by Eric Ries – A popular book that many of you have probably read. At the core of his concept is the Build-Measure-Learn loop, which is......
                   
                     <a href="/categories.html">Read More</a>
                 </p>
@@ -606,6 +606,40 @@ All Pages
           <div class="col-md-12 post">
             <div class="row post-content hidden-xs">
               <div class="col-xs-4">
+                <a href="/guides/index.html">
+                  
+                </a>
+              </div>
+              <div class="col-xs-8">
+                
+                <h2><a class="post-title" href="/guides/index.html">guides</a></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                
+                <h2><a class="post-title visible-xs" href="/pages.html">guides</a></h2>
+                  <p>
+                    
+                        {% for post in page.posts %}{% if post.featured_image %}{% endif %}{{ post.date | date_to_long_string }}{{ post.title }}{% if post.featured_image %}{% endif %}{{ post.title }}{% if post.excerpt.size > 250 %}{{ post.excerpt | strip_html | truncatewords: 70 | append: '...' }}{% else %}{{ post.content| strip_html | truncatewords: 70 | append: '...' }}{% endif %}Read More
+  {% endfor %}
+...
+                  
+                    <a href="/guides/index.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+  
+    
+      
+        <div class="row">
+          <div class="col-md-12 post">
+            <div class="row post-content hidden-xs">
+              <div class="col-xs-4">
                 <a href="/case-studies/index.html">
                   
                 </a>
@@ -796,40 +830,6 @@ All Pages
 ...
                   
                     <a href="/tips/index.html">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-  
-    
-      
-        <div class="row">
-          <div class="col-md-12 post">
-            <div class="row post-content hidden-xs">
-              <div class="col-xs-4">
-                <a href="/guides/index.html">
-                  
-                </a>
-              </div>
-              <div class="col-xs-8">
-                
-                <h2><a class="post-title" href="/guides/index.html">guides</a></h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                
-                <h2><a class="post-title visible-xs" href="/pages.html">guides</a></h2>
-                  <p>
-                    
-                        {% for post in page.posts %}{% if post.featured_image %}{% endif %}{{ post.date | date_to_long_string }}{{ post.title }}{% if post.featured_image %}{% endif %}{{ post.title }}{% if post.excerpt.size > 250 %}{{ post.excerpt | strip_html | truncatewords: 70 | append: '...' }}{% else %}{{ post.content| strip_html | truncatewords: 70 | append: '...' }}{% endif %}Read More
-  {% endfor %}
-...
-                  
-                    <a href="/guides/index.html">Read More</a>
                 </p>
               </div>
             </div>
