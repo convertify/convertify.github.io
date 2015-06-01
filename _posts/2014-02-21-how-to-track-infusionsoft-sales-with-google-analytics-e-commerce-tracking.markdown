@@ -41,7 +41,7 @@ You'll need to edit your current tracking code. Assuming your code looks like th
 {% highlight js %}
 <script>// <![CDATA[
   var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-12345-1']);  
-  _gaq.push(['_setDomainName', 'website.com']); 
+  _gaq.push(['_setDomainName', 'website.com']);
   _gaq.push(['_trackPageview']);
   (function() {
     var ga = document.createElement('script');
@@ -139,7 +139,7 @@ Let's see if it works! Once this change has been made, go to a page on your webs
 
 <code>https://m179.infusionsoft.com/app/orderForms/Product?<strong>__utma=145477216.1430762516.1392159380.1392937143.1392989453.7&__utmb=145477216.4.10.1392989453&__utmc=145477216&__utmx=-&__utmz=145477216.1392159380.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&__utmv=-&__utmk=244849413</strong></code>
 
-If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1</code> 
+If you have universal analytics, your URL should look like this: <code>https://m179.infusionsoft.com/app/manageCart/showManageOrder?<strong>_ga=1.38339491.1087305745.1390089092</strong>&clearCart=true&subscriptionPlanQuantity=1&subscriptionPlanId=9&cartSkinId=8632&productId=692&productQuantity=1</code>
 
 I've bolded the information that should be appended assuming it's working. Once this is done, you're ready for the next step! If you're having trouble, please let us know in the comments below!
 
@@ -187,7 +187,7 @@ Once that's done, cross-domain tracking is set up! Now it's time to get your sit
 
 Now we need to get Infusionsoft to pass data back to our site, and into google analytics. Before we start, we'll need to grab our API key from Infusionsoft. Here's a quick GIF showing how to generate one if you haven't already:
 
-[![Get Api Key from Infusionsoft](http://convertify.wpengine.com/wp-content/uploads/2014/02/Untitled.gif)](http://convertify.wpengine.com/wp-content/uploads/2014/02/Untitled.gif)
+![Get Api Key from Infusionsoft](https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/Untitled.gif)
 
 ### Wordpress Instructions
 
@@ -213,8 +213,7 @@ Next, in Wordpress, go to Appearance >> Editor. On the right menu, click for the
 
 If you haven't done so already, set up a thank you page on your Wordpress site. Then, use this page as the thank you page for ALL your order forms as well as your shopping cart, and make sure to check the "Pass contact's information to Thank You page" setting (see below).
 
-[![Screenshot 2014-02-24 12.45.10](http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-24-12.45.10.png)](http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-24-12.45.10.png)
-
+![Screenshot 2014-02-24 12.45.10](https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/Screenshot-2014-02-24-12.45.10.png)
  
 
 The code we put in the footer of your Wordpress runs globally, so you can set up multiple thank you pages and if you want, and it will still work as long as the page is on Wordpress.
@@ -223,7 +222,7 @@ That's it - you're done!
 
 Hope that wasn't too hard! Now, just wait and watch the data roll into google analytics! If all goes well, you will start seeing data in google analytics under Conversions >> Ecommerce >> Overview, and it should look something like this:
 
-[![Screenshot 2014-02-21 07.26.18](http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-21-07.26.181.png)](http://convertify.wpengine.com/wp-content/uploads/2014/02/Screenshot-2014-02-21-07.26.181.png)
+![Screenshot 2014-02-21 07.26.18](https://s3.amazonaws.com/convertify-s3/blog/images/2014/02/Screenshot-2014-02-21-07.26.181.png)
 
  
 
