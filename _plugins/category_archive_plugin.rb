@@ -81,7 +81,7 @@ module Jekyll
 
       if site.config['category_archive'] && site.config['category_archive']['slugify']
         @category_dir_name = Utils.slugify(@category) # require sanitize here
-      else 
+      else
         @category_dir_name = @category
       end
 
@@ -96,7 +96,7 @@ module Jekyll
           'layout' => @layout,
           'type' => 'archive',
           'title' => "#{@category}",
-          'posts' => posts,
+          'posts' => posts.reverse!,
           'url' => File.join('/',
                      CategoryArchiveUtil.archive_base(site),
                      @category_dir_name, 'index.html')
