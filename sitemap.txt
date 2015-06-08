@@ -23,6 +23,8 @@ http://blog.convertify.io/page/2/index.html
 http://blog.convertify.io/page/3/index.html
 http://blog.convertify.io/page/4/index.html
 
+http://blog.convertify.io/tips/analytics/goals-are-simply-outcomes-we-want
+http://blog.convertify.io/tips/analytics/say-goodbye-to-google-analytics-referral-spam
 http://blog.convertify.io/tips/why-your-winning-ab-tests-arent-improving-your-bottomline
 http://blog.convertify.io/tips/working-with-clients-watch-out-for-back-seat-driving
 http://blog.convertify.io/case-studies/is-your-website-leaking-how-adding-one-element-to-a-blogs-sidebar-achieved-a-82-14-lift-in-conversions

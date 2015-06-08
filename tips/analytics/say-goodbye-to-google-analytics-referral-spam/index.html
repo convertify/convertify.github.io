@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Why Your Winning A/B Tests Aren't Improving Your Bottom-line</title>
-    <meta name="description" content="">
+    <title>Say Goodbye to Google Analytics Referral Spam</title>
+    
     <meta name="author" content="Convertify">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -206,218 +206,132 @@
             <div class="content">
               
 
-<div class='row'>
-  <div class='featuredImage-fullWidth'>
-    <div class='featuredImage-overlay'></div>
-    <img class='img-responsive' src='https://s3.amazonaws.com/convertify-s3/blog/images/2015/03/angry-man-computer.jpg'>
-    
-    <div class='featuredImage-content'>
-      <div class='col-sm-8 col-sm-offset-2'>
-        <h1 class='postTitle'>Why Your Winning A/B Tests Aren't Improving Your Bottom-line</h1>
-        
-        <p></p>
-        
-      </div>
-    </div>
-    
-  </div>
-</div>
-
 <div class='row shadow-above postBody'>
   <div class='col-sm-8 col-sm-offset-2'>
     
+    <img alt='' class='featuredImage featuredImage--single img-responsive center-block' src='https://photos-6.dropbox.com/t/2/AACkQrk7DiNobkhuFKAOPrTaZVZuXFkObZvVvT35FzcRsQ/12/1406414/png/32x32/1/_/1/2/Screenshot%202015-06-07%2018.27.19.png/CM7rVSABIAIgAyAEIAUgBiAHKAEoAg/faeQEL9T2cdtqrd8WM3LnNfjfwYtBESV4axDrcJ0Svg?size=1280x960&size_mode=2'>
     
     
-<p class="lead">Have you ever ran an A/B test that reported a significant lift in conversion, but when you implemented it, you saw no change in your sales? Well, this is a common occurrence, and I get asked about it often. Let me explain why this happens, and how to run tests in a manner that prevents this from happening.</p>
+    <h1 class='postTitle'>Say Goodbye to Google Analytics Referral Spam</h1>
+    
+    <p>Lately, referral spam has become a big issue, significantly skewing results in everyone’s analytics reports. The “exclusion filters” feature of Google Analytics has been a help, but it’s tedious to keep adding more filters whenever new spammers pop up, and a lot of the times the filters just don’t cut it.</p>
 
-<h2 id="understanding-how-testing-platforms-report-a-winner">Understanding how testing platforms report a “Winner”</h2>
+<p><strong>Lucky for you, we’ve put together something that will make referral a spam a problem of the past.</strong></p>
 
-<p>Let’s say that you ran an A/B test which had the following results when it declared a winner:</p>
+<p>Because referral spam has become such a problem, a small community of people have decided to put together a <a href="https://github.com/piwik/referrer-spam-blacklist">Referrer spam blacklist</a> which is updated whenever someone finds a new spammer in their reports. The list is well-maintained and updated <a href="https://github.com/piwik/referrer-spam-blacklist/graphs/contributors">quite often</a>. Now, what if there was a way for you to somehow integrate this list into your website, such that whenever a referral is detected from any domain in that blacklist, they automatically get exluded from your tracking? Well, we built exactly that, and it’ll only take a few minutes for you to set it up!</p>
 
-<div class="table-responsive"><table class="table table-hover table-condensed">
-  <thead>
-    <tr>
-      <th>Variation</th>
-      <th>Visitors</th>
-      <th>Conversions</th>
-      <th>Conversion Rate</th>
-      <th>Lift</th>
-      <th>Significance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Control</td>
-      <td>20000</td>
-      <td>2000</td>
-      <td>10%</td>
-      <td>–</td>
-      <td>–</td>
-    </tr>
-    <tr>
-      <td>Variation 1</td>
-      <td>20000</td>
-      <td>2120</td>
-      <td>10.6%</td>
-      <td>+6.00%</td>
-      <td>97.6%</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<p>You’re probably thinking that what these results are saying is that if you were to implement the winning variation, there’s a 97.6% probability that you will see a 6% lift in conversions. If that’s how you interpret these results, then you are <strong>dead wrong.</strong></p>
-
-<p>What this result <em>actually</em> means is that there’s a 97.6% probability that variation 1 will convert better than the control, but <strong>it does not have any confidence in the lift itself.</strong> So, how come testing tools don’t adjust their algorithms so that the significance represents the confidence in the <em>improvement,</em> rather than just the confidence in which one will win regardless of how much it will win by? Well, there are two very good reasons for this:</p>
+<p>We’ve put together a special version of the google analytics tracking code which will only run if the referrer is not included in the blacklist. This way, you don’t have to set up any filters to get rid of spammers, and it automatically updates itself whenever new spammers are found. Here’s how it works:</p>
 
 <ol>
-  <li>It would take significantly more data to be able to reach 95% significance in the improvement. In fact, it would probably take more than <em><strong>ten times as much data, which means you’d need to run your tests more than ten times longer.</strong></em></li>
-  <li>Once you know which one is the better variation, <em><strong>who cares how much it’s going to win by?</strong></em> It makes more sense to just implement it right away, and move on to another test. In other words, it’s more practical to be able to run 10 experiments with confidence in which one will convert better (regardless of the lift), than to run a single test where you have absolute confidence in the lift.</li>
+  <li>First, it requests a copy of the blacklist before allowing any tracking to happen. Because Github doesn’t <a href="http://stackoverflow.com/questions/14033281/including-javascript-files-from-github-into-html-pages">allow you to include files</a> directly from their website, we’ve hosted a copy of it on an Amazon S3 server and setup a task that updates the blacklist daily.</li>
+  <li>Next, it checks the referrer against the blacklist, and tracks the visitor <strong><em>if and only if</em></strong> the referrer does not match any of the referrers in the blacklist.</li>
 </ol>
 
-<p>If this is news to you, at least now you’re aware of this, which is a step forward. Although we shouldn’t assume that we’re going to get as big a lift as is reported in the results, it also means that we might get a <strong>bigger</strong> lift than what is reported! Most of the time though, I’ve found that the former result tends to be the case.</p>
+<p>Now let’s move on to getting this setup on your website.</p>
 
-<h2 id="how-to-create-tests-that-actually-improve-your-sales">How to create tests that actually improve your sales</h2>
+<h2 id="instructions">Instructions</h2>
 
-<p>The most common reason why winning tests don’t turn into more sales is due to testing variables that result in a small standard deviation, therefore allowing the variance in your natural conversion rate to have a relatively large influence in the results. This is kind of a complex phenomenon to explain but I’ll do my best to drill it into your mind.</p>
+<p>Setting this up is pretty easy. All you need to do is replace your current Google Analytics tracking script with this one:</p>
 
-<p>To understand this better, we first need to understand the concept of a <strong>standard deviation.</strong> The standard deviation is a measure that is used to quantify the amount of variance in a set of data. Here’s a good way to think about this: Let’s assume we have a website that gets a 10% conversion rate. Now, imagine that the individual conversion rate for each day over a 10-day span looks something like this:</p>
+<script src="https://gist.github.com/coopermaruyama/b5a16e51433db2ab8514.js"> </script>
 
-<div class="table-responsive"><table class="table table-hover table-condensed">
-  <thead>
-    <tr>
-      <th>Day</th>
-      <th>Conversion Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>8%</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>5%</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>13%</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>12%</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>5%</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7%</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>9%</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>15%</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>20%</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>6%</td>
-    </tr>
-  </tbody>
-</table></div>
+<p>Once you’ve done that, that’s it! No more referral spam.</p>
 
-<p>For the sake of this example, assume that we got the same amount of visitors every day. As you can see, although the conversion rate is 10%, that doesn’t mean that we are getting that conversion rate every day. Now there’s no need to know how to calculate the standard variation, but we’ll calculate it so that you understand the concept of it. In order to get the standard variation, we subtract the conversion rate for each day from the average conversion rate. However, this number can be negative, so we square each to get a positive value then get the average of <em>that</em>, which gives us the average variance. Then we un-square it (square root) so we don’t have inflated values:</p>
+<p>Note that if you have a customized tracking script because you’re using enhanced link attribution or some other feature, you can freely replace the current script in the example. You can also add any other tracking scripts you have, as long as they are inserted below the <code>Place any tracking scripts here</code> comment and above the <code>End tracking scripts</code> comment.</p>
 
-<div class="table-responsive"><table class="table table-hover table-condensed">
-  <thead>
-    <tr>
-      <th>Day</th>
-      <th>Conversion Rate</th>
-      <th>Variance (x - mean)^2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>8%</td>
-      <td>(8 - 10)^2 = <strong>4</strong></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>5%</td>
-      <td>(5 - 10)^2 = <strong>25</strong></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>13%</td>
-      <td>(13 - 10)^2 =  <strong>9</strong></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>12%</td>
-      <td>(12 - 10)^2 =  <strong>4</strong></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>5%</td>
-      <td>(5 - 10)^2 = <strong>25</strong></td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7%</td>
-      <td>(7 - 10)^2 =  <strong>9</strong></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>9%</td>
-      <td>(9 - 10)^2 =  <strong>1</strong></td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>15%</td>
-      <td>(15 - 10)^2 = <strong>25</strong></td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>20%</td>
-      <td>(20 - 10)^2 = <strong>100</strong></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>6%</td>
-      <td>(6 - 10)^2 = <strong>16</strong></td>
-    </tr>
-  </tbody>
-</table></div>
+<p>I hope this is the last time you have to deal with referral spam. If you have any questions or need help setting this up, leave a comment below. Enjoy!</p>
 
-<p>then we get the average of the differences and get its square root:</p>
+<hr />
 
-<script type="math/tex; mode=display">\sqrt{\frac{4+25+9+4+25+9+1+25+100+16}{10}} = 4.669</script>
+<p>In case you’re curious about the exact source for this script, here’s the un-minified code below:</p>
 
-<p>As you can see, our standard deviation is about 4.7 which is 47% of our conversion rate. Not only is this very large, but also much larger than the lift you will probably get in your A/B tests. It’s unlikely that tools such as Optimizely would consider results like this “conclusive” unless you had lots of data in the test, but you get the gist of it now. Keep in mind that this is in either direction, so a high standard deviation doesn’t necessarily mean the test will not improve your sales. However, here’s what you <em6>should</em6> take from this:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="cm">/*</span>
+<span class="cm"> * Detect if the referrer is a referral spammer and prevent google analytics</span>
+<span class="cm"> * loading if that is the case.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @author Cooper Maruyama</span>
+<span class="cm"> * @website convertify.io</span>
+<span class="cm"> */</span>
 
-<blockquote>
-  <p><strong>The larger your standard deviation, the more dramatic the difference between your control and variations need to be in order to create tests where the reported lift more closely matches the lift you’ll see when you implement the variation.</strong></p>
-</blockquote>
+<span class="c1">// Runs if referrer is valid.</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">trackVisitor</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Your analytics script goes here.</span>
+<span class="p">}</span>
 
-<p>And with that said, the one thing you need to do is <strong>test changes to variables that actually matter to your visitors.</strong> If you aren’t seeing lifts in sales from your winning tests, it’s most likely because you are focusing too much on ‘visual’ aspects of your site, like colors, layout, and aesthetics, rather than the things they actually consciously consider, such as product features, reviews, and competitors.</p>
+<span class="cm">/*======================================================</span>
+<span class="cm">=    Don&#39;t edit anything below!</span>
+<span class="cm">======================================================*/</span>
 
-<p>The first time I saw KISSMetric’s infographic on <a href="https://blog.kissmetrics.com/color-psychology/">how colors affect purchases</a>, I thought it was interesting but at the same time, I almost shed a tear because I knew just how many people scrambled to run an experiment to test different colors on their website, inspired by that infographic. When is the last time you changed your mind about buying something because of the color of something on the site? <strong>Probably never</strong>. When you test something insignificant like this, the affect to the conversion rate due to the change cannot overcome your variance, and therefore your result is actually due to natural variance, which results in tests that don’t make a difference to sales when implemented. You must not forget that in order for a change to your site to improve your sales, that change needs to literally make someone who would <strong>not</strong> have bought from you <strong>change their mind</strong>. So next time you build a test, think to yourself - <em>“Is this change enough to make someone <strong>change their mind?</strong>“</em></p>
+<span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nb">document</span><span class="p">,</span> <span class="nx">trackVisitor</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">BLACKLIST_URL</span><span class="o">=</span><span class="s2">&quot;https://s3.amazonaws.com/s3.convertify.io/spammers.txt&quot;</span><span class="p">;</span>
 
-<p>If you want to learn more about creating tests that actually increase your sales, check out our free CRO course <a href="https://convertify.io/no-guesswork">No Guesswork</a>.</p>
+  <span class="c1">// Fetch blacklist and perform validation.</span>
+  <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="nx">BLACKLIST_URL</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">===</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">status</span> <span class="o">&gt;=</span> <span class="mi">200</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">status</span> <span class="o">&lt;</span> <span class="mi">400</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Parse the list</span>
+        <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">;</span>
+        <span class="nx">validateReferrer</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">isValid</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="nx">isValid</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">trackVisitor</span><span class="p">();</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// Spam detected! bypass tracking.</span>
+          <span class="p">}</span>
+        <span class="p">});</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// AJAX request failed. Track anyways.</span>
+        <span class="nx">trackVisitor</span><span class="p">();</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+
+  <span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+  <span class="nx">request</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+  <span class="cm">/**</span>
+<span class="cm">   *  Validates referrer against a blacklist of known spammers.</span>
+<span class="cm">   *</span>
+<span class="cm">   *  @param   {String}   blacklist - Blacklist of known spammers, delimited by</span>
+<span class="cm">   *                                  new line.</span>
+<span class="cm">   *</span>
+<span class="cm">   *  @param   {Function} callback  - Callback to call. Passes an error as the</span>
+<span class="cm">   *                                  as the 1st argument or null if no error.</span>
+<span class="cm">   *                                  Passes true as the 2nd argument if the</span>
+<span class="cm">   *                                  visitor is valid, or false if the visitor</span>
+<span class="cm">   *                                  is a spammer and should not be tracked.</span>
+<span class="cm">   *</span>
+<span class="cm">   *</span>
+<span class="cm">   *  @return  {Null}</span>
+<span class="cm">   */</span>
+  <span class="kd">var</span> <span class="nx">validateReferrer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">blacklist</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">badReferrers</span> <span class="o">=</span> <span class="nx">blacklist</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">isReferrerBad</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">listLength</span> <span class="o">=</span> <span class="nx">badReferrers</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">listLength</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">re</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="nx">badReferrers</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+      <span class="k">if</span> <span class="p">(</span> <span class="nx">re</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">referrer</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">isReferrerBad</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">isReferrerBad</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">callback</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// Referral spam detected!</span>
+      <span class="nx">callback</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+<span class="p">})(</span><span class="nb">document</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">trackVisitor</span><span class="p">);</span></code></pre></div>
 
     <hr>
     <ul class="pager">
     
       <li class='previous'>
-        <a href='/tips/working-with-clients-watch-out-for-back-seat-driving' title='Working with Clients - Watch out for Back-Seat Driving'>← Previous</a>
+        <a href='/tips/why-your-winning-ab-tests-arent-improving-your-bottomline' title='Why Your Winning A/B Tests Aren't Improving Your Bottom-line'>← Previous</a>
       </li>
     
      <!--  <li>
@@ -425,7 +339,7 @@
       </li> -->
     
       <li class='next'>
-        <a href='/tips/analytics/say-goodbye-to-google-analytics-referral-spam' title='Say Goodbye to Google Analytics Referral Spam'>Next →</a>
+        <a href='/tips/analytics/goals-are-simply-outcomes-we-want' title='Goals Are Nothing But Outcomes We Want'>Next →</a>
       </li>
     
       </li>
@@ -458,10 +372,6 @@
   </div>
 </div>
 
-
-  <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 
             </div>

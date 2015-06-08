@@ -5,10 +5,143 @@
         <description>Convertify - Convertify</description>
         <link>http://blog.convertify.io</link>
         <link>http://blog.convertify.io</link>
-        <lastBuildDate>2015-06-01T02:18:24-07:00</lastBuildDate>
-        <pubDate>2015-06-01T02:18:24-07:00</pubDate>
+        <lastBuildDate>2015-06-07T19:21:59-07:00</lastBuildDate>
+        <pubDate>2015-06-07T19:21:59-07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Goals Are Nothing But Outcomes We Want</title>
+                <description>&lt;p&gt;One of the main points made in my free course, &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://convertify.io/no-guesswork&quot;&gt;“No Guesswork: Advanced A/B Testing &amp;amp; Conversion Rate Optimization”&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; is that the whole point of A/B testing is about improving your decision-making. Yes, of course &lt;em&gt;increasing sales&lt;/em&gt; is the reason &lt;em&gt;why&lt;/em&gt; you do it, but a single test only increases sales in the short run, in the sense that only that single test increases your sales. Ultimately, what you really want to use testing for is to improve your overall decision-making, so that you &lt;em&gt;always&lt;/em&gt; make the ideal decision that gets you the result you want.&lt;/p&gt;
+
+&lt;p&gt;I created the graphic above when thinking about how decisions are what ultimately lead us to success or failure. Decisions have outcomes, negative or positive, and success happens when they are often positive, whereas failure happens when they are often negative. A/B testing is a method to try multiple decisions instead of just one decision, in order to see which decision gives the ideal outcome.&lt;/p&gt;
+
+&lt;p&gt;Goals are simply outcomes that we &lt;strong&gt;&lt;em&gt;want&lt;/em&gt;&lt;/strong&gt; to happen, and in order to get there, &lt;strong&gt;&lt;em&gt;you need to make the right decisions.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+                <link>http://blog.convertify.io/tips/analytics/goals-are-simply-outcomes-we-want</link>
+                <guid>http://blog.convertify.io/tips/analytics/goals-are-simply-outcomes-we-want</guid>
+                <pubDate>2015-06-07T05:56:05-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Say Goodbye to Google Analytics Referral Spam</title>
+                <description>&lt;p&gt;Lately, referral spam has become a big issue, significantly skewing results in everyone’s analytics reports. The “exclusion filters” feature of Google Analytics has been a help, but it’s tedious to keep adding more filters whenever new spammers pop up, and a lot of the times the filters just don’t cut it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lucky for you, we’ve put together something that will make referral a spam a problem of the past.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Because referral spam has become such a problem, a small community of people have decided to put together a &lt;a href=&quot;https://github.com/piwik/referrer-spam-blacklist&quot;&gt;Referrer spam blacklist&lt;/a&gt; which is updated whenever someone finds a new spammer in their reports. The list is well-maintained and updated &lt;a href=&quot;https://github.com/piwik/referrer-spam-blacklist/graphs/contributors&quot;&gt;quite often&lt;/a&gt;. Now, what if there was a way for you to somehow integrate this list into your website, such that whenever a referral is detected from any domain in that blacklist, they automatically get exluded from your tracking? Well, we built exactly that, and it’ll only take a few minutes for you to set it up!&lt;/p&gt;
+
+&lt;p&gt;We’ve put together a special version of the google analytics tracking code which will only run if the referrer is not included in the blacklist. This way, you don’t have to set up any filters to get rid of spammers, and it automatically updates itself whenever new spammers are found. Here’s how it works:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First, it requests a copy of the blacklist before allowing any tracking to happen. Because Github doesn’t &lt;a href=&quot;http://stackoverflow.com/questions/14033281/including-javascript-files-from-github-into-html-pages&quot;&gt;allow you to include files&lt;/a&gt; directly from their website, we’ve hosted a copy of it on an Amazon S3 server and setup a task that updates the blacklist daily.&lt;/li&gt;
+  &lt;li&gt;Next, it checks the referrer against the blacklist, and tracks the visitor &lt;strong&gt;&lt;em&gt;if and only if&lt;/em&gt;&lt;/strong&gt; the referrer does not match any of the referrers in the blacklist.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now let’s move on to getting this setup on your website.&lt;/p&gt;
+
+&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
+
+&lt;p&gt;Setting this up is pretty easy. All you need to do is replace your current Google Analytics tracking script with this one:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/coopermaruyama/b5a16e51433db2ab8514.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Once you’ve done that, that’s it! No more referral spam.&lt;/p&gt;
+
+&lt;p&gt;Note that if you have a customized tracking script because you’re using enhanced link attribution or some other feature, you can freely replace the current script in the example. You can also add any other tracking scripts you have, as long as they are inserted below the &lt;code&gt;Place any tracking scripts here&lt;/code&gt; comment and above the &lt;code&gt;End tracking scripts&lt;/code&gt; comment.&lt;/p&gt;
+
+&lt;p&gt;I hope this is the last time you have to deal with referral spam. If you have any questions or need help setting this up, leave a comment below. Enjoy!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In case you’re curious about the exact source for this script, here’s the un-minified code below:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/*&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * Detect if the referrer is a referral spammer and prevent google analytics&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * loading if that is the case.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; *&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * @author Cooper Maruyama&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * @website convertify.io&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; */&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Runs if referrer is valid.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trackVisitor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Your analytics script goes here.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/*======================================================&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;=    Don&amp;#39;t edit anything below!&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;======================================================*/&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trackVisitor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;BLACKLIST_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;https://s3.amazonaws.com/s3.convertify.io/spammers.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// Fetch blacklist and perform validation.&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;BLACKLIST_URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onreadystatechange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readyState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Parse the list&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;responseText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;validateReferrer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isValid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isValid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;trackVisitor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// Spam detected! bypass tracking.&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// AJAX request failed. Track anyways.&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;trackVisitor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *  Validates referrer against a blacklist of known spammers.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *  @param   {String}   blacklist - Blacklist of known spammers, delimited by&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *                                  new line.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *  @param   {Function} callback  - Callback to call. Passes an error as the&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *                                  as the 1st argument or null if no error.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *                                  Passes true as the 2nd argument if the&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *                                  visitor is valid, or false if the visitor&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *                                  is a spammer and should not be tracked.&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   *  @return  {Null}&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;   */&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateReferrer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;blacklist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;badReferrers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blacklist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;\n&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isReferrerBad&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listLength&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;badReferrers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;badReferrers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;referrer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;isReferrerBad&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isReferrerBad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// Referral spam detected!&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trackVisitor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+                <link>http://blog.convertify.io/tips/analytics/say-goodbye-to-google-analytics-referral-spam</link>
+                <guid>http://blog.convertify.io/tips/analytics/say-goodbye-to-google-analytics-referral-spam</guid>
+                <pubDate>2015-06-07T02:56:05-07:00</pubDate>
+        </item>
 
         <item>
                 <title>Why Your Winning A/B Tests Aren't Improving Your Bottom-line</title>
