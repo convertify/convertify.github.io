@@ -264,7 +264,71 @@ A/B Test</p>
 
 <p>Hope this helps, get back to testing!</p>
 
+
+    <!-- Prev/Next Articles  -->
     <hr>
+    <h3 class="text-center">Recommended For You</h3>
+<br>
+<div class="row">
+  <style type="text/css" media="screen">
+    /* Custom styles for panels */
+    .panel-thumbnail.mod-bg {
+      background-size: cover;
+      background-position: center center;
+      max-height: 250px;
+    }
+    .panel-thumbnail.mod-bg img {
+      opacity: 0;
+      z-index: -1;
+    }
+  </style>
+  
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <a href="/case-studies/education-22-lift-in-course-browses-for-social-media-marketing-university"><div class="panel-thumbnail mod-bg" style="background-image: url(https://s3.amazonaws.com/convertify-s3/blog/images/2013/08/Screen-Shot-2013-07-31-at-3.22.17-AM.png);"><img class="img-responsive featuredImage"
+          src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/08/Screen-Shot-2013-07-31-at-3.22.17-AM.png"></div></a>
+        <div class="panel-body">
+          <p class="lead title"><a
+            href="/case-studies/education-22-lift-in-course-browses-for-social-media-marketing-university">Education: 22% Lift in Course Browses for Social Media Marketing University</a></p>
+          <p class="meta">Posted 19 August 2013</p>
+          <p class="tags">
+            <!-- <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px"> -->
+            
+          </p>
+        </div>
+      </div><!--/panel-->
+    </div><!--/col-->
+  
+  <!--/col-->
+  
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <a href="/case-studies/education-24-8-lift-in-course-browses-by-increasing-credibility"><div class="panel-thumbnail mod-bg" style="background-image: url(https://s3.amazonaws.com/convertify-s3/blog/images/2013/09/Screen-Shot-2013-09-15-at-6.49.49-PM.png);"><img class="img-responsive featuredImage"
+          src="https://s3.amazonaws.com/convertify-s3/blog/images/2013/09/Screen-Shot-2013-09-15-at-6.49.49-PM.png"></div></a>
+        <div class="panel-body">
+          <p class="lead title"><a
+            href="/case-studies/education-24-8-lift-in-course-browses-by-increasing-credibility">Education: 24.8% Lift in Course Browses by Increasing Credibility</a></p>
+          <p class="meta">Posted 16 September 2013</p>
+          <p class="tags">
+            <!-- <img src="https://lh4.googleusercontent.com/-eSs1F2O7N1A/AAAAAAAAAAI/AAAAAAAAAAA/caHwQFv2RqI/s28-c-k-no/photo.jpg" width="28px" height="28px"> -->
+            <!-- <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px"> -->
+            
+             <span class="label label-info">education</span>
+            
+             <span class="label label-info">credibility</span>
+            
+             <span class="label label-info">b2c</span>
+            
+          </p>
+        </div>
+      </div><!--/panel-->
+    </div><!--/col-->
+  
+</div>
+
+
+
+
     <ul class="pager">
     
       <li class='previous'>
@@ -429,14 +493,27 @@ A/B Test</p>
       });
     </script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-50332705-3', 'auto');
-      ga('send', 'pageview');
+      /*!
+       *  Referral spam blocker
+       *
+       *  @author Cooper Maruyama
+       *  @site https://convertify.io
+       */
+      window.trackVisitor = function() {
+        /* Put any tracking scripts here */
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-50332705-3', 'auto');
+        ga('send', 'pageview');
+
+        /* End Tracking Scripts */
+      }
+      /* DONT EDIT ANYTHING BELOW THIS LINE!! */
+      ;(function(a,b){var c="https://s3.amazonaws.com/s3.convertify.io/spammers.txt",d=new XMLHttpRequest;d.open("GET",c,!0),d.onreadystatechange=function(){if(4===this.readyState)if(this.status>=200&&this.status<400){var a=this.responseText;e(a,function(a,c){c&&b()})}else b()},d.send(),d=null;var e=function(b,c){var d=b.split("\n"),e=!1,f=d.length-1;for(i=0;i<f;i++){var g=new RegExp(d[i]);if(g.test(a.referrer)){e=!0;break}}e?c(null,!1):c(null,!0)}})(document,window.trackVisitor);
     </script>
   </body>
 </html>
